@@ -1,0 +1,54 @@
+body {
+	background-color: #eeeeee;
+	overflow: hidden;
+}
+
+div.tupperware {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+}
+
+h3.item-title, h3.item-client {
+	font-family: futura;
+	text-transform: uppercase;
+}
+
+div.image-strip {
+	background-image: url(images/deathstrip800w.jpg);
+	/* opacity: .1; */
+	background-position: top center;
+	height: 1px;
+	transition: .7s all;
+	z-index: -1;
+	overflow: hidden;
+}
+
+div.portfolio-item:hover div.image-strip {
+	height: 21px;
+}
+
+div.portfolio-item:active div.image-strip {
+	height: 100%;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+/* div.portfolio-item:hover {
+	background-image: url(images/deathstrip800w.jpg);
+	background-position: center;
+} */
+
+@media all and (min-width: 801px) and (max-width: 816px) {
+	body {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media all and (max-width: 800px) {
+	body {
+		padding: 0;
+		margin: 0;
+	}
+}
