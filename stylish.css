@@ -17,6 +17,9 @@ div.container a {
 	text-decoration: none;
 }
 
+/* TODO: Use :before classes and separate styling
+   to append .item-subtitles and .item-clients to .item-titles
+   linked by " for " or ": " respectively */
 h3.item-title, h4.item-subtitle h4.item-client {
 	font-family: "Raleway";
 	font-weight: 100;
