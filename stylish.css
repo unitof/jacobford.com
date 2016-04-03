@@ -29,6 +29,11 @@ h3.item-title, h4.item-subtitle h4.item-client {
 	letter-spacing: 2;
 	margin: 4px -1px;
 	opacity: 0;
+	transition-duration: .7s;
+	transition-property: opacity;
+	/* No delay because these properties determine
+	   how it will RETURN to a transparent state.
+	   Delay set in div.portfolio-item:hover h3... */
 }
 
 div.image-strip {
@@ -48,6 +53,7 @@ div.portfolio-item:hover div.image-strip {
 
 div.portfolio-item:hover h3, div.portfolio-item:hover h4 {
 	opacity: 1;
+	transition-delay: .5s;
 }
 
 div.portfolio-item:active div.image-strip {
