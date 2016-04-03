@@ -22,7 +22,9 @@ h3.item-title, h4.item-subtitle h4.item-client {
 	font-weight: 100;
 	font-size: 12px;
 	text-transform: uppercase;
-	color: #929292;
+	color: #818181;
+	letter-spacing: 2;
+	margin: 4px -1px;
 }
 
 div.image-strip {
