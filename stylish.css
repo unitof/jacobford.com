@@ -28,6 +28,7 @@ h3.item-title, h4.item-subtitle h4.item-client {
 	color: #818181;
 	letter-spacing: 2;
 	margin: 4px -1px;
+	opacity: 0;
 }
 
 div.image-strip {
@@ -43,6 +44,10 @@ div.image-strip {
 
 div.portfolio-item:hover div.image-strip {
 	height: 21px;
+}
+
+div.portfolio-item:hover h3, div.portfolio-item:hover h4 {
+	opacity: 1;
 }
 
 div.portfolio-item:active div.image-strip {
