@@ -43,8 +43,6 @@ div.portfolio-item:hover div.image-strip {
 
 div.portfolio-item:active div.image-strip {
 	height: 100%;
-	margin-top: -10px;
-	margin-bottom: -10px;
 }
 
 /* div.portfolio-item:hover {
