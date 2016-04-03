@@ -1,3 +1,7 @@
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
 body {
 	background-color: #eeeeee;
 	overflow: hidden;
@@ -5,19 +9,28 @@ body {
 
 div.container {
 	width: 100%;
-	max-width: 800px;
+	max-width: 1000px;
 	margin: auto;
 }
 
-h3.item-title, h3.item-client {
-	font-family: futura;
+div.container a {
+	text-decoration: none;
+}
+
+h3.item-title, h4.item-subtitle h4.item-client {
+	font-family: "Raleway";
+	font-weight: 100;
+	font-size: 12px;
 	text-transform: uppercase;
+	color: #929292;
 }
 
 div.image-strip {
 	background-image: url(images/deathstrip800w.jpg);
 	/* opacity: .1; */
 	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	height: 1px;
 	transition: .7s all;
 	z-index: -1;
