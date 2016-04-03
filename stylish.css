@@ -27,7 +27,6 @@ h3.item-title, h4.item-subtitle h4.item-client {
 
 div.image-strip {
 	background-image: url(images/deathstrip800w.jpg);
-	/* opacity: .1; */
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -44,11 +43,6 @@ div.portfolio-item:hover div.image-strip {
 div.portfolio-item:active div.image-strip {
 	height: 100%;
 }
-
-/* div.portfolio-item:hover {
-	background-image: url(images/deathstrip800w.jpg);
-	background-position: center;
-} */
 
 @media all and (min-width: 801px) and (max-width: 816px) {
 	body {
