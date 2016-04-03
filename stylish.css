@@ -58,6 +58,7 @@ div.portfolio-item:hover h3, div.portfolio-item:hover h4 {
 
 div.portfolio-item:active div.image-strip {
 	height: 100%;
+	/* TODO: transition-duration: 1.5s [or longer?]; */
 }
 
 @media all and (min-width: 801px) and (max-width: 816px) {
