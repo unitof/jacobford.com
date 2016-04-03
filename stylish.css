@@ -3,7 +3,7 @@ body {
 	overflow: hidden;
 }
 
-div.tupperware {
+div.container {
 	width: 100%;
 	max-width: 800px;
 	margin: auto;
