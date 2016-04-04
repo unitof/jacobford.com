@@ -39,6 +39,14 @@ div.index-header h1 {
 	margin: 15px -28px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
 }
 
+div.index-header h1::before {
+	content: "\2022\00a0";
+}
+
+div.index-header h1::after {
+	content: "\00a0\2022";
+}
+
 h2 {
 	color: #a1a1a1;
 	font-size: 18;
@@ -144,6 +152,10 @@ div.portfolio-item:active div.image-strip {
 		padding-right: 0;
 		margin-left: 0;
 		margin-right: 0;
+	}
+
+	div.index-header h1::before, div.index-header h1::after {
+		content: none;
 	}
 
 	div#story .overhang {
