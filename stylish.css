@@ -39,11 +39,14 @@ div.index-header h1 {
 }
 
 h2 {
+	color: #a1a1a1;
 	font-size: 18;
 	letter-spacing: 7;
 	margin: 0 -7px 0 0; /* keep margin-right equal to -(letter-spacing value) */
 }
 
+span.light {
+	color: #a1a1a1;
 }
 
 span.lc {
