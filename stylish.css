@@ -4,6 +4,7 @@ html {
 
 body {
 	background-color: #eeeeee;
+	color: #454545;
 }
 
 div.container {
@@ -59,6 +60,23 @@ h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
 }
 
+/* STYLES FOR PROJECT STORIES */
+
+div#story {
+	padding: 0 100px;
+	margin: 0 auto;
+}
+
+div#story .overhang {
+	margin-left: -100px;
+	width: 1000px;
+}
+
+p {
+	font-family: "Fanwood", serif;
+	font-size: 20px;
+}
+
 /* STYLES FOR THE INDEX */
 
 /* TODO: Use :before classes and separate styling
@@ -107,14 +125,20 @@ div.portfolio-item:active div.image-strip {
 	/* TODO: transition-duration: 1.5s [or longer?]; */
 }
 
-@media all and (min-width: 801px) and (max-width: 816px) {
+@media all and (max-width: 1016px) {
+	div.portfolio-item h3, div.portfolio-item h4 {
+		margin-left: 5px;
+	}
+}
+
+@media all and (min-width: 1001px) and (max-width: 1016px) {
 	body {
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
 	body {
 		padding-left: 0;
 		padding-right: 0;
@@ -122,7 +146,13 @@ div.portfolio-item:active div.image-strip {
 		margin-right: 0;
 	}
 
-	div.portfolio-item h3, div.portfolio-item h4 {
-		margin-left: 5px;
+	div#story .overhang {
+		max-width: 100%;
+		max-width: calc(100% + 60px);
+		margin-left: -30px; /* TODO: Is there any way to make this not apply to browsers who can't do calc()? */
+	}
+
+	div#story {
+		padding: 0 30px;
 	}
 }
