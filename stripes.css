@@ -1,3 +1,7 @@
 div.image-strip#deathstrip {
-	background-image: url(projects/death-strip/str_deathstrip.jpg);
+	background-image: url(projects/deathstrip/str_deathstrip.jpg);
+}
+
+div.image-strip#violet100 {
+	background-image: url(projects/violet100/str_violet100.jpg);
 }
