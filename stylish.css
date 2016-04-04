@@ -125,7 +125,7 @@ div.portfolio-item h3, div.portfolio-item h4 {
 div.image-strip {
 	background-color: #e2e2e2;
 	background-position: center top;
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 1px;
 	transition: .7s all;
@@ -143,7 +143,7 @@ div.portfolio-item:hover h3, div.portfolio-item:hover h4 {
 }
 
 div.portfolio-item:active div.image-strip {
-	height: 600px;
+	height: 300px;
 	/* TODO: transition-duration: 1.5s [or longer?]; */
 }
 
