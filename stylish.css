@@ -70,7 +70,13 @@ div.portfolio-item:active div.image-strip {
 
 @media all and (max-width: 800px) {
 	body {
-		padding: 0;
-		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	div.portfolio-item h3, div.portfolio-item h4 {
+		margin-left: 5px;
 	}
 }
