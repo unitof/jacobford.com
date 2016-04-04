@@ -59,6 +59,8 @@ h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
 }
 
+/* STYLES FOR THE INDEX */
+
 /* TODO: Use :before classes and separate styling
    to append .item-subtitles and .item-clients to .item-titles
    linked by " for " or ": " respectively */
