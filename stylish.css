@@ -47,6 +47,15 @@ h1.header-mid {
 	margin: 15px -28px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
 }
 
+h1 {
+	font-size: 26px;
+	font-style: italic;
+	text-transform: none;
+	letter-spacing: 3;
+	transform: rotate(-6deg);
+	margin: 50px -3px 50px 0;
+}
+
 /* TODO: Use :before classes and separate styling
    to append .item-subtitles and .item-clients to .item-titles
    linked by " for " or ": " respectively */
