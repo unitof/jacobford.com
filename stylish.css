@@ -25,36 +25,35 @@ div#header {
 	min-width: 210px;
 }
 
+h1 {
+	font-size: 26px;
+	letter-spacing: 3;
+	/* transform: rotate(-6deg);
+	margin: 50px -3px 50px 0; */
+	margin: 15px -3px 15px 0;
+}
+
+div.index-header h1 {
+	letter-spacing: 28;
+	margin: 15px -28px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
+}
+
+h2 {
+	font-size: 18;
+	letter-spacing: 7;
+	margin: 0 -7px 0 0; /* keep margin-right equal to -(letter-spacing value) */
+}
+
+}
+
 span.lc {
 	text-transform: none;
 	font-style: italic;
 	letter-spacing: 3.5;
 }
 
-h2.header-top, h2.header-bot {
-	font-size: 18;
-	letter-spacing: 7;
-	margin: 0 -7px 0 0; /* keep margin-right equal to -(letter-spacing value) */
-}
-
-h2.header-top span.lc, h2.header-bot span.lc {
+h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
-}
-
-h1.header-mid {
-	font-size: 26;
-	letter-spacing: 28;
-	margin: 15px -28px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
-}
-
-h1 {
-	font-size: 26px;
-	font-style: italic;
-	text-transform: none;
-	letter-spacing: 3;
-	/* transform: rotate(-6deg);
-	margin: 50px -3px 50px 0; */
-	margin: 15px -3px 15px 0;
 }
 
 /* TODO: Use :before classes and separate styling
