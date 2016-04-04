@@ -16,7 +16,7 @@ div.container a {
 	text-decoration: none;
 }
 
-div.header {
+div#header {
 	font-family: "Fanwood", serif;
 	text-align: center;
 	color: #818181;
