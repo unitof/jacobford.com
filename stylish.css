@@ -76,6 +76,10 @@ div#story {
 	margin: 0 auto;
 }
 
+div#story img {
+	width: 100%;
+}
+
 div#story .overhang {
 	margin-left: -100px;
 	width: 1000px;
@@ -84,6 +88,15 @@ div#story .overhang {
 p {
 	font-family: "Fanwood", serif;
 	font-size: 20px;
+}
+
+p.caption {
+	font-size: 12px;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-top: 3px;
+	margin-left: -1px;
 }
 
 /* STYLES FOR THE INDEX */
@@ -137,6 +150,10 @@ div.portfolio-item:active div.image-strip {
 @media all and (max-width: 1016px) {
 	div.portfolio-item h3, div.portfolio-item h4 {
 		margin-left: 5px;
+	}
+
+	p.caption {
+		margin-left: 15px;
 	}
 }
 
