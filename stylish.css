@@ -54,6 +54,7 @@ div.portfolio-item h3, div.portfolio-item h4 {
 	text-transform: uppercase;
 	color: #818181;
 	letter-spacing: 2;
+	font-feature-settings: lnum;
 	margin: 4px -1px;
 	opacity: 0;
 	transition-duration: .7s;
