@@ -8,13 +8,13 @@ body {
 	overflow-x: hidden;
 }
 
-div.container {
+div#container > * {
 	width: 100%;
 	max-width: 1000px;
-	margin: auto;
+	margin: 0 auto;
 }
 
-div.container a {
+div#container a {
 	text-decoration: none;
 }
 
