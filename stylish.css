@@ -79,9 +79,10 @@ div#story {
 
 div#story img {
 	max-width: 100%;
+	margin: 0 auto;
 }
 
-div#story .overhang {
+.overhang {
 	margin-left: -100px;
 	width: 1000px;
 }
