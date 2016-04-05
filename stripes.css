@@ -4,5 +4,5 @@ div.image-strip#deathstrip {
 
 div.image-strip#violet100 {
 	background-image: url(projects/violet100/str_violet100.jpg);
-	background-position: center 45%; /* override so that woman's face is visible */
+	background-position: center 23%; /* override so that woman's face is visible */
 }
