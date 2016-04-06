@@ -73,8 +73,16 @@ h2 span.lc {
 /* STYLES FOR PROJECT STORIES */
 
 div#story {
-	padding: 0 100px;
-	margin: 0 auto;
+	padding: 0 auto;
+}
+
+div#story > * {
+	max-width: 800px;
+	margin: 1em auto;
+}
+
+div#story > *:first-child {
+	margin-top: 0px;
 }
 
 div#story img {
@@ -83,9 +91,8 @@ div#story img {
 	margin: 0 auto;
 }
 
-.overhang {
-	margin-left: -100px;
-	width: 1000px;
+div#story .overhang {
+	max-width: 1000px;
 }
 
 p {
