@@ -6,16 +6,24 @@ body {
 	background-color: #eeeeee;
 	color: #454545;
 	overflow-x: hidden;
+	margin: 0;
 }
 
-div#container > * {
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-div#container a {
+a {
 	text-decoration: none;
+}
+
+p {
+	font-family: "Fanwood", serif;
+	font-size: 20px;
+}
+
+p.caption {
+	font-size: 12px;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-feature-settings: "lnum";
 }
 
 div#header {
@@ -38,7 +46,8 @@ h1 {
 
 div.index-header h1 {
 	letter-spacing: 28;
-	margin: 15px -28px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
+	margin: 15px 0;
+	padding-right: -28px; /* keep margin-right equal to -(letter-spacing value) */
 }
 
 div.index-header h1::before {
@@ -72,10 +81,7 @@ h2 span.lc {
 
 /* STYLES FOR PROJECT STORIES */
 
-div#story {
-	padding: 0 auto;
-}
-
+/* Fake 800px width while still allowing for .superoverhang */
 div#story > * {
 	max-width: 800px;
 	margin: 1em auto;
@@ -87,26 +93,25 @@ div#story > *:first-child {
 
 div#story img {
 	display: block;
-	max-width: 100%;
-	margin: 0 auto;
+	width: 100%;
 }
 
 div#story .overhang {
 	max-width: 1000px;
 }
 
-p {
-	font-family: "Fanwood", serif;
-	font-size: 20px;
+div#story .superoverhang {
+	max-width: none;
+	width: 100%;
 }
 
-p.caption {
-	font-size: 12px;
-	font-style: italic;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+div#story div p.caption {
 	margin-top: 3px;
 	margin-left: -1px;
+}
+
+div#story .superoverhang p.caption {
+	margin-left: 15px; /* must match @media all and (max-width: 1016px) { p.caption } */
 }
 
 /* STYLES FOR THE INDEX */
@@ -163,7 +168,7 @@ div.portfolio-item:active div.image-strip {
 	}
 
 	p.caption {
-		margin-left: 15px;
+		margin-left: 15px; /* must match .superoverhang p.caption */
 	}
 }
 
@@ -175,21 +180,8 @@ div.portfolio-item:active div.image-strip {
 }
 
 @media all and (max-width: 1000px) {
-	body {
-		padding-left: 0;
-		padding-right: 0;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
 	div.index-header h1::before, div.index-header h1::after {
 		content: none;
-	}
-
-	div#story .overhang {
-		max-width: 100%;
-		max-width: calc(100% + 60px);
-		margin-left: -30px; /* TODO: Is there any way to make this not apply to browsers who can't do calc()? */
 	}
 
 	div#story {
