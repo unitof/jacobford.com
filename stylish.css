@@ -167,7 +167,7 @@ div.portfolio-item:active div.image-strip {
 		margin-left: 5px;
 	}
 
-	p.caption {
+	div#story div p.caption {
 		margin-left: 15px; /* must match .superoverhang p.caption */
 	}
 }
