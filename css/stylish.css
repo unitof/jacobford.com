@@ -178,6 +178,10 @@ div.portfolio-item:active div.image-strip {
 	/* TODO: transition-duration: 1.5s [or longer?]; */
 }
 
+div.portfolio-item h3, div#story p.caption {
+	transition: margin-left .3s;
+}
+
 @media all and (max-width: 1016px) {
 	div.portfolio-item h3 {
 		margin-left: 5px;
