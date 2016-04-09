@@ -16,12 +16,12 @@
 @font-face {
 	font-family: 'Fanwood';
 	src: local('Fanwood Italic'),
-		 local('Fanwood-Italic')
-	src: url('../type/fanwood_italic-wf.eot');
-	src: url('../type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
-		 url('../type/fanwood_italic-wf.woff2') format('woff2'),
-		 url('../type/fanwood_italic-wf.woff') format('woff'),
-		 url('../type/fanwood_italic-wf.ttf') format('truetype');
+		 local('Fanwood-Italic');
+	src: url('type/fanwood_italic-wf.eot');
+	src: url('type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
+		 url('type/fanwood_italic-wf.woff2') format('woff2'),
+		 url('type/fanwood_italic-wf.woff') format('woff'),
+		 url('type/fanwood_italic-wf.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
 
