@@ -125,7 +125,7 @@ div#stripestack {
 /* TODO: Use :before classes and separate styling
    to append .item-subtitles and .item-clients to .item-titles
    linked by " for " or ": " respectively */
-div.portfolio-item h3, div.portfolio-item h4 {
+div.portfolio-item h3 {
 	font-family: "Raleway";
 	font-weight: 500;
 	font-size: 12px;
@@ -140,6 +140,10 @@ div.portfolio-item h3, div.portfolio-item h4 {
 	/* No delay because these properties determine
 	   how it will RETURN to a transparent state.
 	   Delay set in div.portfolio-item:hover h3... */
+}
+
+div.portfolio-item span.item-client {
+	color: #b9b9b9;
 }
 
 /* TODO: Rename to image-stripe */
