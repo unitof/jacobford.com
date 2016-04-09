@@ -144,6 +144,7 @@ div.portfolio-item h3 {
 
 div.portfolio-item span.item-client {
 	color: #b9b9b9;
+	opacity: 0;
 }
 
 /* TODO: Rename to image-stripe */
@@ -165,6 +166,12 @@ div.portfolio-item:hover div.image-strip {
 div.portfolio-item:hover h3 {
 	opacity: 1;
 	transition-delay: .5s;
+}
+
+div.portfolio-item:hover span.item-client {
+	opacity: 1;
+	transition-delay: 2s;
+	transition-duration: 1.2s;
 }
 
 div.portfolio-item:active div.image-strip {
