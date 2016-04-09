@@ -47,7 +47,7 @@ h1 {
 div.index-header h1 {
 	letter-spacing: 28;
 	margin: 15px 0;
-	padding-right: -28px; /* keep margin-right equal to -(letter-spacing value) */
+	margin-right: -28px; /* keep margin-right equal to -(letter-spacing value) */
 }
 
 div.index-header h1::before {
