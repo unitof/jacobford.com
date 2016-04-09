@@ -116,6 +116,12 @@ div#story .superoverhang p.caption {
 
 /* STYLES FOR THE INDEX */
 
+div#stripestack {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* TODO: Use :before classes and separate styling
    to append .item-subtitles and .item-clients to .item-titles
    linked by " for " or ": " respectively */
