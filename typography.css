@@ -2,6 +2,7 @@
 
 @font-face {
 	font-family: 'Fanwood';
+	src: local('Fanwood');
 	src: url('type/fanwood-wf.eot');
 	src: url('type/fanwood-wf.eot?#iefix') format('embedded-opentype'),
 		 url('type/fanwood-wf.woff2') format('woff2'),
@@ -14,6 +15,8 @@
 
 @font-face {
 	font-family: 'Fanwood';
+	src: local('Fanwood Italic'),
+		 local('Fanwood-Italic')
 	src: url('type/fanwood_italic-wf.eot');
 	src: url('type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
 		 url('type/fanwood_italic-wf.woff2') format('woff2'),
@@ -26,6 +29,10 @@
 
 @font-face {
 	font-family: 'Raleway';
+	src: local('Raleway 500'),
+		 local('Raleway-500'),
+		 local('Raleway Medium'),
+		 local('Raleway-Medium');
 	src: url('type/raleway-medium-wf.eot');
 	src: url('type/raleway-medium-wf.eot?#iefix') format('embedded-opentype'),
 		 url('type/raleway-medium-wf.woff2') format('woff2'),
