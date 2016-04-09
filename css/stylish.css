@@ -122,6 +122,18 @@ div#stripestack {
 	margin-right: auto;
 }
 
+/* TODO: Rename to image-stripe */
+div.image-strip {
+	background-color: #e2e2e2;
+	background-position: center top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 1px;
+	transition: .7s all;
+	z-index: -1;
+	overflow: hidden;
+}
+
 /* TODO: Use :before classes and separate styling
    to append .item-subtitles and .item-clients to .item-titles
    linked by " for " or ": " respectively */
@@ -145,18 +157,6 @@ div.portfolio-item h3 {
 div.portfolio-item span.item-client {
 	color: #b9b9b9;
 	opacity: 0;
-}
-
-/* TODO: Rename to image-stripe */
-div.image-strip {
-	background-color: #e2e2e2;
-	background-position: center top;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	height: 1px;
-	transition: .7s all;
-	z-index: -1;
-	overflow: hidden;
 }
 
 div.portfolio-item:hover div.image-strip {
