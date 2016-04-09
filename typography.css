@@ -2,18 +2,6 @@
 
 @font-face {
 	font-family: 'Fanwood';
-	src: url('type/fanwood_italic-wf.eot');
-	src: url('type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
-		 url('type/fanwood_italic-wf.woff2') format('woff2'),
-		 url('type/fanwood_italic-wf.woff') format('woff'),
-		 url('type/fanwood_italic-wf.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-
-}
-
-@font-face {
-	font-family: 'Fanwood';
 	src: url('type/fanwood-wf.eot');
 	src: url('type/fanwood-wf.eot?#iefix') format('embedded-opentype'),
 		 url('type/fanwood-wf.woff2') format('woff2'),
@@ -21,6 +9,18 @@
 		 url('type/fanwood-wf.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Fanwood';
+	src: url('type/fanwood_italic-wf.eot');
+	src: url('type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
+		 url('type/fanwood_italic-wf.woff2') format('woff2'),
+		 url('type/fanwood_italic-wf.woff') format('woff'),
+		 url('type/fanwood_italic-wf.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
 
 }
 
