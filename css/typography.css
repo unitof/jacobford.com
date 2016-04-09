@@ -2,9 +2,9 @@
 
 @font-face {
 	font-family: 'Fanwood';
-	src: local('Fanwood');
 	src: url('../type/fanwood-wf.eot');
-	src: url('../type/fanwood-wf.eot?#iefix') format('embedded-opentype'),
+	src: local('Fanwood'),
+		 url('../type/fanwood-wf.eot?#iefix') format('embedded-opentype'),
 		 url('../type/fanwood-wf.woff2') format('woff2'),
 		 url('../type/fanwood-wf.woff') format('woff'),
 		 url('../type/fanwood-wf.ttf') format('truetype');
@@ -15,13 +15,13 @@
 
 @font-face {
 	font-family: 'Fanwood';
+	src: url('../type/fanwood_italic-wf.eot');
 	src: local('Fanwood Italic'),
-		 local('Fanwood-Italic');
-	src: url('type/fanwood_italic-wf.eot');
-	src: url('type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
-		 url('type/fanwood_italic-wf.woff2') format('woff2'),
-		 url('type/fanwood_italic-wf.woff') format('woff'),
-		 url('type/fanwood_italic-wf.ttf') format('truetype');
+		 local('Fanwood-Italic'),
+		 url('../type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
+		 url('../type/fanwood_italic-wf.woff2') format('woff2'),
+		 url('../type/fanwood_italic-wf.woff') format('woff'),
+		 url('../type/fanwood_italic-wf.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
 
@@ -29,12 +29,12 @@
 
 @font-face {
 	font-family: 'Raleway';
+	src: url('../type/raleway-medium-wf.eot');
 	src: local('Raleway 500'),
 		 local('Raleway-500'),
 		 local('Raleway Medium'),
-		 local('Raleway-Medium');
-	src: url('../type/raleway-medium-wf.eot');
-	src: url('../type/raleway-medium-wf.eot?#iefix') format('embedded-opentype'),
+		 local('Raleway-Medium'),
+		 url('../type/raleway-medium-wf.eot?#iefix') format('embedded-opentype'),
 		 url('../type/raleway-medium-wf.woff2') format('woff2'),
 		 url('../type/raleway-medium-wf.woff') format('woff'),
 		 url('../type/raleway-medium-wf.ttf') format('truetype');
