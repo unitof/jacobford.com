@@ -16,6 +16,8 @@ a {
 p {
 	font-family: "Fanwood", serif;
 	font-size: 20px;
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures contextual;
 	   -moz-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
 	    -ms-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
 	     -o-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
