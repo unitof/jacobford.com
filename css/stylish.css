@@ -28,7 +28,11 @@ p.caption {
 	font-style: italic;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-feature-settings: "lnum";
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
 }
 
 div#header {
@@ -36,9 +40,13 @@ div#header {
 	text-align: center;
 	color: #818181;
 	text-transform: uppercase;
-	font-feature-settings: "lnum";
 	padding: 45px 15px;
 	min-width: 210px;
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
 }
 
 h1 {
@@ -146,7 +154,6 @@ div.portfolio-item h3 {
 	font-weight: 500;
 	font-size: 12px;
 	text-transform: uppercase;
-	font-feature-settings: "lnum";
 	color: #818181;
 	letter-spacing: 2;
 	margin: 4px -.5px;
@@ -156,6 +163,11 @@ div.portfolio-item h3 {
 	/* No delay because these properties determine
 	   how it will RETURN to a transparent state.
 	   Delay set in div.portfolio-item:hover h3... */
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
 }
 
 div.portfolio-item span.item-client {
