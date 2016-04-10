@@ -2,12 +2,12 @@
 
 @font-face {
 	font-family: 'Fanwood';
-	src: url('../type/fanwood-wf.eot');
+	src: url('../type/fanwood-jf-regular-wf.eot');
 	src: local('Fanwood'),
-		 url('../type/fanwood-wf.eot?#iefix') format('embedded-opentype'),
-		 url('../type/fanwood-wf.woff2') format('woff2'),
-		 url('../type/fanwood-wf.woff') format('woff'),
-		 url('../type/fanwood-wf.ttf') format('truetype');
+		 url('../type/fanwood-jf-regular-wf.eot?#iefix') format('embedded-opentype'),
+		 url('../type/fanwood-jf-regular-wf.woff2') format('woff2'),
+		 url('../type/fanwood-jf-regular-wf.woff') format('woff'),
+		 url('../type/fanwood-jf-regular-wf.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 
@@ -15,13 +15,13 @@
 
 @font-face {
 	font-family: 'Fanwood';
-	src: url('../type/fanwood_italic-wf.eot');
+	src: url('../type/fanwood-jf-regularitalic-wf.eot');
 	src: local('Fanwood Italic'),
 		 local('Fanwood-Italic'),
-		 url('../type/fanwood_italic-wf.eot?#iefix') format('embedded-opentype'),
-		 url('../type/fanwood_italic-wf.woff2') format('woff2'),
-		 url('../type/fanwood_italic-wf.woff') format('woff'),
-		 url('../type/fanwood_italic-wf.ttf') format('truetype');
+		 url('../type/fanwood-jf-regularitalic-wf.eot?#iefix') format('embedded-opentype'),
+		 url('../type/fanwood-jf-regularitalic-wf.woff2') format('woff2'),
+		 url('../type/fanwood-jf-regularitalic-wf.woff') format('woff'),
+		 url('../type/fanwood-jf-regularitalic-wf.ttf') format('truetype');
 	font-weight: normal;
 	font-style: italic;
 
