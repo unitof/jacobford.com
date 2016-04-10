@@ -16,6 +16,11 @@ a {
 p {
 	font-family: "Fanwood", serif;
 	font-size: 20px;
+	   -moz-font-feature-settings: "onum" 1, "pnum" 1, "liga" 1;
+	    -ms-font-feature-settings: "onum" 1, "pnum" 1, "liga" 1;
+	     -o-font-feature-settings: "onum" 1, "pnum" 1, "liga" 1;
+	-webkit-font-feature-settings: "onum" 1, "pnum" 1, "liga" 1;
+	        font-feature-settings: "onum" 1, "pnum" 1, "liga" 1;
 }
 
 p.caption {
