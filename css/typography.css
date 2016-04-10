@@ -4,7 +4,6 @@
 	font-family: 'Fanwood';
 	src: url('../type/fanwood-jf-regular-wf.eot');
 	src: local('Fanwood'),
-		 url('../type/fanwood-jf-regular-wf.eot?#iefix') format('embedded-opentype'),
 		 url('../type/fanwood-jf-regular-wf.woff2') format('woff2'),
 		 url('../type/fanwood-jf-regular-wf.woff') format('woff'),
 		 url('../type/fanwood-jf-regular-wf.ttf') format('truetype');
@@ -18,7 +17,6 @@
 	src: url('../type/fanwood-jf-regularitalic-wf.eot');
 	src: local('Fanwood Italic'),
 		 local('Fanwood-Italic'),
-		 url('../type/fanwood-jf-regularitalic-wf.eot?#iefix') format('embedded-opentype'),
 		 url('../type/fanwood-jf-regularitalic-wf.woff2') format('woff2'),
 		 url('../type/fanwood-jf-regularitalic-wf.woff') format('woff'),
 		 url('../type/fanwood-jf-regularitalic-wf.ttf') format('truetype');
