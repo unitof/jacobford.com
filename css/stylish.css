@@ -130,6 +130,31 @@ div#story .superoverhang p.caption {
 	margin-left: 15px; /* must match @media all and (max-width: 1016px) { p.caption } */
 }
 
+div#story .credits {
+	max-width: 100%;
+	padding: 0 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div#story .credits p {
+	font-size: 12.5px;
+	line-height: 1.6em;
+	margin: 6px 0;
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
+}
+
+div#story .credits .name {
+	text-transform: none;
+	font-size: 1.6em;
+	font-style: italic;
+	margin: 0 1px;
+}
+
 /* STYLES FOR THE INDEX */
 
 div#stripestack {
