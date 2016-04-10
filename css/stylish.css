@@ -74,7 +74,7 @@ div.index-header h1::after {
 
 h2 {
 	color: #a1a1a1;
-	font-size: 18;
+	font-size: 18px;
 	letter-spacing: 7;
 	margin: 0 -7px 0 0; /* keep margin-right equal to -(letter-spacing value) */
 }
