@@ -1,5 +1,5 @@
 @font-face {
-	font-family: 'Fanwood';
+	font-family: 'Fanwood-JF';
 	src: url('../type/fanwood-jf-regular-wf.eot');
 	src: url('../type/fanwood-jf-regular-wf.woff2') format('woff2'),
 		 url('../type/fanwood-jf-regular-wf.woff') format('woff'),
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-	font-family: 'Fanwood';
+	font-family: 'Fanwood-JF';
 	src: url('../type/fanwood-jf-regularitalic-wf.eot');
 	src: url('../type/fanwood-jf-regularitalic-wf.woff2') format('woff2'),
 		 url('../type/fanwood-jf-regularitalic-wf.woff') format('woff'),
