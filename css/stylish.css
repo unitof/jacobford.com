@@ -14,7 +14,8 @@ a {
 }
 
 p {
-	font-family: "Fanwood", serif;
+	font-family: "Fanwood-JF", "Fanwood", "Times New Roman", serif;
+	font-weight: normal;
 	font-size: 20px;
 	font-kerning: normal;
 	font-variant-ligatures: common-ligatures contextual;
@@ -38,7 +39,8 @@ p.caption {
 }
 
 div#header {
-	font-family: "Fanwood", serif;
+	font-family: "Fanwood-JF", "Fanwood", "Times New Roman", serif;
+	font-weight: normal;
 	text-align: center;
 	color: #818181;
 	text-transform: uppercase;
