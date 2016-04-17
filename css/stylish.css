@@ -138,8 +138,8 @@ div#story .credits {
 }
 
 div#story .credits p {
-	font-size: 12.5px;
-	line-height: 1.6em;
+	font-size: 12.5px; /* .625rem */
+	line-height: 1.6em; /* 1rem */
 	margin: 6px 0;
 	   -moz-font-feature-settings: "lnum" 1;
 	    -ms-font-feature-settings: "lnum" 1;
@@ -150,7 +150,7 @@ div#story .credits p {
 
 div#story .credits .name {
 	text-transform: none;
-	font-size: 1.6em;
+	font-size: 1.6em; /* 1rem */
 	font-style: italic;
 	margin: 0 1px;
 }
