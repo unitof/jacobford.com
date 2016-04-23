@@ -162,11 +162,8 @@ div.portfolio-item h3 {
 	letter-spacing: 2;
 	margin: 4px -.5px;
 	opacity: 0;
-	transition-duration: .7s;
-	transition-property: opacity;
-	/* No delay because these properties determine
-	   how it will RETURN to a transparent state.
-	   Delay set in div.portfolio-item:hover h3... */
+	/* See div.portfolio-item h3, div#story p.caption selector
+	   for transition rules. Rules set here get overridden. */
 	   -moz-font-feature-settings: "lnum" 1;
 	    -ms-font-feature-settings: "lnum" 1;
 	     -o-font-feature-settings: "lnum" 1;
@@ -203,7 +200,10 @@ div.portfolio-item:active div.image-strip {
 }
 
 div.portfolio-item h3, div#story p.caption {
-	transition: margin-left .3s;
+	transition: margin-left .3s, opacity .7s;
+	/* No delay for opacity because these properties
+	   determine how it will RETURN to a transparent state.
+	   Delay set in div.portfolio-item:hover h3... */
 }
 
 @media all and (max-width: 1016px) {
