@@ -132,6 +132,15 @@ div#story .superoverhang p.caption {
 	margin-left: 15px; /* must match @media all and (max-width: 1016px) { p.caption } */
 }
 
+div#story .gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch; /* if this works it'll be amazing: short items will stretch themselves to the tallest */
+	justify-content: space-between;
+	align-content: flex-start;
+}
+
 div#story .credits {
 	max-width: 100%;
 	padding: 0 15px;
