@@ -147,14 +147,14 @@ div#story .gallery {
 	        flex-wrap: nowrap;
 	-webkit-box-align: stretch;
 	-webkit-align-items: stretch;
-	    -ms-flex-align: stretch;
+	     -ms-flex-align: stretch;
 	        align-items: stretch; /* if this works it'll be amazing: short items will stretch themselves to the tallest */
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
+	          -ms-flex-pack: justify;
 	        justify-content: space-between;
 	-webkit-align-content: flex-start;
-	    -ms-flex-line-pack: start;
+	        -ms-flex-line-pack: start;
 	        align-content: flex-start;
 }
 
