@@ -272,7 +272,7 @@ a:focus div.portfolio-item span.item-client {
 	transition-duration: 1.2s;
 }
 
-div.portfolio-item:active div.image-strip {
+a:active div.portfolio-item div.image-strip {
 	height: 300px;
 	/* TODO: transition-duration: 1.5s [or longer?]; */
 }
