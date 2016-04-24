@@ -177,6 +177,10 @@ div#story .gallery > div,
 div#story .gallery > img,
 div#story .gallery .frame {
 	margin: 15px 15px 0 0;
+	/* TODO: use flex:auto here
+	   and flex-flow: row wrap above and
+	   I can make the row wrap when .frames are
+	   below a certain width. */
 }
 
 /* Method using calc() and gallery width-specific classes
