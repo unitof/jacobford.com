@@ -132,6 +132,56 @@ div#story .superoverhang p.caption {
 	margin-left: 15px; /* must match @media all and (max-width: 1016px) { p.caption } */
 }
 
+div#story .gallery {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	     -ms-flex-align: stretch;
+	        align-items: stretch; /* if this works it'll be amazing: short items will stretch themselves to the tallest */
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	          -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-align-content: flex-start;
+	        -ms-flex-line-pack: start;
+	        align-content: flex-start;
+}
+
+div#story .gallery > div,
+div#story .gallery > img,
+div#story .gallery .frame {
+	margin: 15px 15px 0 0;
+}
+
+/* Method using calc() and gallery width-specific classes
+
+.g2 {
+	width: calc(50% - (15px / 2));
+}
+
+.g3 {
+	width: calc(33.33333333% - 15px + (15px / 3));
+}
+
+*/
+
+div#story .gallery > div:last-child,
+div#story .gallery > img:last-child,
+div#story .gallery .frame:last-child {
+	margin-right: 0;
+}
+
 div#story .credits {
 	max-width: 100%;
 	padding: 0 15px;
