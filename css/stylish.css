@@ -15,6 +15,20 @@ body {
 
 a {
 	text-decoration: none;
+	transition: .7s all;
+	border-bottom: 1px;
+}
+
+a:link, a:visited {
+    color: #ff0022;
+}
+
+a:hover {
+	color: #848484;
+}
+
+a:active {
+    color: #a8a8a8;
 }
 
 p {
