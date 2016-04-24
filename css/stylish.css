@@ -164,6 +164,18 @@ div#story .gallery .frame {
 	margin: 15px 15px 0 0;
 }
 
+/* Method using calc() and gallery width-specific classes
+
+.g2 {
+	width: calc(50% - (15px / 2));
+}
+
+.g3 {
+	width: calc(33.33333333% - 15px + (15px / 3));
+}
+
+*/
+
 div#story .gallery > div:last-child,
 div#story .gallery > img:last-child,
 div#story .gallery .frame:last-child {
