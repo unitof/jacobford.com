@@ -158,6 +158,18 @@ div#story .gallery {
 	        align-content: flex-start;
 }
 
+div#story .gallery > div,
+div#story .gallery > img,
+div#story .gallery .frame {
+	margin: 15px 15px 0 0;
+}
+
+div#story .gallery > div:last-child,
+div#story .gallery > img:last-child,
+div#story .gallery .frame:last-child {
+	margin-right: 0;
+}
+
 div#story .credits {
 	max-width: 100%;
 	padding: 0 15px;
