@@ -44,7 +44,7 @@ div#header {
 	text-align: center;
 	color: #818181;
 	text-transform: uppercase;
-	padding: 45px 15px;
+	margin: 45px 15px;
 	min-width: 210px;
 	   -moz-font-feature-settings: "lnum" 1;
 	    -ms-font-feature-settings: "lnum" 1;
@@ -59,7 +59,7 @@ h1 {
 	letter-spacing: 3;
 	/* transform: rotate(-6deg);
 	margin: 50px -3px 50px 0; */
-	margin: 15px -3px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
+	margin: 0 -3px 0 0; /* keep margin-right equal to -(letter-spacing value) */
 }
 
 div.index-header h1 {
@@ -80,7 +80,7 @@ h2 {
 	font-size: 18px;
 	font-weight: normal;
 	letter-spacing: 7;
-	margin: 0 -7px 0 0; /* keep margin-right equal to -(letter-spacing value) */
+	margin: 15px -7px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
 }
 
 span.light {
