@@ -3,6 +3,7 @@ html {
 	font-weight: normal;
 	font-size: 20px;
 	-webkit-font-smoothing: antialiased;
+	/* TODO: Stop doing this, but make body text a little ligther to compensate */
 }
 
 body {
