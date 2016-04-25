@@ -322,6 +322,31 @@ div.portfolio-item h3, div#story p.caption {
 	   Delay set in div.portfolio-item:hover h3... */
 }
 
+/* STYLES FOR CSS ICONS */
+
+div.icon-index {
+	width: 12px;
+	height: 12px;
+	margin: 0px auto;
+}
+
+div.icon-index div.icon-index-stripe {
+	background-color: #a4a4a4;
+	height: 1px;
+	margin-bottom: 1px;
+}
+
+div.icon-index div.icon-index-expand {
+	border-bottom: 1px solid #a4a4a4;
+	border-left: 1px solid #a4a4a4;
+	border-right: 1px solid #a4a4a4;
+	height: 2px;
+	margin-top: -1px;
+	margin-bottom: 1px;
+}
+
+/* STYLES FOR RESPONSIVE SIZING */
+
 @media all and (max-width: 1016px) {
 	div.portfolio-item h3 {
 		margin-left: 5px;
