@@ -124,6 +124,14 @@ h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
 }
 
+h2.header-top::before {
+	transition: .7s all;
+}
+
+h2.header-top:hover::before {
+	content: "Return to "
+}
+
 /* STYLES FOR PROJECT STORIES */
 
 /* Fake 800px width while still allowing for .superoverhang */
