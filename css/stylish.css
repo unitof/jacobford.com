@@ -41,6 +41,18 @@ p {
 	        font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
 }
 
+ol {
+	padding-left: 30px;
+	padding-right: 30px;
+    /* best if these match values for
+	@media all and (max-width: 1000px)
+	{ div#story > p, div#story > img } */
+}
+
+li {
+	margin: 1em 0;
+}
+
 p.caption {
 	font-size: 12px;
 	font-style: italic;
