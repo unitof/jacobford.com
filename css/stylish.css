@@ -348,11 +348,11 @@ div.icon-index div.icon-index-stripe {
 	transition: .2s all;
 }
 
-div.icon-index:hover {
+a.footer-returnlink:hover div.icon-index {
 	padding-top: 0;
 }
 
-div.icon-index:hover div.icon-index-expand {
+a.footer-returnlink:hover div.icon-index div.icon-index-expand {
 	border: 1px solid #a4a4a4;
 	height: 2px;
 	margin-bottom: 1px;
