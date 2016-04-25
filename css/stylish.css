@@ -324,7 +324,7 @@ div.portfolio-item h3, div#story p.caption {
 /* STYLES FOR FOOTER */
 
 div#footer a.footer-returnlink h2 {
-	display: inline;
+	display: inline-block;
 }
 
 div#footer div.icon-index + h2 {
@@ -337,7 +337,8 @@ div.icon-index {
 	display: inline-block;
 	width: 18px;
 	height: 12px;
-	padding-top: 2px;
+	position: relative;
+	top: 2px;
 	transition: .2s all;
 }
 
@@ -349,7 +350,7 @@ div.icon-index div.icon-index-stripe {
 }
 
 a.footer-returnlink:hover div.icon-index {
-	padding-top: 0;
+	top: 0;
 }
 
 a.footer-returnlink:hover div.icon-index div.icon-index-expand {
