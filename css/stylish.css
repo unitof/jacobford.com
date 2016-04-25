@@ -327,7 +327,7 @@ div#footer a.footer-returnlink h2 {
 	display: inline;
 }
 
-div.icon-index + h2 {
+div#footer div.icon-index + h2 {
 	margin-left: 9px;
 }
 
