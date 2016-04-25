@@ -65,8 +65,7 @@ p.caption {
 	        font-feature-settings: "lnum" 1;
 }
 
-div#header {
-	font-family: "Fanwood-JF", "Fanwood", "Times New Roman", serif;
+div#header, div#footer {
 	font-weight: normal;
 	text-align: center;
 	color: #818181;
