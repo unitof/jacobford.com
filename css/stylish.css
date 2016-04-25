@@ -349,6 +349,7 @@ div.icon-index div.icon-index-stripe {
 	transition: .2s all;
 }
 
+/* remove the below property to make icon animate more like the actual .image-strips do */
 a.footer-returnlink:hover div.icon-index {
 	top: 0;
 }
