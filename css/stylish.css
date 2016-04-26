@@ -218,7 +218,7 @@ div#story .gallery .frame:last-child {
 
 div#story .credits {
 	max-width: 100%;
-	padding: 0 15px;
+	margin: 45px 15px; /* keep equal to div#footer margins */
 	text-align: center;
 	text-transform: uppercase;
 }
