@@ -350,8 +350,8 @@ div.icon-index div.icon-index-stripe {
 	border-color: #a4a4a4;
 	border-bottom-color: transparent;
 	height: 0px;
-	-webkit-transition: .2s border, .2s height, .2s margin;
-	        transition: .2s border, .2s height, .2s margin;
+	-webkit-transition: .05s border, .2s border-color, .2s height, .2s margin;
+	        transition: .05s border, .2s border-color, .2s height, .2s margin;
 }
 
 /* remove the below property to make icon animate more like the actual .image-strips do */
