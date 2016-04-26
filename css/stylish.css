@@ -339,14 +339,16 @@ div.icon-index {
 	height: 12px;
 	position: relative;
 	top: 2px;
-	transition: .2s all;
+	transition: .2s top;
 }
 
 div.icon-index div.icon-index-stripe {
-	border-top: 1px solid #a4a4a4;
-	border-bottom: 1px solid transparent;
+	border-style: solid none solid;
+	border-width: 1px;
+	border-color: #a4a4a4;
+	border-bottom-color: transparent;
 	height: 0px;
-	transition: .2s all;
+	transition: .2s border, .2s height, .2s margin;
 }
 
 /* remove the below property to make icon animate more like the actual .image-strips do */
