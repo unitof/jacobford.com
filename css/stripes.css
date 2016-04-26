@@ -6,3 +6,7 @@ div.image-strip#violet100 {
 	background-image: url(../projects/violet100/str_violet100.jpg);
 	background-position: center 23%; /* override so that woman's face is visible */
 }
+
+div.image-strip#urbandemocracylab {
+	background-image: url(../projects/urbandemocracylab/str_urbandemocracylab.png)
+}
