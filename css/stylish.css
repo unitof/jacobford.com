@@ -347,8 +347,7 @@ div.icon-index {
 div.icon-index div.icon-index-stripe {
 	border-style: solid none solid;
 	border-width: 1px;
-	border-color: #a4a4a4;
-	border-bottom-color: transparent;
+	border-color: #a4a4a4 #a4a4a4 transparent;
 	height: 0px;
 	-webkit-transition: .05s border, .2s border-color, .2s height, .2s margin;
 	        transition: .05s border, .2s border-color, .2s height, .2s margin;
