@@ -61,8 +61,7 @@ p.caption {
 	        font-feature-settings: "lnum" 1;
 }
 
-div#header {
-	font-family: "Fanwood-JF", "Fanwood", "Times New Roman", serif;
+div#header, div#footer {
 	font-weight: normal;
 	text-align: center;
 	color: #818181;
@@ -118,6 +117,14 @@ span.lc {
 
 h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
+}
+
+h2.header-top::before {
+	transition: .7s all;
+}
+
+h2.header-top:hover::before {
+	content: "Return to "
 }
 
 /* STYLES FOR PROJECT STORIES */
@@ -249,7 +256,8 @@ div.image-strip {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 1px;
-	transition: .7s all;
+	        transition: .7s all;
+	-webkit-transition: .7s all;
 	z-index: -1;
 	overflow: hidden;
 }
@@ -288,14 +296,17 @@ a:focus div.portfolio-item div.image-strip {
 div.portfolio-item:hover h3,
 a:focus div.portfolio-item h3 {
 	opacity: 1;
-	transition-delay: .5s;
+	-webkit-transition-delay: .5s;
+	        transition-delay: .5s;
 }
 
 div.portfolio-item:hover span.item-client,
 a:focus div.portfolio-item span.item-client {
 	opacity: 1;
-	transition-delay: 2s;
-	transition-duration: 1.2s;
+	-webkit-transition-delay: 2s;
+	        transition-delay: 2s;
+	-webkit-transition-duration: 1.2s;
+	        transition-duration: 1.2s;
 }
 
 a:active div.portfolio-item div.image-strip {
@@ -304,10 +315,54 @@ a:active div.portfolio-item div.image-strip {
 }
 
 div.portfolio-item h3, div#story p.caption {
-	transition: margin-left .3s, opacity .7s;
+	-webkit-transition: margin-left .3s, opacity .7s;
+	        transition: margin-left .3s, opacity .7s;
 	/* No delay for opacity because these properties
 	   determine how it will RETURN to a transparent state.
 	   Delay set in div.portfolio-item:hover h3... */
+}
+
+/* STYLES FOR FOOTER */
+
+div#footer a.footer-returnlink h2 {
+	display: inline-block;
+}
+
+div#footer div.icon-index + h2 {
+	margin-left: 9px;
+}
+
+/* STYLES FOR CSS ICONS */
+
+div.icon-index {
+	display: inline-block;
+	width: 18px;
+	height: 12px;
+	position: relative;
+	top: 2px;
+	-webkit-transition: .2s top;
+	        transition: .2s top;
+}
+
+div.icon-index div.icon-index-stripe {
+	border-style: solid none solid;
+	border-width: 1px;
+	border-color: #a4a4a4;
+	border-bottom-color: transparent;
+	height: 0px;
+	-webkit-transition: .2s border, .2s height, .2s margin;
+	        transition: .2s border, .2s height, .2s margin;
+}
+
+/* remove the below property to make icon animate more like the actual .image-strips do */
+a.footer-returnlink:hover div.icon-index {
+	top: 0;
+}
+
+a.footer-returnlink:hover div.icon-index div.icon-index-expand {
+	border: 1px solid #a4a4a4;
+	height: 2px;
+	margin-bottom: 1px;
 }
 
 @media all and (max-width: 1016px) {
