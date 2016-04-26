@@ -13,14 +13,10 @@ body {
 	margin: 0;
 }
 
-a {
-	text-decoration: none;
-	transition: .7s all;
-	border-bottom: 1px;
-}
-
 a:link, a:visited {
-    color: #ff0022;
+	color: #ff0022;
+	text-decoration: none;
+	transition: .7s color;
 }
 
 a:hover {
@@ -28,7 +24,7 @@ a:hover {
 }
 
 a:active {
-    color: #a8a8a8;
+	color: #a8a8a8;
 }
 
 p {
