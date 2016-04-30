@@ -114,10 +114,6 @@ h2 a:visited {
 	margin: 15px -7px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
 }
 
-span.light {
-	color: #a1a1a1;
-}
-
 span.lc {
 	text-transform: none;
 	font-style: italic;
