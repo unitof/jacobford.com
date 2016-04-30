@@ -119,14 +119,6 @@ h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
 }
 
-h2.header-top::before {
-	transition: .7s all;
-}
-
-h2.header-top:hover::before {
-	content: "Return to "
-}
-
 /* STYLES FOR PROJECT STORIES */
 
 /* Fake 800px width while still allowing for .superoverhang */
@@ -322,13 +314,13 @@ div.portfolio-item h3, div#story p.caption {
 	   Delay set in div.portfolio-item:hover h3... */
 }
 
-/* STYLES FOR FOOTER */
+/* STYLES FOR HEADER & FOOTER */
 
-div#footer a.footer-returnlink h2 {
+a.nav-returnlink h2 {
 	display: inline-block;
 }
 
-div#footer div.icon-index + h2 {
+div.icon-index + h2 {
 	margin-left: 9px;
 }
 
@@ -353,12 +345,14 @@ div.icon-index div.icon-index-stripe {
 	        transition: .05s border, .2s border-color, .2s height, .2s margin;
 }
 
-/* remove the below property to make icon animate more like the actual .image-strips do */
-a.footer-returnlink:hover div.icon-index {
+/* remove the below property and the icon will
+   animate more like the actual .image-strips,
+   but have poor vertical alignment with text. */
+a.nav-returnlink:hover div.icon-index {
 	top: 0;
 }
 
-a.footer-returnlink:hover div.icon-index div.icon-index-expand {
+a.nav-returnlink:hover div.icon-index div.icon-index-expand {
 	border: 1px solid #a4a4a4;
 	height: 2px;
 	margin-bottom: 1px;
