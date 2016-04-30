@@ -97,7 +97,14 @@ div.index-header h1::after {
 	content: "\00a0\2022";
 }
 
-h2 {
+/* To restore proper margin collapsing,
+   I moved the a inside the h2. If I can
+   solve margin collapsing and move it back
+   outside, the bottom two selectors here
+   should become unneccesary. */
+h2,
+h2 a:link,
+h2 a:visited {
 	color: #a1a1a1;
 	font-size: 18px;
 	font-weight: normal;
