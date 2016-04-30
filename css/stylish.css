@@ -61,6 +61,8 @@ p.caption {
 	        font-feature-settings: "lnum" 1;
 }
 
+/* STYLES FOR HEADER & FOOTER */
+
 div#header, div#footer {
 	font-weight: normal;
 	text-align: center;
@@ -124,6 +126,48 @@ span.lc {
 
 h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
+}
+
+a.nav-returnlink h2 {
+	display: inline-block;
+}
+
+div.icon-index + h2 {
+	margin-left: 9px;
+}
+
+/* STYLES FOR CSS ICONS */
+
+div.icon-index {
+	display: inline-block;
+	width: 18px;
+	height: 12px;
+	position: relative;
+	top: 2px;
+	-webkit-transition: .2s top;
+	        transition: .2s top;
+}
+
+div.icon-index div.icon-index-stripe {
+	border-style: solid none solid;
+	border-width: 1px;
+	border-color: #a4a4a4 #a4a4a4 transparent;
+	height: 0px;
+	-webkit-transition: .05s border, .2s border-color, .2s height, .2s margin;
+	        transition: .05s border, .2s border-color, .2s height, .2s margin;
+}
+
+/* remove the below property and the icon will
+   animate more like the actual .image-strips,
+   but have poor vertical alignment with text. */
+a.nav-returnlink:hover div.icon-index {
+	top: 0;
+}
+
+a.nav-returnlink:hover div.icon-index div.icon-index-expand {
+	border: 1px solid #a4a4a4;
+	height: 2px;
+	margin-bottom: 1px;
 }
 
 /* STYLES FOR PROJECT STORIES */
@@ -319,50 +363,6 @@ div.portfolio-item h3, div#story p.caption {
 	/* No delay for opacity because these properties
 	   determine how it will RETURN to a transparent state.
 	   Delay set in div.portfolio-item:hover h3... */
-}
-
-/* STYLES FOR HEADER & FOOTER */
-
-a.nav-returnlink h2 {
-	display: inline-block;
-}
-
-div.icon-index + h2 {
-	margin-left: 9px;
-}
-
-/* STYLES FOR CSS ICONS */
-
-div.icon-index {
-	display: inline-block;
-	width: 18px;
-	height: 12px;
-	position: relative;
-	top: 2px;
-	-webkit-transition: .2s top;
-	        transition: .2s top;
-}
-
-div.icon-index div.icon-index-stripe {
-	border-style: solid none solid;
-	border-width: 1px;
-	border-color: #a4a4a4 #a4a4a4 transparent;
-	height: 0px;
-	-webkit-transition: .05s border, .2s border-color, .2s height, .2s margin;
-	        transition: .05s border, .2s border-color, .2s height, .2s margin;
-}
-
-/* remove the below property and the icon will
-   animate more like the actual .image-strips,
-   but have poor vertical alignment with text. */
-a.nav-returnlink:hover div.icon-index {
-	top: 0;
-}
-
-a.nav-returnlink:hover div.icon-index div.icon-index-expand {
-	border: 1px solid #a4a4a4;
-	height: 2px;
-	margin-bottom: 1px;
 }
 
 @media all and (max-width: 1016px) {
