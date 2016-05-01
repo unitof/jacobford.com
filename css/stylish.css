@@ -27,6 +27,11 @@ a:active {
 	color: #a8a8a8;
 }
 
+a.no-dec {
+	-webkit-transition: none;
+	        transition: none;
+}
+
 p {
 	font-kerning: normal;
 	font-variant-ligatures: common-ligatures contextual;
