@@ -349,10 +349,10 @@ a:focus div.portfolio-item h3 {
 div.portfolio-item:hover span.item-client,
 a:focus div.portfolio-item span.item-client {
 	opacity: 1;
-	-webkit-transition-delay: 2s;
-	        transition-delay: 2s;
-	-webkit-transition-duration: 1.2s;
-	        transition-duration: 1.2s;
+	-webkit-transition-delay: 1.7s;
+	        transition-delay: 1.7s;
+	-webkit-transition-duration: 1.4s;
+	        transition-duration: 1.4s;
 }
 
 a:active div.portfolio-item div.image-strip {
