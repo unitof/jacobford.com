@@ -351,6 +351,8 @@ a:focus div.portfolio-item div.image-strip {
 div.portfolio-item:hover h3,
 a:focus div.portfolio-item h3 {
 	opacity: 1;
+	-webkit-transition-delay: .5s;
+	        transition-delay: .5s;
 }
 
 div.portfolio-item:hover span.item-client,
@@ -368,8 +370,8 @@ a:active div.portfolio-item div.image-strip {
 }
 
 div.portfolio-item h3, div#story p.caption {
-	-webkit-transition: margin-left .3s, opacity .7s .5s;
-	        transition: margin-left .3s, opacity .7s .5s;
+	-webkit-transition: margin-left .3s, opacity .7s;
+	        transition: margin-left .3s, opacity .7s;
 	/* No delay for opacity because these properties
 	   determine how it will RETURN to a transparent state.
 	   Delay set in div.portfolio-item:hover h3... */
