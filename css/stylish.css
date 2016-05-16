@@ -190,6 +190,12 @@ div#story img {
 	width: 100%;
 }
 
+/* for designs whose backgrounds are or are dangerously close to #eeeeee */
+div#story .border {
+	border: 2px solid #dddddd;
+	margin-left: -2px;
+}
+
 div#story .overhang {
 	max-width: 1000px;
 }
