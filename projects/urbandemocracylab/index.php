@@ -6,7 +6,7 @@
 ?>
 <html>
 <head>
-<?php htmlhead($title) ?>
+<?php htmlhead($title); ?>
 	<meta name="Description" content="A research lab founded by NYU Gallatin, Urban Democracy &ldquo;promotes critical, creative, just, and sustainable forms of urbanism, through scholarship, curricular activities, public engagement, and programming.&rdquo; We plan events that make people think, and I tried to make our posters do the same.">
 </head>
 <body>
