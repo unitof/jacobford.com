@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+<?php
+	require_once("php/functions.php");
+	$title = "The Portfolio of Jacob Ford";
+?>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/typography.css">
-	<link rel="stylesheet" type="text/css" href="css/stylish.css">
-	<link rel="stylesheet" type="text/css" href="css/stripes.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>The Portfolio of Jacob Ford</title>
+<?php htmlhead($title, "index"); ?>
 	<meta name="Description" content="Designer of Things.">
 </head>
 <body>
