@@ -6,11 +6,7 @@
 ?>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylish.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stripes.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Civic Engagement Posters for the Urban Democracy Lab</title>
+<?php htmlhead($title) ?>
 	<meta name="Description" content="A research lab founded by NYU Gallatin, Urban Democracy &ldquo;promotes critical, creative, just, and sustainable forms of urbanism, through scholarship, curricular activities, public engagement, and programming.&rdquo; We plan events that make people think, and I tried to make our posters do the same.">
 </head>
 <body>
