@@ -1,4 +1,5 @@
 <?php
+	include_once("../../php/functions.php");
 	$object = "Civic Engagement Posters";
 	$client = "the Urban Democracy Lab";
 	$title = $object . " for " . $client;
