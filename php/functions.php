@@ -1,6 +1,6 @@
 <?php
 
-function jf_htmlhead($title) {
+function htmlhead($title) {
 	$html = <<<HTML
 	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylish.css">
