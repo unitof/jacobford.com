@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 	require_once("../../php/functions.php");
 	$object = "Death Strip: A Map of Berlin & Time";

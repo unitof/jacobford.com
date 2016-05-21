@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 	require_once("../../php/functions.php");
 	$object = "Violet 100: The NYU Spirit Week";
