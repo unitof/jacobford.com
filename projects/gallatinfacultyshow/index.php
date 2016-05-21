@@ -1,10 +1,12 @@
+<?php
+	require_once("../../php/functions.php");
+	$object = "Exhibition Catalog";
+	$client = "the Gallatin Faculty Show";
+	$title = $object . " for " . $client;
+?>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylish.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stripes.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Exhibition Catalog for the Gallatin Faculty Show</title>
+<?php htmlhead($title); ?>
 	<meta name="Description" content="Independent characters sharing elements: how to turn a gallery show&rsquo;s mission into its own visual identity.">
 </head>
 <body>
