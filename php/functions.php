@@ -8,7 +8,7 @@ function jf_htmlhead(title) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>{$title}</title>
 HTML;
-return html;
+	return html;
 }
 
 ?>
