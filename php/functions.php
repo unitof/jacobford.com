@@ -9,7 +9,6 @@ function htmlhead($title, $pageClass = "") {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
 	<link rel="stylesheet" type="text/css" href="../../css/stylish.css">
-
 HTML;
 			break;
 
@@ -20,7 +19,6 @@ HTML;
 	<link rel="stylesheet" type="text/css" href="css/typography.css">
 	<link rel="stylesheet" type="text/css" href="css/stylish.css">
 	<link rel="stylesheet" type="text/css" href="css/stripes.css">
-
 HTML;
 			break;
 
@@ -31,11 +29,10 @@ HTML;
 	<link rel="stylesheet" type="text/css" href="/css/typography.css">
 	<link rel="stylesheet" type="text/css" href="/css/stylish.css">
 	<link rel="stylesheet" type="text/css" href="/css/stripes.css">
-
 HTML;
 			break;
 	}
-	echo $html;
+	echo $html . "\n";
 }
 
 ?>
