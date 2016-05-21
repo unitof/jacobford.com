@@ -7,7 +7,7 @@
 ?>
 <html>
 <head>
-<?php htmlhead($title); ?>
+<?php htmlhead($title, "project"); ?>
 	<meta name="Description" content="Independent characters sharing elements: how to turn a gallery show&rsquo;s mission into its own visual identity.">
 </head>
 <body>
