@@ -1,3 +1,8 @@
+<?php
+	$object = "Civic Engagement Posters";
+	$client = "the Urban Democracy Lab";
+	$title = $object . " for " . $client;
+?>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
