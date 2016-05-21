@@ -1,10 +1,12 @@
+<?php
+	require_once("../../php/functions.php");
+	$object = "Violet 100: The NYU Spirit Week";
+	$client = "the NYU Student Senators Council";
+	$title = $object; // for grammatical reasons, not syntactical and I know it
+?>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylish.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stripes.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Violet 100: The NYU Spirit Week</title>
+<?php htmlhead($title) ?>
 	<meta name="Description" content="Originally it stood for 100 hours of NYU spirit. Now it is a weeklong series of events celebrating university pride, and students needed to know it was happening. The week needed an identity.">
 </head>
 <body>
