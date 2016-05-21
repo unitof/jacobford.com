@@ -1,10 +1,12 @@
+<?php
+	require_once("../../php/functions.php");
+	$object = "Death Strip: A Map of Berlin & Time";
+	// $client = "myself";
+	$title = $object;
+?>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylish.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stripes.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Death Strip: A Map of Berlin &amp; Time</title>
+<?php htmlhead($title); ?>
 	<meta name="Description" content="The Berlin Wall was plural. Two concrete barriers divided East from West, and in between lay the Death Strip: a heavily-guarded minefield razed flat except for 302 watchtowers. The wall began to be officially dismantled in 1990, but it left a scar of emptiness through the center of a suddenly reunited city. This map shows what the Death Strip has become.">
 </head>
 <body>
