@@ -45,21 +45,7 @@
 			<p class="caption">Or the Metacolophon, if you will</p>
 		</div>
 	</div>
-	<div id="footer" class="project-footer">
-		<!-- TODO: This a element prevents the
-		     margin collapsing that should be
-		     happening with div#footer. Any fix? -->
-		<a href="../../" class="nav-returnlink no-decdec">
-			<div class="icon-index">
-				<div class="icon-index-stripe"></div>
-				<div class="icon-index-stripe icon-index-expand"></div>
-				<div class="icon-index-stripe"></div>
-				<div class="icon-index-stripe"></div>
-				<div class="icon-index-stripe"></div>
-			</div>
-			<h2>Return <span class="lc">to</span> the Index</h2>
-		</a>
-	</div>
+<?php htmlfooter(); ?>
 </div>
 </body>
 </html>

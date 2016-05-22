@@ -33,6 +33,7 @@
 			<p>Designed by <span class="name">Jacob&nbsp;Ford</span> in May 2014.</p>
 		</div>
 	</div>
+<?php htmlfooter(); ?>
 </div>
 </body>
 </html>
