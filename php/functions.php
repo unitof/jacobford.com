@@ -4,6 +4,11 @@ function prependlcfor($string, $nbsp = true) {
 	return '<span class="lc">for</span>&nbsp;' . $string;
 }
 
+function makelastspnb($string) {
+	$lastSpacePos = strrpos($string, " ");
+	return substr_replace($string, "&nbsp;", $lastSpacePos, 1);
+}
+
 function htmlhead($title, $pageClass = "") {
 	$htmltitle = htmlspecialchars($title);
 	$ga = <<<HTML
