@@ -1,7 +1,7 @@
 <?php
 
 function htmlhead($title, $pageClass = "") {
-	$htmltitle = htmlentities($title);
+	$htmltitle = htmlspecialchars($title);
 	$ga = <<<HTML
 	<script>
 	if (document.cookie.includes("JFDev=dev") == false) {
