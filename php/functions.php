@@ -1,5 +1,9 @@
 <?php
 
+function prependlcfor($string, $nbsp = true) {
+	return '<span class="lc">for</span>&nbsp;' . $string;
+}
+
 function htmlhead($title, $pageClass = "") {
 	$htmltitle = htmlspecialchars($title);
 	$ga = <<<HTML
