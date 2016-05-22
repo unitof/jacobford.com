@@ -12,8 +12,8 @@ function htmlhead($title, $pageClass = "") {
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-78108122-1', 'auto');
 			ga('send', 'pageview');
-		} else { console.log("Not executing Google Analytics: host not jacobford.com"); }
-	} else { console.log("Not executing Google Analytics: developer cookie detected"); }
+		} else { console.log("Google Analytics disabled: hostname not jacobford.com"); }
+	} else { console.log("Google Analytics disabled: developer cookie detected"); }
 	</script>
 HTML;
 
