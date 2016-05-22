@@ -112,5 +112,7 @@ HTML;
 HTML;
 			break;
 	}
+
+	echo $html . "\n";
 }
 ?>
