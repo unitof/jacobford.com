@@ -121,6 +121,28 @@ HTML;
 	echo $html . "\n";
 }
 
+function htmlindexstrip($slug, $title = "", $client = "", $imgExt = "jpg") {
+	if ($client == "") {
+		$html = <<<HTML
+		<a class="portfolio-item" href="projects/{$slug}/" id="{$slug}">
+			<div class="image-strip" style="background-image: url(../projects/{$slug}/str_$slug.{$imgExt});"></div>
+			<h3 class="item-title">{$title}</h3>
+		</a>
+HTML;
+	} else {
+		$html = <<<HTML
+		<a class="portfolio-item" href="projects/{$slug}/" id="{$slug}">
+			<div class="image-strip" style="background-image: url(../projects/{$slug}/str_{$slug}.{$imgExt});"></div>
+			<h3 class="item-title">{$title}
+				<span class="item-client">{$client}</span>
+			</h3>
+		</a>
+HTML;
+	}
+
+	echo $html . "\n";
+}
+
 function htmldesignedbyline($year = "", $name = "Jacob Ford") {
 	$htmlname = makelastspacenb($name);
 	if ($year == "") {
