@@ -79,8 +79,6 @@ HTML;
 }
 
 function htmlheader($pageClass = "", $middle = "", $bottom = "") {
-	$htmlmiddle = htmlspecialchars($middle);
-	$htmlbottom = htmlspecialchars($bottom);
 	switch ($pageClass) {
 		case "project":
 			$html = <<<HTML
@@ -88,8 +86,8 @@ function htmlheader($pageClass = "", $middle = "", $bottom = "") {
 		<h2 class="header-top">
 			<a href="../../" class="nav-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
 		</h2>
-		<h1 class="header-mid">{$htmlmiddle}</h1>
-		<h2 class="header-bot">{$htmlbottom}</h2>
+		<h1 class="header-mid">{$middle}</h1>
+		<h2 class="header-bot">{$bottom}</h2>
 	</div>
 HTML;
 			break;
