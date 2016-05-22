@@ -74,4 +74,43 @@ HTML;
 	echo $html . "\n";
 }
 
+function htmlheader($pageClass = "", $middle = "", $bottom = "") {
+	$htmlmiddle = htmlspecialchars($middle);
+	$htmlbottom = htmlspecialchars($bottom);
+	switch ($pageClass) {
+		case "project":
+			$html = <<<HTML
+	<div id="header" class="project-header">
+		<h2 class="header-top">
+			<a href="../../" class="nav-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+		</h2>
+		<h1 class="header-mid">{$htmlmiddle}</h1>
+		<h2 class="header-bot">{$htmlbottom}</h2>
+	</div>
+HTML;
+			break;
+
+		case "index":
+			$html = <<<HTML
+	<div id="header" class="index-header">
+		<h2 class="header-top">The Portfolio&nbsp;<span class="lc">of</span></h2>
+		<h1 class="header-mid">Jacob Ford</h1>
+		<h2 class="header-bot">Designer&nbsp;<span class="lc">of</span> Things</h2>
+	</div>
+HTML;
+			break;
+
+		default:
+			$html = <<<HTML
+	<div id="header" class="project-header">
+		<h2 class="header-top">
+			<a href="/" class="nav-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+		</h2>
+		<h1 class="header-mid">Coming Soon</h1>
+		<h2 class="header-bot">A Project Still in the Works</h2>
+	</div>
+HTML;
+			break;
+	}
+}
 ?>
