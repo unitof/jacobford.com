@@ -78,7 +78,10 @@ HTML;
 	echo $html . "\n";
 }
 
-function htmlheader($pageClass = "", $middle = "", $bottom = "") {
+function htmlheader($pageClass = "", $middle = "", $bottom = "", $prependFor = false) {
+	if ($prependFor) {
+		$bottom = prependlcfor($bottom);
+	}
 	switch ($pageClass) {
 		case "project":
 			$html = <<<HTML
