@@ -121,9 +121,9 @@ HTML;
 	echo $html . "\n";
 }
 
-function htmldesignedbyline($year = null, $name = "Jacob Ford") {
+function htmldesignedbyline($year = "", $name = "Jacob Ford") {
 	$htmlname = makelastspacenb($name);
-	if is_null($year) {
+	if ($year == "") {
 		$html = '<p>Designed by <span class="name">{$htmlname}</span>.</p>';
 HTML;
 	} else {
