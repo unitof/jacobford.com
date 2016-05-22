@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <?php
 	require_once("../../php/functions.php");
+	$pageClass = "project";
 	$object = "Violet 100: The NYU Spirit Week";
-	$client = "the NYU Student Senators Council";
+	$client = "The NYU Student Senators Council";
 	$title = $object; // for grammatical reasons, not syntactical and I know it
+	$middle = makelastspnb($object);
+	$bottom = prependlcfor( makelastspnb($client) );
 ?>
 <html>
 <head>
@@ -12,11 +15,7 @@
 </head>
 <body>
 <div id="container">
-	<div id="header" class="project-header">
-		<h2 class="header-top">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</h2>
-		<h1 class="header-mid">Violet 100: The NYU Spirit&nbsp;Week</h1>
-		<h2 class="header-bot"><span class="lc">for</span> NYU Student Senators Council</h2>
-	</div>
+<?php htmlheader($pageClass, $middle, $bottom); ?>
 	<div id="story">
 		<div class="overhang">
 			<img src="violet100_kimmel_straight.jpg" alt="A map depicting the Death Strip slicing through Berlin.">

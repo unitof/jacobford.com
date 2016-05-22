@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <?php
 	require_once("../../php/functions.php");
-	$object = "Exhibition Catalog";
-	$client = "the Gallatin Faculty Show";
+	$pageClass = "project";
+	$object = "Gallatin Faculty Show";
+	$client = "The Gallatin Galleries";
 	$title = $object . " for " . $client;
+	$middle = makelastspnb($object);
+	$bottom = prependlcfor( makelastspnb($client) );
 ?>
 <html>
 <head>
@@ -12,13 +15,7 @@
 </head>
 <body>
 <div id="container">
-	<div id="header" class="project-header">
-		<h2 class="header-top">
-			<a href="../../" class="nav-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
-		</h2>
-		<h1 class="header-mid">Gallatin Faculty Show</h1>
-		<h2 class="header-bot">for the Gallatin Galleries</h2>
-	</div>
+<?php htmlheader($pageClass, $middle, $bottom); ?>
 	<div id="story">
 		<div class="overhang">
 			<img src="detail_cover.jpg" alt="Closeup: gallatin / faculty / show / 2013, where one ligature from each line shares a stroke with its neighbor. Top three lines are black, bottom is cyan. All on just offwhite.">

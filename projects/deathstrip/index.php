@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <?php
 	require_once("../../php/functions.php");
+	$pageClass = "project";
 	$object = "Death Strip: A Map of Berlin & Time";
-	// $client = "myself";
+	$client = "";
 	$title = $object;
+	$middle = "Death Strip: A Map of&nbsp;Berlin&nbsp;&amp;&nbsp;Time";
+	$bottom = "A&nbsp;Personal Academic&nbsp;Project";
 ?>
 <html>
 <head>
-<?php htmlhead($title, "project"); ?>
+<?php htmlhead($title, $pageClass); ?>
 	<meta name="Description" content="The Berlin Wall was plural. Two concrete barriers divided East from West, and in between lay the Death Strip: a heavily-guarded minefield razed flat except for 302 watchtowers. The wall began to be officially dismantled in 1990, but it left a scar of emptiness through the center of a suddenly reunited city. This map shows what the Death Strip has become.">
 </head>
 <body>
 <div id="container">
-	<div id="header" class="project-header">
-		<h2 class="header-top">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</h2>
-		<h1 class="header-mid">Death Strip: A Map of&nbsp;Berlin&nbsp;&amp;&nbsp;Time</h1>
-		<h2 class="header-top">A&nbsp;Personal Academic&nbsp;Project</h2>
-	</div>
+<?php htmlheader($pageClass, $middle, $bottom); ?>
 	<div id="story">
 		<div class="overhang">
 			<img src="deathstrip_full.jpg" alt="A map depicting the Death Strip slicing through Berlin.">

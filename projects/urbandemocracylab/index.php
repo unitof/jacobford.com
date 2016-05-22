@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <?php
 	require_once("../../php/functions.php");
+	$pageClass = "project";
 	$object = "Civic Engagement Posters";
 	$client = "the Urban Democracy Lab";
 	$title = $object . " for " . $client;
+	$middle = $object;
+	$bottom = prependlcfor( makelastspnb($client) );
 ?>
 <html>
 <head>
-<?php htmlhead($title, "project"); ?>
+<?php htmlhead($title, $pageClass); ?>
 	<meta name="Description" content="A research lab founded by NYU Gallatin, Urban Democracy &ldquo;promotes critical, creative, just, and sustainable forms of urbanism, through scholarship, curricular activities, public engagement, and programming.&rdquo; We plan events that make people think, and I tried to make our posters do the same.">
 </head>
 <body>
 <div id="container">
-	<div id="header" class="project-header">
-		<h2 class="header-top">
-			<a href="../../" class="nav-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
-		</h2>
-		<h1 class="header-mid">Civic Engagement Posters</h1>
-		<h2 class="header-bot">for the Urban Democracy Lab</h2>
-	</div>
+<?php htmlheader($pageClass, $middle, $bottom, true); ?>
 	<div id="story">
 		<div class="overhang">
 			<img src="mfte.png" alt="Marching for the Extraordinary: a panel dicussion on the culture and spectacle of contemporary street bands.">

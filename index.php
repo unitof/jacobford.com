@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 	require_once("php/functions.php");
+	$pageClass = "index";
 	$title = "The Portfolio of Jacob Ford";
 ?>
 <html>
@@ -10,11 +11,7 @@
 </head>
 <body>
 <div id="container">
-	<div id="header" class="index-header">
-		<h2 class="header-top">The Portfolio&nbsp;<span class="lc">of</span></h2>
-		<h1 class="header-mid">Jacob Ford</h1>
-		<h2 class="header-bot">Designer&nbsp;<span class="lc">of</span> Things</h2>
-	</div>
+<?php htmlheader($pageClass) ?>
 	<div id="stripestack">
 		<a class="no-dec" href="projects/deathstrip/">
 			<div class="portfolio-item">
