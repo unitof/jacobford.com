@@ -314,10 +314,14 @@ div.image-strip {
 	overflow: hidden;
 }
 
+a.portfolio-item {
+	display: block;
+}
+
 /* TODO: Use :before classes and separate styling
    to append .item-subtitles and .item-clients to .item-titles
    linked by " for " or ": " respectively */
-div.portfolio-item h3 {
+.portfolio-item h3 {
 	font-family: "Raleway";
 	font-weight: 500;
 	font-size: 12px;
@@ -330,7 +334,7 @@ div.portfolio-item h3 {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	/* See div.portfolio-item h3, div#story p.caption selector
+	/* See .portfolio-item h3, div#story p.caption selector
 	   for transition rules. Rules set here get overridden. */
 	   -moz-font-feature-settings: "lnum" 1;
 	    -ms-font-feature-settings: "lnum" 1;
@@ -339,25 +343,25 @@ div.portfolio-item h3 {
 	        font-feature-settings: "lnum" 1;
 }
 
-div.portfolio-item span.item-client {
+.portfolio-item span.item-client {
 	color: #b9b9b9;
 	opacity: 0;
 }
 
-div.portfolio-item:hover div.image-strip,
-a:focus div.portfolio-item div.image-strip {
+.portfolio-item:hover div.image-strip,
+a:focus .portfolio-item div.image-strip {
 	height: 21px;
 }
 
-div.portfolio-item:hover h3,
-a:focus div.portfolio-item h3 {
+.portfolio-item:hover h3,
+a:focus .portfolio-item h3 {
 	opacity: 1;
 	-webkit-transition-delay: .5s;
 	        transition-delay: .5s;
 }
 
-div.portfolio-item:hover span.item-client,
-a:focus div.portfolio-item span.item-client {
+.portfolio-item:hover span.item-client,
+a:focus .portfolio-item span.item-client {
 	opacity: 1;
 	-webkit-transition-delay: 1.7s;
 	        transition-delay: 1.7s;
@@ -365,21 +369,21 @@ a:focus div.portfolio-item span.item-client {
 	        transition-duration: 1.4s;
 }
 
-a:active div.portfolio-item div.image-strip {
+a:active .portfolio-item div.image-strip {
 	height: 300px;
 	/* TODO: transition-duration: 1.5s [or longer?]; */
 }
 
-div.portfolio-item h3, div#story p.caption {
+.portfolio-item h3, div#story p.caption {
 	-webkit-transition: margin-left .3s, opacity .7s;
 	        transition: margin-left .3s, opacity .7s;
 	/* No delay for opacity because these properties
 	   determine how it will RETURN to a transparent state.
-	   Delay set in div.portfolio-item:hover h3... */
+	   Delay set in .portfolio-item:hover h3... */
 }
 
 @media all and (max-width: 1016px) {
-	div.portfolio-item h3 {
+	.portfolio-item h3 {
 		margin-left: 5px;
 	}
 
