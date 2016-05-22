@@ -120,7 +120,11 @@ HTML;
 
 	echo $html . "\n";
 }
-
+/*
+Make sure the following exist before invoking htmlindexstrip():
+	/projects/[slug]/index.php
+	/projects/[slug]/str_[slug].[imgExt]
+*/
 function htmlindexstrip($slug, $title = "", $client = "", $imgExt = "jpg") {
 	if ($client == "") {
 		$html = <<<HTML
