@@ -10,7 +10,7 @@
 ?>
 <html>
 <head>
-<?php htmlhead($title, $pageClass); ?>
+<?php htmlhead($pageClass, $title); ?>
 	<meta name="Description" content="The Berlin Wall was plural. Two concrete barriers divided East from West, and in between lay the Death Strip: a heavily-guarded minefield razed flat except for 302 watchtowers. The wall began to be officially dismantled in 1990, but it left a scar of emptiness through the center of a suddenly reunited city. This map shows what the Death Strip has become.">
 </head>
 <body>

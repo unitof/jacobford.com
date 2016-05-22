@@ -6,7 +6,7 @@
 ?>
 <html>
 <head>
-<?php htmlhead($title, "index"); ?>
+<?php htmlhead($pageClass, $title); ?>
 	<meta name="Description" content="Designer of Things.">
 </head>
 <body>

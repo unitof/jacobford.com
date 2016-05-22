@@ -10,7 +10,7 @@
 ?>
 <html>
 <head>
-<?php htmlhead($title, "project"); ?>
+<?php htmlhead($pageClass, $title); ?>
 	<meta name="Description" content="Originally it stood for 100 hours of NYU spirit. Now it is a weeklong series of events celebrating university pride, and students needed to know it was happening. The week needed an identity.">
 </head>
 <body>

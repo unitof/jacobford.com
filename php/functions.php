@@ -9,7 +9,7 @@ function makelastspnb($string) {
 	return substr_replace($string, "&nbsp;", $lastSpacePos, 1);
 }
 
-function htmlhead($title, $pageClass = "") {
+function htmlhead($pageClass = "", $title = "") {
 	$htmltitle = htmlspecialchars($title);
 	$ga = <<<HTML
 	<script>
