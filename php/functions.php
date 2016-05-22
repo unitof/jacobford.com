@@ -52,7 +52,7 @@ HTML;
 	echo $html . "\n";
 }
 
-function htmlfooter($returnTo = "the Index") {
+function htmlfooter($pageClass = "", $returnTo = "the Index") {
 	$html = <<<HTML
 	<div id="footer" class="project-footer">
 		<!-- TODO: This a element prevents the
