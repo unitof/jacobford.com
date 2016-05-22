@@ -348,19 +348,19 @@ a.portfolio-item {
 }
 
 .portfolio-item:hover div.image-strip,
-a:focus .portfolio-item div.image-strip {
+.portfolio-item:focus div.image-strip {
 	height: 21px;
 }
 
 .portfolio-item:hover h3,
-a:focus .portfolio-item h3 {
+.portfolio-item:focus h3 {
 	opacity: 1;
 	-webkit-transition-delay: .5s;
 	        transition-delay: .5s;
 }
 
 .portfolio-item:hover span.item-client,
-a:focus .portfolio-item span.item-client {
+.portfolio-item:focus span.item-client {
 	opacity: 1;
 	-webkit-transition-delay: 1.7s;
 	        transition-delay: 1.7s;
@@ -368,7 +368,7 @@ a:focus .portfolio-item span.item-client {
 	        transition-duration: 1.4s;
 }
 
-a:active .portfolio-item div.image-strip {
+.portfolio-item:active div.image-strip {
 	height: 300px;
 	/* TODO: transition-duration: 1.5s [or longer?]; */
 }
