@@ -65,7 +65,7 @@ function htmlheader($pageClass = "", $middle = "", $bottom = "") {
 			$html = <<<HTML
 	<div id="header" class="project-header">
 		<h2 class="header-top">
-			<a href="../../" class="nav-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+			<a href="../../" class="header-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
 		</h2>
 		<h1 class="header-mid">{$middle}</h1>
 		<h2 class="header-bot">{$bottom}</h2>
@@ -87,7 +87,7 @@ HTML;
 			$html = <<<HTML
 	<div id="header" class="project-header">
 		<h2 class="header-top">
-			<a href="/" class="nav-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+			<a href="/" class="header-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
 		</h2>
 		<h1 class="header-mid">Coming Soon</h1>
 		<h2 class="header-bot">A Project Still in the Works</h2>
@@ -105,7 +105,7 @@ function htmlfooter($pageClass = "", $returnTo = "the Index") {
 		<!-- TODO: This a element prevents the
 		     margin collapsing that should be
 		     happening with div#footer. Any fix? -->
-		<a href="../../" class="nav-returnlink no-dec">
+		<a href="../../" class="footer-returnlink no-dec">
 			<div class="icon-index">
 				<div class="icon-index-stripe"></div>
 				<div class="icon-index-stripe icon-index-expand"></div>
