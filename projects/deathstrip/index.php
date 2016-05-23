@@ -6,7 +6,7 @@
 	$client = "";
 	$title = $object;
 	$middle = "Death Strip: A Map of&nbsp;Berlin&nbsp;&amp;&nbsp;Time";
-	$bottom = "A&nbsp;Personal Academic&nbsp;Project";
+	$bottom = makelastspnb("A Personal Academic Project");
 ?>
 <html>
 <head>
