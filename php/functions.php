@@ -19,9 +19,9 @@ function htmlhead($pageClass = "", $title = "") {
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga('create', $propId, 'auto');
+		if (document.cookie.includes("JFDev=dev") == true ) { ga('set', 'dimension1', 'true'); }
 		ga('send', 'pageview');
 	} else { console.log("Google Analytics disabled: hostname not jacobford.com"); }
-	if (document.cookie.includes("JFDev=dev") == true ) { ga('set', 'dimension1', 'true'); }
 	</script>
 HTML;
 
