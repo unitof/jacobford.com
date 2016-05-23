@@ -293,6 +293,10 @@ div#story .credits .name {
 	margin: 0 1px;
 }
 
+div#story .credits .name:not(.wrap) {
+	white-space: nowrap;
+}
+
 /* STYLES FOR THE INDEX */
 
 div#stripestack {
