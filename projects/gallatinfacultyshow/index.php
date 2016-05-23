@@ -44,7 +44,7 @@
 		<div class="credits">
 			<p>Project managed and show curated by <span class="name">Keith Miller</span>.</p>
 			<p>Assistance and encouragement from <span class="name">Andrew Harvey</span> and <span class="name">Julia Berke</span>.</p>
-			<p>Designed by <span class="name">Jacob&nbsp;Ford</span> in 2013.</p>
+			<p>Designed by <span class="name">Jacob Ford</span> in 2013.</p>
 		</div>
 	</div>
 <?php htmlfooter(); ?>

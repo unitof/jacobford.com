@@ -69,9 +69,9 @@
 			<p class="caption">(Still) the Progressive Mayor?</p>
 		</div>
 		<div class="credits">
-			<p>Projects managed by <span class="name">Rebecca&nbsp;Amato</span>.</p>
-			<p>Deadlines lovingly kept by <span class="name">Jason&nbsp;Laning</span>.</p>
-			<p>Designed by <span class="name">Jacob&nbsp;Ford</span> in 2015 and 2016.</p>
+			<p>Projects managed by <span class="name">Rebecca Amato</span>.</p>
+			<p>Deadlines lovingly kept by <span class="name">Jason Laning</span>.</p>
+			<p>Designed by <span class="name">Jacob Ford</span> in 2015 and 2016.</p>
 		</div>
 	</div>
 <?php htmlfooter(); ?>
