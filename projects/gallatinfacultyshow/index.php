@@ -26,13 +26,13 @@
 			<img src="cover.jpg" alt="Straighon: booklet cover: gallatin / faculty / show / 2013, where one ligature from each line shares a stroke with its neighbor">
 			<p class="caption">Front cover</p>
 			<img src="spread_gregory.jpg" alt="Two-page spread on Matthew Gregory">
-			<p class="caption">Page 18&ndash;19: Matthew Gregory</p>
+			<p class="caption">Pages 18&ndash;19: Matthew Gregory</p>
 			<img src="spread_joachim.jpg" alt="Two-page spread on Mitchell Joachim">
-			<p class="caption">Page 24&ndash;25: Mitchell Joachim</p>
+			<p class="caption">Pages 24&ndash;25: Mitchell Joachim</p>
 			<img src="spread_katchadourian.jpg" alt="Two-page spread on Nina Katchadourian">
 			<p class="caption">Pages 26&ndash;27: Nina Katchadourian</p>
 			<img src="spread_mokgosi.jpg" alt="Two-page spread on Meleko Mokgosi">
-			<p class="caption">Page 32&ndash;33: Meleko Mokgosi</p>
+			<p class="caption">Pages 32&ndash;33: Meleko Mokgosi</p>
 			<img src="spread_colophon.jpg" alt="Two-page spread: left is blank, right contains a colophon">
 			<p class="caption">Colophon</p>
 		</div>
