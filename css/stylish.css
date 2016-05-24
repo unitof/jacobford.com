@@ -66,6 +66,10 @@ p.caption {
 	        font-feature-settings: "lnum" 1;
 }
 
+p.caption i {
+	font-style: normal;
+}
+
 /* STYLES FOR HEADER & FOOTER */
 
 div#header, div#footer {
