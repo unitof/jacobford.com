@@ -23,7 +23,7 @@
 		</div>
 		<p>Professors at NYU&rsquo;s Gallatin School do strange and wonderful things, much of which is worthy of display in Gallatin's first-floor gallery space. While working as an assistant curator for the Gallatin Galleries, I was responsible for designing a visual identity and assembling a printed exhibition catalog for 2013&rsquo;s iteration of the show.</p>
 		<div class="overhang">
-			<img src="cover.jpg" alt="Straighon: booklet cover: gallatin / faculty / show / 2013, where one ligature from each line shares a stroke with its neighbor">
+			<img src="cover.jpg" alt="Straigthon: booklet cover: gallatin / faculty / show / 2013, where one ligature from each line shares a stroke with its neighbor">
 			<p class="caption">Front cover</p>
 			<img src="spread_gregory.jpg" alt="Two-page spread on Matthew Gregory">
 			<p class="caption">Pages 18&ndash;19: Matthew Gregory</p>
