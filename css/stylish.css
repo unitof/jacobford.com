@@ -397,11 +397,11 @@ div.card {
 	margin: 0 auto;
 	width: 80vw;
 	height: 45.7142857143vw; /* 3.5:2 aspect ratio */
-	max-width: 700px;
-	max-height: 400px;
+	max-width: 400px;
+	max-height: 228px;
 
 	border: 1px solid #818181;
-	background-color: #fcfcfc;
+	background-color: #f8f8f8;
 
 	text-align: center;
 }
