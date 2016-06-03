@@ -392,7 +392,11 @@ a.portfolio-item {
 /* STYLES FOR CARD */
 
 div.card {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+
 	position: relative;
 	margin: 0 auto;
 	width: 80vw;
