@@ -406,6 +406,13 @@ div.card {
 	text-align: center;
 }
 
+div.card h3.contact {
+	font-size: 20px;
+	line-height: 1.2em;
+	margin: 1em 0;
+	letter-spacing: 1px;
+}
+
 @media all and (max-width: 1016px) {
 	.portfolio-item h3 {
 		margin-left: 5px;
