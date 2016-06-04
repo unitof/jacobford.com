@@ -435,12 +435,16 @@ div.card h3.contact span.contract {
 	opacity: 1;
 }
 
-div.card h3.contact.phone:hover span.expand {
+div.card h3.contact.phone:hover span.expand,
+div.card h3.contact.phone:focus span.expand,
+div.card h3.contact.phone:active span.expand {
 	width: 70%;
 	opacity: 1;
 }
 
-div.card h3.contact.phone:hover span.contract {
+div.card h3.contact.phone:hover span.contract,
+div.card h3.contact.phone:focus span.contract,
+div.card h3.contact.phone:active span.contract {
 	width: 0;
 	opacity: 0;
 }
