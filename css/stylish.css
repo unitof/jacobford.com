@@ -32,7 +32,7 @@ a.no-dec {
 	        transition: none;
 }
 
-p {
+p, h3, h4, h5, h6 {
 	font-kerning: normal;
 	font-variant-ligatures: common-ligatures contextual;
 	   -moz-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
