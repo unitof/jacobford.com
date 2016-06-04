@@ -20,11 +20,11 @@ a:link, a:visited {
 }
 
 a:hover {
-	color: #ff0022;
+	color: #a8a8a8;
 }
 
 a:active {
-	color: #a8a8a8;
+	color: #ff0022;
 }
 
 a.no-dec {
