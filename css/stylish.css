@@ -42,6 +42,15 @@ p {
 	        font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
 }
 
+/* we just want lining numbers with contact info, that's all */
+p.contact {
+	   -moz-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	    -ms-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	     -o-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	-webkit-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	        font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+}
+
 ol, ul {
 	padding-left: 30px;
 	padding-right: 30px;
