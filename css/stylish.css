@@ -14,13 +14,13 @@ body {
 }
 
 a:link, a:visited {
-	color: #ff0022;
+	color: #848484;
 	text-decoration: none;
 	transition: .7s color;
 }
 
 a:hover {
-	color: #848484;
+	color: #ff0022;
 }
 
 a:active {
