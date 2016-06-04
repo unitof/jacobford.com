@@ -19,17 +19,21 @@ a:link, a:visited {
 	transition: color .3s;
 }
 
-a:hover {
+/* invisible links */
+a.hidden:link,
+a.hidden:visited {
+	color: #454545; /* keep set to body {color} */
+	color: inherit;
+}
+
+a:hover,
+a.hidden:hover {
 	color: #a8a8a8;
 }
 
-a:active {
+a:active,
+a.hidden:active {
 	color: #ff0022;
-}
-
-a.no-dec {
-	-webkit-transition: none;
-	        transition: none;
 }
 
 p {
