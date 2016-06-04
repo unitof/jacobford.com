@@ -13,8 +13,8 @@
 <div id="container">
 <?php htmlheader($pageClass) ?>
 	<div class="card" id="front">
-		<h3 class="contact email">j@cobford.com</h3>
-		<h3 class="contact phone">(<span class="three digits expand">email me first</span>)<span class="subscribernumber digits contract"><span class="three digits">000</span>-<span class="four digits">0000</span></span></h3>
+		<p class="contact email">j@cobford.com</p>
+		<p class="contact phone">(<span class="three digits expand">email me first</span>)<span class="subscribernumber digits contract"><span class="three digits">000</span>-<span class="four digits">0000</span></span></p>
 	</div>
 	<!--
 	<div class="card" id="back">
