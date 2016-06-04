@@ -412,16 +412,18 @@ div.card {
 
 div.card h3.contact {
 	font-size: 20px;
-	line-height: 1.2em;
 	margin: 1em 0;
 	letter-spacing: 1px;
+	line-height: 1.2em;
+	height: 1.2em;
 }
 
 div.card h3.contact span.contract,
 div.card h3.contact span.expand {
 	display: inline-block;
-	height: 1.2em;
+	vertical-align: top;
 	overflow: hidden;
+	white-space: nowrap;
 	transition: 1s opacity ease, 1s width ease;
 }
 
@@ -433,7 +435,6 @@ div.card h3.contact span.contract {
 	opacity: 1;
 }
 
-
 div.card h3.contact.phone:hover span.expand {
 	width: 70%;
 	opacity: 1;
@@ -441,6 +442,7 @@ div.card h3.contact.phone:hover span.expand {
 
 div.card h3.contact.phone:hover span.contract {
 	width: 0;
+	opacity: 0;
 }
 
 span.digits {
@@ -469,6 +471,7 @@ span.four.digits {
 
 span.subscribernumber.digits {
 	width: 4.1585em;
+	margin-left: .2em;
 }
 
 @media all and (max-width: 1016px) {
