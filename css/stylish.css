@@ -417,6 +417,34 @@ div.card h3.contact {
 	letter-spacing: 1px;
 }
 
+span.digits {
+	opacity: 0;
+}
+
+span.one.digits {
+	width: .55em;
+	width: calc(.55em * 1);
+}
+
+span.two.digits {
+	width: 1.1em;
+	width: calc(.55em * 2);
+}
+
+span.three.digits {
+	width: 1.65em;
+	width: calc(.55em * 3);
+}
+
+span.four.digits {
+	width: 2.2em;
+	width: calc(.55em * 4);
+}
+
+span.subscribernumber.digits {
+	width: 4.1585em;
+}
+
 @media all and (max-width: 1016px) {
 	.portfolio-item h3 {
 		margin-left: 5px;
