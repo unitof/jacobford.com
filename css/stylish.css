@@ -16,7 +16,7 @@ body {
 a:link, a:visited {
 	color: #848484;
 	text-decoration: none;
-	transition: color .5s;
+	transition: color .3s;
 }
 
 a:hover {
