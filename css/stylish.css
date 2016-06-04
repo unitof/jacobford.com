@@ -433,15 +433,16 @@ div.card .contact span.expand {
 	vertical-align: top;
 	overflow: hidden;
 	white-space: nowrap;
-	transition: opacity 1s ease, width 1s ease, margin-left 1s ease;
 }
 
 div.card .contact span.expand {
 	opacity: 0;
+	transition: opacity 1s ease .8s, width 1s ease, margin-left 1s ease;
 }
 
 div.card .contact span.contract {
 	opacity: 1;
+	transition: opacity .3s ease, width 1s ease, margin-left 1s ease;
 }
 
 div.card .contact:hover span.expand,
