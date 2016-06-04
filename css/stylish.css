@@ -433,7 +433,7 @@ div.card .contact span.expand {
 	vertical-align: top;
 	overflow: hidden;
 	white-space: nowrap;
-	transition: 1s opacity ease, 1s width ease, 1s margin-left ease;
+	transition: opacity 1s ease, width 1s ease, margin-left 1s ease;
 }
 
 div.card .contact span.expand {
