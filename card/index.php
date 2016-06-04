@@ -9,7 +9,7 @@
 <?php htmlhead($pageClass, $title); ?>
 	<meta name="Description" content="The business card of Jacob Ford, Designer of Things.">
 </head>
-<body>
+<body ontouchstart>
 <div id="container">
 <?php htmlheader($pageClass) ?>
 	<div class="card" id="front">
