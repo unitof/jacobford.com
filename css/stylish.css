@@ -410,7 +410,7 @@ div.card {
 	text-align: center;
 }
 
-div.card h3.contact {
+div.card .contact {
 	font-size: 20px;
 	font-weight: normal;
 	margin: 1em 0;
@@ -419,8 +419,8 @@ div.card h3.contact {
 	height: 1.2em;
 }
 
-div.card h3.contact span.contract,
-div.card h3.contact span.expand {
+div.card .contact span.contract,
+div.card .contact span.expand {
 	display: inline-block;
 	vertical-align: top;
 	overflow: hidden;
@@ -428,24 +428,24 @@ div.card h3.contact span.expand {
 	transition: 1s opacity ease, 1s width ease;
 }
 
-div.card h3.contact span.expand {
+div.card .contact span.expand {
 	opacity: 0;
 }
 
-div.card h3.contact span.contract {
+div.card .contact span.contract {
 	opacity: 1;
 }
 
-div.card h3.contact.phone:hover span.expand,
-div.card h3.contact.phone:focus span.expand,
-div.card h3.contact.phone:active span.expand {
+div.card .contact:hover span.expand,
+div.card .contact:focus span.expand,
+div.card .contact:active span.expand {
 	width: 70%;
 	opacity: 1;
 }
 
-div.card h3.contact.phone:hover span.contract,
-div.card h3.contact.phone:focus span.contract,
-div.card h3.contact.phone:active span.contract {
+div.card .contact:hover span.contract,
+div.card .contact:focus span.contract,
+div.card .contact:active span.contract {
 	width: 0;
 	opacity: 0;
 }
