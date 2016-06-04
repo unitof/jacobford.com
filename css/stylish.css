@@ -417,6 +417,32 @@ div.card h3.contact {
 	letter-spacing: 1px;
 }
 
+div.card h3.contact span.contract,
+div.card h3.contact span.expand {
+	display: inline-block;
+	height: 1.2em;
+	overflow: hidden;
+	transition: 1s opacity ease, 1s width ease;
+}
+
+div.card h3.contact span.expand {
+	opacity: 0;
+}
+
+div.card h3.contact span.contract {
+	opacity: 1;
+}
+
+
+div.card h3.contact.phone:hover span.expand {
+	width: 70%;
+	opacity: 1;
+}
+
+div.card h3.contact.phone:hover span.contract {
+	width: 0;
+}
+
 span.digits {
 	opacity: 0;
 }
