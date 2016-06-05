@@ -425,6 +425,12 @@ a.portfolio-item {
 	transition: transform 1s;
 }
 
+.card.flipped,
+.card #back:target,
+.card #back:target ~ .card #front {
+	transform: rotateY(180deg);
+}
+
 .card .card-face {
 	position: absolute;
 	width: 100%;
