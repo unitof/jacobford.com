@@ -490,7 +490,7 @@ a.portfolio-item {
 }
 
 span.digits {
-	visibility: hidden;
+	opacity: 0;
 }
 
 span.one.digits {
