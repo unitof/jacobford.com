@@ -443,7 +443,7 @@ a.portfolio-item {
 	backface-visibility: hidden;
 }
 
-.card #back {
+.card #front {
 	transform: rotateY(180deg);
 }
 
