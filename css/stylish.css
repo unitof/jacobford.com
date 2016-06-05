@@ -403,12 +403,7 @@ a.portfolio-item {
 
 /* STYLES FOR CARD */
 
-div.card {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-
+.card-holder {
 	position: relative;
 	margin: 0 auto;
 	width: 80vw;
@@ -417,12 +412,24 @@ div.card {
 	max-height: 228px;
 
 	border: 1px solid #818181;
-	background-color: #f8f8f8;
+	perspective: 800px;
 
 	text-align: center;
 }
 
-div.card .contact {
+.card-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+	background-color: #f8f8f8;
+}
+
+.card .contact {
 	font-weight: normal;
 	margin: 1em 0;
 	letter-spacing: 1px;
@@ -430,8 +437,8 @@ div.card .contact {
 	height: 1.2em;
 }
 
-div.card .contact span.contract,
-div.card .contact span.expand {
+.card .contact span.contract,
+.card .contact span.expand {
 	display: inline-block;
 	vertical-align: top;
 	overflow: hidden;
@@ -439,25 +446,25 @@ div.card .contact span.expand {
 	transition: opacity 1s ease, width 1s ease .8s, margin-left 1s ease .8s;
 }
 
-div.card .contact span.expand {
+.card .contact span.expand {
 	opacity: 0;
 }
 
-div.card .contact span.contract {
+.card .contact span.contract {
 	opacity: 1;
 }
 
-div.card .contact:hover span.expand,
-div.card .contact:focus span.expand,
-div.card .contact:active span.expand {
+.card .contact:hover span.expand,
+.card .contact:focus span.expand,
+.card .contact:active span.expand {
 	width: 70%;
 	opacity: 1;
 	transition: opacity 1s ease .8s, width 1s ease, margin-left 1s ease;
 }
 
-div.card .contact:hover span.contract,
-div.card .contact:focus span.contract,
-div.card .contact:active span.contract {
+.card .contact:hover span.contract,
+.card .contact:focus span.contract,
+.card .contact:active span.contract {
 	width: 0;
 	margin-left: 0;
 	opacity: 0;
