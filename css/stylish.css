@@ -429,6 +429,8 @@ a.portfolio-item {
 	transform: rotateY(180deg);
 }
 
+/* TODO: seems to be a bug where :hover can still be triggered on the backface */
+
 #card .card-face {
 	position: absolute;
 	width: 100%;
