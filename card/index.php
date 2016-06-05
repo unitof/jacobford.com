@@ -13,7 +13,7 @@
 <div id="container">
 <?php htmlheader($pageClass) ?>
 	<section class="card-holder">
-		<div class="card">
+		<div id="card">
 			<div class="card-face" id="back">
 				<p class="contact email"><a class="hidden" href="mailto:j@cobford.com">j@cobford.com</a></p>
 				<p class="contact phone">(<span class="three digits expand">best to <a href="mailto:j@cobford.com">email me</a> first</span>)<span class="subscribernumber digits contract"><span class="three digits">000</span>-<span class="four digits">0000</span></span></p>

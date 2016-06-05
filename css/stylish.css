@@ -417,7 +417,7 @@ a.portfolio-item {
 	text-align: center;
 }
 
-.card {
+#card {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -425,11 +425,11 @@ a.portfolio-item {
 	transition: transform 1s;
 }
 
-.card.flipped {
+#card.flipped {
 	transform: rotateY(180deg);
 }
 
-.card .card-face {
+#card .card-face {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -441,22 +441,22 @@ a.portfolio-item {
 	backface-visibility: hidden;
 }
 
-.card #front {
+#card #front {
 	transform: rotateY(180deg);
 }
 
 
 /* if #front is the URL target, don't flip it… */
-.card #front:target {
+#card #front:target {
 	transform: none;
 }
 
 /* …and instead flip the back */
-.card #front:target ~ .card #back {
+#card #front:target ~ .card #back {
 	transform: rotateY(180deg);
 }
 
-.card .contact {
+#card .contact {
 	font-weight: normal;
 	margin: 1em 0;
 	letter-spacing: 1px;
@@ -464,8 +464,8 @@ a.portfolio-item {
 	height: 1.2em;
 }
 
-.card .contact span.contract,
-.card .contact span.expand {
+#card .contact span.contract,
+#card .contact span.expand {
 	display: inline-block;
 	vertical-align: top;
 	overflow: hidden;
@@ -473,25 +473,25 @@ a.portfolio-item {
 	transition: opacity 1s ease, width 1s ease .8s, margin-left 1s ease .8s;
 }
 
-.card .contact span.expand {
+#card .contact span.expand {
 	opacity: 0;
 }
 
-.card .contact span.contract {
+#card .contact span.contract {
 	opacity: 1;
 }
 
-.card .contact:hover span.expand,
-.card .contact:focus span.expand,
-.card .contact:active span.expand {
+#card .contact:hover span.expand,
+#card .contact:focus span.expand,
+#card .contact:active span.expand {
 	width: 70%;
 	opacity: 1;
 	transition: opacity 1s ease .8s, width 1s ease, margin-left 1s ease;
 }
 
-.card .contact:hover span.contract,
-.card .contact:focus span.contract,
-.card .contact:active span.contract {
+#card .contact:hover span.contract,
+#card .contact:focus span.contract,
+#card .contact:active span.contract {
 	width: 0;
 	margin-left: 0;
 	opacity: 0;
