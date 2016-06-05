@@ -439,6 +439,7 @@ a.portfolio-item {
 	justify-content: center;
 	background-color: #f8f8f8;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 #card #front {
