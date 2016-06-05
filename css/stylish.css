@@ -452,7 +452,8 @@ a.portfolio-item {
 }
 
 /* …and instead flip the back */
-#card #front:target ~ .card #back {
+/* TODO: Why doesn't this work as `#card #front:target ~ #card #back`? */;
+#card #front:target ~ #back {
 	transform: rotateY(180deg);
 }
 
