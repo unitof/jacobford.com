@@ -75,6 +75,16 @@ function htmlheader($pageClass = "", $middle = "", $bottom = "") {
 HTML;
 			break;
 
+		case "card":
+			$html = <<<HTML
+	<div id="header" class="index-header">
+		<h2 class="header-top">The Business Card&nbsp;<span class="lc">of</span></h2>
+		<h1 class="header-mid">Jacob Ford</h1>
+		<h2 class="header-bot">Designer&nbsp;<span class="lc">of</span> Things</h2>
+	</div>
+HTML;
+			break;
+
 		case "index":
 			$html = <<<HTML
 	<div id="header" class="index-header">
