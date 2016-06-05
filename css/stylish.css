@@ -425,9 +425,7 @@ a.portfolio-item {
 	transition: transform 1s;
 }
 
-.card.flipped,
-.card #back:target,
-.card #back:target ~ .card #front {
+.card.flipped {
 	transform: rotateY(180deg);
 }
 
@@ -444,6 +442,17 @@ a.portfolio-item {
 }
 
 .card #front {
+	transform: rotateY(180deg);
+}
+
+
+/* if #front is the URL target, don't flip it… */
+.card #front:target {
+	transform: none;
+}
+
+/* …and instead flip the back */
+.card #front:target ~ .card #back {
 	transform: rotateY(180deg);
 }
 
