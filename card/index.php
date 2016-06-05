@@ -25,5 +25,16 @@
 		</div>
 	</section>
 </div>
+<script type="text/javascript">
+	var card = document.getElementById('card');
+	function flipCard(event){
+		if (event.target.nodeName.toLowerCase() == 'a') {
+			event.stopPropagation();
+		} else {
+			card.classList.toggle('flipped');
+		}
+	}
+	card.addEventListener('click', flipCard, true);
+</script>
 </body>
 </html>
