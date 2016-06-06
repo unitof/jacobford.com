@@ -176,8 +176,8 @@ div.icon + h2 {
 div.icon-index {
 	height: 12px;
 	top: 2px;
-	-webkit-transition: .2s top;
-	        transition: .2s top;
+	-webkit-transition: top .2s;
+	        transition: top .2s;
 }
 
 div.icon-index div.icon-index-stripe {
@@ -185,8 +185,8 @@ div.icon-index div.icon-index-stripe {
 	border-width: 1px;
 	border-color: #a8a8a8 #a8a8a8 transparent;
 	height: 0px;
-	-webkit-transition: .05s border, .2s border-color, .2s height, .2s margin;
-	        transition: .05s border, .2s border-color, .2s height, .2s margin;
+	-webkit-transition: border .05s, border-color .2s, height .2s, margin .2s;
+	        transition: border .05s, border-color .2s, height .2s, margin .2s;
 }
 
 a.icon-link:hover div.icon-index,
@@ -205,8 +205,8 @@ a.icon-link:focus div.icon-index div.icon-index-expand {
 
 div.icon-card {
 	height: 9px;
-	-webkit-transition: .3s transform;
-	        transition: .3s transform;
+	-webkit-transition: transform .3s;
+	        transition: transform .3s;
 	border: 1px solid #a8a8a8;
 }
 
@@ -352,8 +352,8 @@ div.image-strip {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height: 1px;
-	        transition: .7s all;
-	-webkit-transition: .7s all;
+	        transition: height .7s;
+	-webkit-transition: height .7s;
 	z-index: -1;
 	overflow: hidden;
 }
