@@ -25,8 +25,7 @@
 		</div>
 	</section>
 	<section class="action-pane">
-		<a class="action action-one" href="#">Download resume</a>
-		<a class="action action-two" href="#">Download resume</a>
+		<a class="action" href="jacobford_resume.pdf">Download resume</a>
 	</section>
 <?php htmlfooter($pageClass) ?>
 </div>

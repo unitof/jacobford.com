@@ -46,22 +46,15 @@ a.action {
 	font-size: .8rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #a8a8a8;
 	border-color: #a8a8a8;
 	border-width: 1px;
 	border-style: solid none solid;
-	transition: border-top-color .2s, color .2s, padding .2s;
+	transition: border-color .2s, color .2s;
 }
 
-a.action-one:hover {
-	padding-left: 0;
-	padding-right: 0;
-	color: inherit;
-}
-
-a.action-two:hover {
-	border-top-color: transparent;
-	color: inherit;
+a.action:hover {
+	color: #454545;
+	border-color: #454545;
 }
 
 a.action + a.action {
