@@ -145,7 +145,7 @@ h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
 }
 
-a.footer-returnlink h2 {
+a.icon-link h2 {
 	display: inline-block;
 }
 
@@ -177,13 +177,13 @@ div.icon-index div.icon-index-stripe {
 /* remove the below property and the icon will
    animate more like the actual .image-strips,
    but have poor vertical alignment with text. */
-a.footer-returnlink:hover div.icon-index,
-a.footer-returnlink:focus div.icon-index {
+a.icon-link:hover div.icon-index,
+a.icon-link:focus div.icon-index {
 	top: 0;
 }
 
-a.footer-returnlink:hover div.icon-index div.icon-index-expand,
-a.footer-returnlink:focus div.icon-index div.icon-index-expand {
+a.icon-link:hover div.icon-index div.icon-index-expand,
+a.icon-link:focus div.icon-index div.icon-index-expand {
 	border: 1px solid #a4a4a4;
 	height: 2px;
 	margin-bottom: 1px;

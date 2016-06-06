@@ -117,8 +117,8 @@ function htmlfooter($pageClass = "", $returnTo = "the Index") {
 		<!-- TODO: This a element prevents the
 		     margin collapsing that should be
 		     happening with div#footer. Any fix? -->
-		<a href="../../" class="footer-returnlink no-dec">
-			<div class="icon-index">
+		<a href="../../" class="icon-link hidden">
+			<div class="icon icon-index">
 				<div class="icon-index-stripe"></div>
 				<div class="icon-index-stripe icon-index-expand"></div>
 				<div class="icon-index-stripe"></div>
@@ -126,6 +126,10 @@ function htmlfooter($pageClass = "", $returnTo = "the Index") {
 				<div class="icon-index-stripe"></div>
 			</div>
 			<h2>Return <span class="lc">to</span> {$returnTo}</h2>
+		</a>
+		<a href="../../card/" class="icon-link hidden">
+			<div class="icon icon-card"></div>
+			<h2>Take my Card</h2>
 		</a>
 	</div>
 HTML;
