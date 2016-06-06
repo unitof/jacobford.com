@@ -174,12 +174,9 @@ div.icon-index div.icon-index-stripe {
 	        transition: .05s border, .2s border-color, .2s height, .2s margin;
 }
 
-/* remove the below property and the icon will
-   animate more like the actual .image-strips,
-   but have poor vertical alignment with text. */
 a.icon-link:hover div.icon-index,
 a.icon-link:focus div.icon-index {
-	top: 0;
+	top: 0; /* less like the actual frontpage, but better text alignment */
 }
 
 a.icon-link:hover div.icon-index div.icon-index-expand,
