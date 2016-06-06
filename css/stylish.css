@@ -151,15 +151,18 @@ a.icon-link h2 {
 	display: inline-block;
 }
 
-div.icon-index + h2 {
+div.icon + h2 {
 	margin-left: 9px;
 }
 
-div.icon-index {
+div.icon {
 	display: inline-block;
-	width: 18px;
-	height: 12px;
 	position: relative;
+	width: 18px;
+}
+
+div.icon-index {
+	height: 12px;
 	top: 2px;
 	-webkit-transition: .2s top;
 	        transition: .2s top;
