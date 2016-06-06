@@ -493,7 +493,6 @@ a.portfolio-item {
 	transform: rotateY(180deg);
 }
 
-
 /* if #front is the URL target, don't flip it… */
 #card #front:target {
 	transform: none;
@@ -503,6 +502,15 @@ a.portfolio-item {
 /* TODO: Why doesn't this work as `#card #front:target ~ #card #back`? */
 #card #front:target ~ #back {
 	transform: rotateY(180deg);
+}
+
+/* fix for Chrome bug where :hover still fires on backface */
+#card.flipped #back {
+	pointer-events: none;
+}
+
+#card #front:target ~ #back {
+	pointer-events: auto;
 }
 
 #card .contact {
