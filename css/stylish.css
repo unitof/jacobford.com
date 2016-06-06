@@ -196,6 +196,19 @@ a.icon-link:focus div.icon-index div.icon-index-expand {
 	margin-bottom: 1px;
 }
 
+/* Card icon */
+
+div.icon-card {
+	height: 9px;
+	-webkit-transition: .3s transform;
+	        transition: .3s transform;
+	border: 1px solid #a8a8a8;
+}
+
+.icon-link:hover div.icon-card {
+	transform: rotateY(180deg);
+}
+
 /* STYLES FOR PROJECT STORIES */
 
 /* Fake 800px width while still allowing for .superoverhang */
