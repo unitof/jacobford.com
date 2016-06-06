@@ -156,6 +156,13 @@ h2 span.lc {
 	margin-left: 30px;
 }
 
+/* reset for narrow screens to fix centering */
+@media all and (max-width: 649px) {
+	.icon-link + .icon-link {
+		margin-left: 0;
+	}
+}
+
 div.icon {
 	display: inline-block;
 	position: relative;
