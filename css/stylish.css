@@ -35,6 +35,33 @@ a.hidden:active {
 	color: #ff0022;
 }
 
+.action-pane {
+	text-align: center;
+}
+
+a.action {
+	display: inline-block;
+	padding: 20px;
+	margin: 2em auto;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #a8a8a8;
+	border-color: #a8a8a8;
+	border-width: 1px;
+	border-style: solid none solid;
+	transition: padding .2s;
+}
+
+a.action:hover {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+a.action + a.action {
+	margin-left: 1em;
+}
+
 p {
 	font-kerning: normal;
 	font-variant-ligatures: common-ligatures contextual;
