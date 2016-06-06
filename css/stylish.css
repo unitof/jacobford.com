@@ -50,12 +50,18 @@ a.action {
 	border-color: #a8a8a8;
 	border-width: 1px;
 	border-style: solid none solid;
-	transition: padding .2s;
+	transition: border-top-color .2s, color .2s, padding .2s;
 }
 
-a.action:hover {
+a.action-one:hover {
 	padding-left: 0;
 	padding-right: 0;
+	color: inherit;
+}
+
+a.action-two:hover {
+	border-top-color: transparent;
+	color: inherit;
 }
 
 a.action + a.action {
