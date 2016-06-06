@@ -24,6 +24,9 @@
 			</div>
 		</div>
 	</section>
+	<section class="action-pane">
+		<a class="action" href="#">Download my resume</a>
+	</section>
 <?php htmlfooter($pageClass) ?>
 </div>
 <script type="text/javascript">
