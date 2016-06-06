@@ -18,6 +18,7 @@
 <?php htmlindexstrip("urbandemocracylab", "Civic Engagement Posters", "for the Urban Democracy Lab", "png"); ?>
 <?php htmlindexstrip("gallatinfacultyshow", "Gallatin Faculty Show", "for the Gallatin Galleries", "jpg"); ?>
 	</div>
+<?php htmlfooter($pageClass); ?>
 </div>
 </body>
 </html>
