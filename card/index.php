@@ -15,8 +15,8 @@
 	<section class="card-holder">
 		<div id="card">
 			<div class="card-face" id="front">
-				<h2 class="name">Jacob Ford</h2>
-				<h3 class="title">Designer&nbsp;<span class="lc">of</span> Things</h3>
+				<h3 class="name">Jacob Ford</h2>
+				<h4 class="title">Designer&nbsp;<span class="lc">of</span> Things</h3>
 			</div>
 			<div class="card-face" id="back">
 				<p class="contact email"><a class="hidden" href="mailto:j@cobford.com">j@cobford.com</a></p>
