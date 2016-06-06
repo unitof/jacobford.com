@@ -111,12 +111,11 @@ HTML;
 	echo $html . "\n";
 }
 
-function htmlfooter($pageClass = "", $returnTo = "the Index") {
-	$html = <<<HTML
+function htmlfooter($pageClass = "") {
+	switch ($pageClass) {
+		case "project":
+			$html = <<<HTML
 	<div id="footer" class="project-footer">
-		<!-- TODO: This a element prevents the
-		     margin collapsing that should be
-		     happening with div#footer. Any fix? -->
 		<a href="../../" class="icon-link hidden">
 			<div class="icon icon-index">
 				<div class="icon-index-stripe"></div>
@@ -125,7 +124,7 @@ function htmlfooter($pageClass = "", $returnTo = "the Index") {
 				<div class="icon-index-stripe"></div>
 				<div class="icon-index-stripe"></div>
 			</div>
-			<h2>Return <span class="lc">to</span> {$returnTo}</h2>
+			<h2>Return <span class="lc">to</span> the Index</h2>
 		</a>
 		<a href="../../card/" class="icon-link hidden">
 			<div class="icon icon-card"></div>
@@ -133,6 +132,59 @@ function htmlfooter($pageClass = "", $returnTo = "the Index") {
 		</a>
 	</div>
 HTML;
+			break;
+
+		case "card":
+			$html = <<<HTML
+	<div id="footer" class="project-footer">
+		<a href="../../" class="icon-link hidden">
+			<div class="icon icon-index">
+				<div class="icon-index-stripe"></div>
+				<div class="icon-index-stripe icon-index-expand"></div>
+				<div class="icon-index-stripe"></div>
+				<div class="icon-index-stripe"></div>
+				<div class="icon-index-stripe"></div>
+			</div>
+			<h2>Return <span class="lc">to</span> the Index</h2>
+		</a>
+	</div>
+HTML;
+			break;
+
+		case "index":
+			$html = <<<HTML
+	<div id="footer" class="project-footer">
+		<a href="../../card/" class="icon-link hidden">
+			<div class="icon icon-card"></div>
+			<h2>Take my Card</h2>
+		</a>
+	</div>
+HTML;
+			break;
+
+		default:
+			$html = <<<HTML
+	<div id="footer" class="project-footer">
+		<!-- TODO: This a element prevents the
+		     margin collapsing that should be
+		     happening with div#footer. Any fix? -->
+		<a href="/" class="icon-link hidden">
+			<div class="icon icon-index">
+				<div class="icon-index-stripe"></div>
+				<div class="icon-index-stripe icon-index-expand"></div>
+				<div class="icon-index-stripe"></div>
+				<div class="icon-index-stripe"></div>
+				<div class="icon-index-stripe"></div>
+			</div>
+			<h2>Return <span class="lc">to</span> the Index</h2>
+		</a>
+		<a href="/card/" class="icon-link hidden">
+			<div class="icon icon-card"></div>
+			<h2>Take my Card</h2>
+		</a>
+	</div>
+HTML;
+	}
 
 	echo $html . "\n";
 }
