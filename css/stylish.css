@@ -178,7 +178,7 @@ div.icon-index {
 div.icon-index div.icon-index-stripe {
 	border-style: solid none solid;
 	border-width: 1px;
-	border-color: #a4a4a4 #a4a4a4 transparent;
+	border-color: #a8a8a8 #a8a8a8 transparent;
 	height: 0px;
 	-webkit-transition: .05s border, .2s border-color, .2s height, .2s margin;
 	        transition: .05s border, .2s border-color, .2s height, .2s margin;
@@ -191,7 +191,7 @@ a.icon-link:focus div.icon-index {
 
 a.icon-link:hover div.icon-index div.icon-index-expand,
 a.icon-link:focus div.icon-index div.icon-index-expand {
-	border: 1px solid #a4a4a4;
+	border: 1px solid #a8a8a8;
 	height: 2px;
 	margin-bottom: 1px;
 }
