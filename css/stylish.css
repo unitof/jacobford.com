@@ -145,6 +145,8 @@ h2 span.lc {
 	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
 }
 
+/* STYLES FOR CSS ICONS */
+
 a.icon-link h2 {
 	display: inline-block;
 }
@@ -152,8 +154,6 @@ a.icon-link h2 {
 div.icon-index + h2 {
 	margin-left: 9px;
 }
-
-/* STYLES FOR CSS ICONS */
 
 div.icon-index {
 	display: inline-block;
