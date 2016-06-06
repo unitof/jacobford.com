@@ -24,8 +24,8 @@
 			</div>
 		</div>
 	</section>
-</div>
 <?php htmlfooter($pageClass) ?>
+</div>
 <script type="text/javascript">
 	var card = document.getElementById('card');
 	function flipCard(event){
