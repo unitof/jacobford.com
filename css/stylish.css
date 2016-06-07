@@ -267,6 +267,10 @@ div#story .overhang {
 	max-width: 1000px;
 }
 
+div#story .underhang {
+	max-width: 400px;
+}
+
 div#story .superoverhang {
 	max-width: none;
 	width: 100%;
