@@ -6,7 +6,7 @@
 	$client = "The Gallatin Galleries";
 	$title = $object . " for " . $client;
 	$middle = makelastspnb($object);
-	$bottom = prependlcfor( makelastspnb($client) );
+	$bottom = prependlcfor($client);
 ?>
 <html>
 <head>
