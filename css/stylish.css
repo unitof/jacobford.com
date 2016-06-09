@@ -171,20 +171,12 @@ h2 span.lc {
 
 /* STYLES FOR THE ICONS */
 
-.icon-link,
+.icon-link {
+	display: block;
+}
+
 .icon-link h2 {
 	display: inline-block;
-}
-
-.icon-link + .icon-link {
-	margin-left: 30px;
-}
-
-/* reset for narrow screens to fix centering */
-@media all and (max-width: 649px) {
-	.icon-link + .icon-link {
-		margin-left: 0;
-	}
 }
 
 div.icon {
