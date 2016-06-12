@@ -12,6 +12,17 @@ body {
 	margin: 0;
 }
 
+em,
+cite,
+i {
+	font-style: italic;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
 a:link, a:visited {
 	color: #848484;
 	text-decoration: none;
