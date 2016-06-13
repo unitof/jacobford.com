@@ -288,6 +288,27 @@ div#story .superoverhang p.caption {
 	margin-left: 15px; /* must match @media all and (max-width: 1016px) { p.caption } */
 }
 
+div#story .embed {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+div#story .embed.r16x9 {
+	padding-bottom: 56.25%;
+}
+
+.embed iframe,
+.embed object,
+.embed embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 div#story .gallery {
 	display: -webkit-box;
 	display: -webkit-flex;
