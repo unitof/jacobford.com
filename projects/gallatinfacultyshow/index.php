@@ -38,7 +38,7 @@
 		</div>
 		<p>We knew things were going to get small, so I knew things were going to have to stay crisp. Much of the catalog's color scheme is the C and the K&mdash;cyan and key (black)&mdash;of CYMK, so there would be no risk of fuzzy text from misregistration artifacts.</p>
 		<div class="overhang">
-			<img src="detail_colophon.jpg" srcset="detail_colophon@2x.jpg 2x, detail_colophon@3x.jpg 3x, detail_colophon@max.jpg 4x" alt="Thank yous">
+			<img src="detail_colophon.jpg" srcset="detail_colophon@2x.jpg 2x, detail_colophon@3x.jpg 3x, detail_colophon@max.jpg 4x" alt="Colophon: This catalog is one of five hundred / designed by Jacob Ford / and printed by DG3. // The text is set in various / weights and sizes of Archer, / designed by Hoefler &amp; Frere-Jones / just a few blocks down the street. // Thanks to Andrew and Julia / for hugs and white balancing / and to Keith / for letting me make a colophon.">
 			<p class="caption">Or the Metacolophon, if you will</p>
 		</div>
 		<div class="credits">
