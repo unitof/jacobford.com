@@ -111,6 +111,54 @@ HTML;
 	echo $html . "\n";
 }
 
+/* Needs some work, and compatibility checks. */
+function htmlsrcset($src, $maxWidth = '', $upTo = 3, $max = false) {
+	if ( is_string($maxWidth) ) {
+		switch ($maxWidth) {
+			case 'overhang':
+				$maxWidth = 1000;
+				break;
+			
+			case 'underhang':
+				$maxWidth = 500;
+				break;
+
+			case 'superoverhang':
+				$maxWidth = 6000;
+				break;
+
+			default:
+				$maxWidth = 1000;
+				break;
+		}
+	}
+	$lastDotPos = strrpos($src, ".");
+	$slug = substr($src, 0, $lastDotPos);
+	$ext = substr($src, $lastDotPos + 1);
+	$upTo = floor($upTo);
+	$srcval = $src;
+	$srcsetval = '';
+	$sizesval = '';
+	if ( $upTo > 2 ) {
+		$srcsetval = $src . ' ' . $maxWidth . 'w, ';
+		for ( $x = 2; $x <= $upTo; $x++ ) {
+			$srcsetval .= $slug . '@' . $x . 'x' . '.' . $ext . ' ' . ($maxWidth * $x) . 'w';
+			if ( $x < $upTo ) {
+				$srcsetval .= ', ';
+			}
+		}
+		$sizesval = '(max-width: ' . $maxWidth . 'px) 100vw, ' . $maxWidth . 'px';
+	}
+	$html = 'src="' . $srcval . '"';
+	if ($srcsetval) {
+		$html .= ' srcset="' . $srcsetval . '"';
+	}
+	if ($sizesval) {
+		$html .= ' sizes="' . $sizesval . '"';
+	}
+	echo $html;
+}
+
 function htmlfooter($pageClass = "") {
 	switch ($pageClass) {
 		case "project":
