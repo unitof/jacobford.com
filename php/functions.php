@@ -111,6 +111,27 @@ HTML;
 	echo $html . "\n";
 }
 
+function htmlsrcset($src, $upTo = 3, $max = false) {
+	$lastDotPos = strrpos($src, ".");
+	$slug = substr($src, 0, $lastDotPos);
+	$ext = substr($src, $lastDotPos + 1);
+	$upTo = floor($upTo);
+	$srcval = $src;
+	$srcsetval = $src . ' ' . '1x, ';
+	/* TODO: check if file exists before listing; deprecate $max */
+	for ( $x = 2; $x <= $upTo; $x++ ) {
+		$srcsetval .= $slug . '@' . $x . 'x' . '.' . $ext . ' ' . $x . 'x, ';
+	}
+	if ( $max ) {
+		$srcsetval .= $slug . '@max.' . $ext . ' ' . ($upTo + 1) . 'x, ';
+	}
+	$html = 'src="' . $srcval . '"';
+	if ($srcsetval) {
+		$html .= ' srcset="' . $srcsetval . '"';
+	}
+	echo rtrim($html, ', ');
+}
+
 /* Needs some work, and compatibility checks. */
 function htmlsrcset_widths($src, $maxWidth = '', $upTo = 3, $max = false) {
 	if ( is_string($maxWidth) ) {
