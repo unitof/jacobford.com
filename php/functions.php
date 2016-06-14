@@ -112,7 +112,7 @@ HTML;
 }
 
 /* Needs some work, and compatibility checks. */
-function htmlsrcset($src, $maxWidth = '', $upTo = 3, $max = false) {
+function htmlsrcset_widths($src, $maxWidth = '', $upTo = 3, $max = false) {
 	if ( is_string($maxWidth) ) {
 		switch ($maxWidth) {
 			case 'overhang':
