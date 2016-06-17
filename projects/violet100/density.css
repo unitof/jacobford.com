@@ -1,3 +1,4 @@
 img.density {
 	content: attr(src url) "2x";
+	/* not ready yet, but when it is, spec's at https://developer.mozilla.org/en-US/docs/Web/CSS/content */
 }
