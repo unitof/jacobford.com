@@ -163,18 +163,20 @@ function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
 	$ext = substr($src, strrpos($src, ".") + 1);
 	$upTo = floor($upTo);
 	$srcval = $src;
-	if ( $upTo >= 2 ) {
-		$srcsetval = "{$src} {$baseWidth}w, ";
-		for ( $x = 2; $x <= $upTo; $x++ ) {
-			$width = $baseWidth * $x;
-			$srcsetval .= "{$slug}@{$x}x.{$ext} {$width}w, ";
+	for ( $x = 1; $x <= $upTo; $x++ ) {
+		if ($x == 1) {
+			$filename = $src;
+		} else {
+			$filename = "{$slug}@{$x}x.{$ext}";
 		}
-		$sizesval = "(max-width: {$baseWidth}px) 100vw, {$baseWidth}px";
+		list($width) = getimagesize($filename);
+		$srcsetval .= "{$filename} {$width}w, ";
 	}
 	if ( $max ) {
-		list($maxWidth) = getimagesize($slug . '@max.' . $ext); /* TODO: use this on above loop? */
+		list($maxWidth) = getimagesize($slug . '@max.' . $ext);
 		$srcsetval .= "{$slug}@max.{$ext} {$maxWidth}w, ";
 	}
+	$sizesval = "(max-width: {$baseWidth}px) 100vw, {$baseWidth}px";
 	$srcsetval = rtrim($srcsetval, ', ');
 	$sizesval = rtrim($sizesval, ', ');
 	$html = "src=\"{$srcval}\"";
