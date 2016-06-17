@@ -164,22 +164,25 @@ function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
 	$upTo = floor($upTo);
 	$srcval = $src;
 	if ( $upTo >= 2 ) {
-		$srcsetval = $src . ' ' . $baseWidth . 'w, ';
+		$srcsetval = "{$src} {$baseWidth}w, ";
 		for ( $x = 2; $x <= $upTo; $x++ ) {
-			$srcsetval .= $slug . '@' . $x . 'x' . '.' . $ext . ' ' . ($baseWidth * $x) . 'w, ';
+			$width = $baseWidth * $x;
+			$srcsetval .= "{$slug}@{$x}x.{$ext} {$width}w, ";
 		}
-		$sizesval = '(max-width: ' . $baseWidth . 'px) 100vw, ' . $baseWidth . 'px';
+		$sizesval = "(max-width: {$baseWidth}px) 100vw, {$baseWidth}px";
 	}
 	if ( $max ) {
 		list($maxWidth) = getimagesize($slug . '@max.' . $ext); /* TODO: use this on above loop? */
-		$srcsetval .= $slug . '@max' . '.' . $ext . ' ' . $maxWidth . 'w, ';
+		$srcsetval .= "{$slug}@max.{$ext} {$maxWidth}w, ";
 	}
-	$html = 'src="' . $srcval . '"';
+	$srcsetval = rtrim($srcsetval, ', ');
+	$sizesval = rtrim($sizesval, ', ');
+	$html = "src=\"{$srcval}\"";
 	if ($srcsetval) {
-		$html .= ' srcset="' . rtrim($srcsetval, ', ') . '"';
+		$html .= " srcset=\"{$srcsetval}\"";
 	}
 	if ($sizesval) {
-		$html .= ' sizes="' . rtrim($sizesval, ', ') . '"';
+		$html .= " sizes=\"{$sizesval}\"";
 	}
 	echo $html;
 }
