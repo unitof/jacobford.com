@@ -149,7 +149,7 @@ function htmlsrcset_widths($src, $maxWidth = '', $upTo = 3, $max = false) {
 				break;
 
 			default:
-				$maxWidth = 1000;
+				$maxWidth = 800;
 				break;
 		}
 	}
