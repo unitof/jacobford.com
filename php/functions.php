@@ -163,8 +163,6 @@ function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
 	$ext = substr($src, strrpos($src, ".") + 1);
 	$upTo = floor($upTo);
 	$srcval = $src;
-	$srcsetval = '';
-	$sizesval = '';
 	if ( $upTo >= 2 ) {
 		$srcsetval = $src . ' ' . $baseWidth . 'w, ';
 		for ( $x = 2; $x <= $upTo; $x++ ) {
