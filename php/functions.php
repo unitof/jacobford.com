@@ -133,29 +133,29 @@ function htmlsrcset_density($src, $upTo = 3, $max = false) {
 }
 
 /* Generates src, srcset, and sizes attributes for use in an img element */
-function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
-	if ( is_string($baseWidth) ) {
-		switch ($baseWidth) {
+function htmlsrcset($src, $maxDisplayWidth = '', $upTo = 3, $max = false) {
+	if ( is_string($maxDisplayWidth) ) {
+		switch ($maxDisplayWidth) {
 			case 'overhang':
 			case 'oh':
-				$baseWidth = 1000;
+				$maxDisplayWidth = 1000;
 				break;
 			
 			case 'underhang':
 			case 'uh':
-				$baseWidth = 500;
+				$maxDisplayWidth = 500;
 				break;
 
 			case 'superoverhang':
 			case 'soh':
-				$baseWidth = 6000; /* iffy, probably best just to define in the function call for SOHs */
+				$maxDisplayWidth = 6000; /* iffy, probably best just to define in the function call for SOHs */
 				break;
 
 			case 'nohang':
 			case 'nh':
 			case 'hang':
 			default:
-				$baseWidth = 800;
+				$maxDisplayWidth = 800;
 				break;
 		}
 	}
@@ -176,7 +176,7 @@ function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
 		list($maxWidth) = getimagesize($slug . '@max.' . $ext);
 		$srcsetval .= "{$slug}@max.{$ext} {$maxWidth}w, ";
 	}
-	$sizesval = "(max-width: {$baseWidth}px) 100vw, {$baseWidth}px";
+	$sizesval = "(max-width: {$maxDisplayWidth}px) 100vw, {$maxDisplayWidth}px";
 	$srcsetval = rtrim($srcsetval, ', ');
 	$sizesval = rtrim($sizesval, ', ');
 	$html = "src=\"{$srcval}\"";
