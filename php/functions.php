@@ -172,6 +172,10 @@ function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
 		}
 		$sizesval = '(max-width: ' . $baseWidth . 'px) 100vw, ' . $baseWidth . 'px';
 	}
+	if ( $max ) {
+		list($maxWidth) = getimagesize($slug . '@max.' . $ext); /* TODO: use this on above loop? */
+		$srcsetval .= $slug . '@max' . '.' . $ext . ' ' . $maxWidth . 'w, ';
+	}
 	$html = 'src="' . $srcval . '"';
 	if ($srcsetval) {
 		$html .= ' srcset="' . rtrim($srcsetval, ', ') . '"';
