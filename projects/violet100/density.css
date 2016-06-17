@@ -1,0 +1,3 @@
+img.density {
+	content: attr(src url) "2x";
+}

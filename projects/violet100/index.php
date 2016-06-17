@@ -12,6 +12,7 @@
 <head>
 <?php htmlhead($pageClass, $title); ?>
 	<meta name="Description" content="Originally it stood for 100 hours of NYU spirit. Now it is a weeklong series of events celebrating university pride, and students needed to know it was happening. The week needed an identity.">
+	<link rel="stylesheet" type="text/css" href="density.css">
 </head>
 <body>
 <div id="container">
@@ -21,7 +22,7 @@
 			<img src="kimmel_straight.jpg" alt="A map depicting the Death Strip slicing through Berlin.">
 		</div>
 		<p>Originally it stood for 100 hours of NYU spirit. Now it is a weeklong series of events celebrating university pride, and students needed to know it was happening.</p>
-		<img src="thegrid.png" srcset="thegrid.svg" alt="VIO / LET / 100">
+		<img class="density" src="thegrid.png" alt="VIO / LET / 100">
 		<p>I developed what become known as the Tic-Tac-Toe identity (though I strongly preferred The Grid), to be used across all promotional material. It showed up on coffee cup sleeves, napkin dispensers in the university cafeterias, hats, shrits, and on all flyers for the individual events which Violet 100 comprised.</p>
 		<p>Then we decided to make a sticker the size of a building.</p>
 		<div class="superoverhang">
