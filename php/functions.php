@@ -132,8 +132,8 @@ function htmlsrcset_density($src, $upTo = 3, $max = false) {
 	echo rtrim($html, ', ');
 }
 
-/* Needs some work, and compatibility checks. */
-function htmlsrcset_widths($src, $baseWidth = '', $upTo = 3, $max = false) {
+/* Generates src, srcset, and sizes attributes for use in an img element */
+function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
 	if ( is_string($baseWidth) ) {
 		switch ($baseWidth) {
 			case 'overhang':
