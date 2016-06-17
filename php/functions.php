@@ -165,22 +165,19 @@ function htmlsrcset($src, $baseWidth = '', $upTo = 3, $max = false) {
 	$srcval = $src;
 	$srcsetval = '';
 	$sizesval = '';
-	if ( $upTo > 2 ) {
+	if ( $upTo >= 2 ) {
 		$srcsetval = $src . ' ' . $baseWidth . 'w, ';
 		for ( $x = 2; $x <= $upTo; $x++ ) {
-			$srcsetval .= $slug . '@' . $x . 'x' . '.' . $ext . ' ' . ($baseWidth * $x) . 'w';
-			if ( $x < $upTo ) {
-				$srcsetval .= ', ';
-			}
+			$srcsetval .= $slug . '@' . $x . 'x' . '.' . $ext . ' ' . ($baseWidth * $x) . 'w, ';
 		}
 		$sizesval = '(max-width: ' . $baseWidth . 'px) 100vw, ' . $baseWidth . 'px';
 	}
 	$html = 'src="' . $srcval . '"';
 	if ($srcsetval) {
-		$html .= ' srcset="' . $srcsetval . '"';
+		$html .= ' srcset="' . rtrim($srcsetval, ', ') . '"';
 	}
 	if ($sizesval) {
-		$html .= ' sizes="' . $sizesval . '"';
+		$html .= ' sizes="' . rtrim($sizesval, ', ') . '"';
 	}
 	echo $html;
 }
