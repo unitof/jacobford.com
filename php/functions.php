@@ -111,7 +111,7 @@ HTML;
 	echo $html . "\n";
 }
 
-function htmlsrcset($src, $upTo = 3, $max = false) {
+function htmlsrcset_density($src, $upTo = 3, $max = false) {
 	$lastDotPos = strrpos($src, ".");
 	$slug = substr($src, 0, $lastDotPos);
 	$ext = substr($src, $lastDotPos + 1);
@@ -133,42 +133,47 @@ function htmlsrcset($src, $upTo = 3, $max = false) {
 }
 
 /* Needs some work, and compatibility checks. */
-function htmlsrcset_widths($src, $maxWidth = '', $upTo = 3, $max = false) {
-	if ( is_string($maxWidth) ) {
-		switch ($maxWidth) {
+function htmlsrcset_widths($src, $baseWidth = '', $upTo = 3, $max = false) {
+	if ( is_string($baseWidth) ) {
+		switch ($baseWidth) {
 			case 'overhang':
-				$maxWidth = 1000;
+			case 'oh':
+				$baseWidth = 1000;
 				break;
 			
 			case 'underhang':
-				$maxWidth = 500;
+			case 'uh':
+				$baseWidth = 500;
 				break;
 
 			case 'superoverhang':
-				$maxWidth = 6000;
+			case 'soh':
+				$baseWidth = 6000; /* iffy, probably best just to define in the function call for SOHs */
 				break;
 
+			case 'nohang':
+			case 'nh':
+			case 'hang':
 			default:
-				$maxWidth = 800;
+				$baseWidth = 800;
 				break;
 		}
 	}
-	$lastDotPos = strrpos($src, ".");
-	$slug = substr($src, 0, $lastDotPos);
-	$ext = substr($src, $lastDotPos + 1);
+	$slug = substr($src, 0, strrpos($src, "."));
+	$ext = substr($src, strrpos($src, ".") + 1);
 	$upTo = floor($upTo);
 	$srcval = $src;
 	$srcsetval = '';
 	$sizesval = '';
 	if ( $upTo > 2 ) {
-		$srcsetval = $src . ' ' . $maxWidth . 'w, ';
+		$srcsetval = $src . ' ' . $baseWidth . 'w, ';
 		for ( $x = 2; $x <= $upTo; $x++ ) {
-			$srcsetval .= $slug . '@' . $x . 'x' . '.' . $ext . ' ' . ($maxWidth * $x) . 'w';
+			$srcsetval .= $slug . '@' . $x . 'x' . '.' . $ext . ' ' . ($baseWidth * $x) . 'w';
 			if ( $x < $upTo ) {
 				$srcsetval .= ', ';
 			}
 		}
-		$sizesval = '(max-width: ' . $maxWidth . 'px) 100vw, ' . $maxWidth . 'px';
+		$sizesval = '(max-width: ' . $baseWidth . 'px) 100vw, ' . $baseWidth . 'px';
 	}
 	$html = 'src="' . $srcval . '"';
 	if ($srcsetval) {
