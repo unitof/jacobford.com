@@ -9,6 +9,27 @@ function makelastspnb($string) {
 	return substr_replace($string, "&nbsp;", $lastSpacePos, 1);
 }
 
+function toRoot($pageClass) {
+	switch ($pageClass) {
+		case 'project':
+			$toRoot = '../../';
+			break;
+
+		case 'card':
+			$toRoot = '../';
+			break;
+
+		case 'index':
+			$toRoot = '';
+			break;
+
+		default:
+			$toRoot = '/'; // generally-works fallback
+			break;
+	}
+	return $toRoot;
+}
+
 function htmlhead($pageClass = "", $title = "") {
 	$htmltitle = htmlspecialchars($title);
 	$ga = <<<HTML
