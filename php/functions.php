@@ -67,7 +67,7 @@ function htmlheader($pageClass = "", $middle = "", $bottom = "") {
 			$html = <<<HTML
 	<div id="header" class="project-header">
 		<h2 class="header-top">
-			<a href="../../" class="hidden">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+			<a href="../../" class="camouflage">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
 		</h2>
 		<h1 class="header-mid">{$middle}</h1>
 		<h2 class="header-bot">{$bottom}</h2>
@@ -99,7 +99,7 @@ HTML;
 			$html = <<<HTML
 	<div id="header" class="project-header">
 		<h2 class="header-top">
-			<a href="/" class="hidden">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+			<a href="/" class="camouflage">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
 		</h2>
 		<h1 class="header-mid">Coming Soon</h1>
 		<h2 class="header-bot">A Project Still in the Works</h2>
@@ -194,7 +194,7 @@ function htmlfooter($pageClass = "") {
 		case "project":
 			$html = <<<HTML
 	<div id="footer" class="project-footer">
-		<a href="../../" class="icon-link hidden">
+		<a href="../../" class="icon-link camouflage">
 			<div class="icon icon-index">
 				<div class="icon-index-stripe"></div>
 				<div class="icon-index-stripe icon-index-expand"></div>
@@ -204,7 +204,7 @@ function htmlfooter($pageClass = "") {
 			</div>
 			<h2>Return <span class="lc">to</span> the Index</h2>
 		</a>
-		<a href="../../card/" class="icon-link hidden">
+		<a href="../../card/" class="icon-link camouflage">
 			<div class="icon icon-card"></div>
 			<h2>Take my Card</h2>
 		</a>
@@ -215,7 +215,7 @@ HTML;
 		case "card":
 			$html = <<<HTML
 	<div id="footer" class="project-footer">
-		<a href="../../" class="icon-link hidden">
+		<a href="../../" class="icon-link camouflage">
 			<div class="icon icon-index">
 				<div class="icon-index-stripe"></div>
 				<div class="icon-index-stripe icon-index-expand"></div>
@@ -232,7 +232,7 @@ HTML;
 		case "index":
 			$html = <<<HTML
 	<div id="footer" class="project-footer">
-		<a href="../../card/" class="icon-link hidden">
+		<a href="../../card/" class="icon-link camouflage">
 			<div class="icon icon-card"></div>
 			<h2>Take my Card</h2>
 		</a>
@@ -246,7 +246,7 @@ HTML;
 		<!-- TODO: This a element prevents the
 		     margin collapsing that should be
 		     happening with div#footer. Any fix? -->
-		<a href="/" class="icon-link hidden">
+		<a href="/" class="icon-link camouflage">
 			<div class="icon icon-index">
 				<div class="icon-index-stripe"></div>
 				<div class="icon-index-stripe icon-index-expand"></div>
@@ -256,7 +256,7 @@ HTML;
 			</div>
 			<h2>Return <span class="lc">to</span> the Index</h2>
 		</a>
-		<a href="/card/" class="icon-link hidden">
+		<a href="/card/" class="icon-link camouflage">
 			<div class="icon icon-card"></div>
 			<h2>Take my Card</h2>
 		</a>

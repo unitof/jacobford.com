@@ -30,19 +30,18 @@ a:link, a:visited {
 }
 
 /* invisible links */
-a.hidden:link,
-a.hidden:visited {
-	color: #454545; /* fallback: keep set to body {color} */
+a.camouflage:link,
+a.camouflage:visited {
 	color: inherit;
 }
 
 a:hover,
-a.hidden:hover {
+a.camouflage:hover {
 	color: #a8a8a8;
 }
 
 a:active,
-a.hidden:active {
+a.camouflage:active {
 	color: #ff0022;
 }
 
@@ -160,9 +159,7 @@ div.index-header h1::after {
    solve margin collapsing and move it back
    outside, the bottom two selectors here
    should become unneccesary. */
-h2,
-h2 a:link,
-h2 a:visited {
+h2 {
 	color: #a8a8a8;
 	font-size: 18px;
 	font-weight: normal;
