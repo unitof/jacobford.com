@@ -62,6 +62,8 @@ a.action {
 	transition: border-color .2s, color .2s;
 }
 
+/* TODO: implement something like http://stackoverflow.com/questions/16977631/removing-margin-on-inline-block-element-after-wrapping-lines */
+
 a.action:hover {
 	color: #454545;
 	border-color: #454545;
@@ -155,10 +157,9 @@ div.index-header h1::after {
 }
 
 /* To restore proper margin collapsing,
-   I moved the a inside the h2. If I can
-   solve margin collapsing and move it back
-   outside, the bottom two selectors here
-   should become unneccesary. */
+   I moved the a inside the h2 in the header.
+   TODO: solve margin collapsing and move
+   it back outside. */
 h2 {
 	color: #a8a8a8;
 	font-size: 18px;
