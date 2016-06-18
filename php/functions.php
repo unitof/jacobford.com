@@ -48,36 +48,14 @@ function htmlhead($pageClass = "", $title = "") {
 	} else { console.log("Google Analytics disabled: hostname not jacobford.com"); }
 	</script>
 HTML;
+	$toRoot = toRoot($pageClass);
 
-	switch ($pageClass) {
-		case "project":
-			$html = <<<HTML
+	$html = <<<HTML
 	<title>{$htmltitle}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../../css/typography.css">
-	<link rel="stylesheet" type="text/css" href="../../css/stylish.css">
+	<link rel="stylesheet" type="text/css" href="{$toRoot}css/typography.css">
+	<link rel="stylesheet" type="text/css" href="{$toRoot}css/stylish.css">
 HTML;
-			break;
-
-		case "index":
-			$html = <<<HTML
-	<title>{$htmltitle}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/typography.css">
-	<link rel="stylesheet" type="text/css" href="css/stylish.css">
-HTML;
-			break;
-
-		default:
-			$html = <<<HTML
-	<title>{$htmltitle}</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/css/typography.css">
-	<link rel="stylesheet" type="text/css" href="/css/stylish.css">
-HTML;
-			break;
-	}
-
 	$html .= "\n" . $ga;
 	echo $html . "\n";
 }
