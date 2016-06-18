@@ -116,7 +116,8 @@ p.caption {
 	        font-feature-settings: "lnum" 1;
 }
 
-p.caption i {
+p.caption i,
+p.caption em {
 	font-style: normal;
 }
 
