@@ -67,7 +67,7 @@ function htmlheader($pageClass = "", $middle = "", $bottom = "") {
 			$html = <<<HTML
 	<div id="header" class="project-header">
 		<h2 class="header-top">
-			<a href="../../" class="header-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+			<a href="../../" class="hidden">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
 		</h2>
 		<h1 class="header-mid">{$middle}</h1>
 		<h2 class="header-bot">{$bottom}</h2>
@@ -99,7 +99,7 @@ HTML;
 			$html = <<<HTML
 	<div id="header" class="project-header">
 		<h2 class="header-top">
-			<a href="/" class="header-returnlink">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
+			<a href="/" class="hidden">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
 		</h2>
 		<h1 class="header-mid">Coming Soon</h1>
 		<h2 class="header-bot">A Project Still in the Works</h2>
