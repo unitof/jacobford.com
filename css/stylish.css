@@ -8,8 +8,16 @@ html {
 body {
 	background-color: #eeeeee;
 	color: #454545;
-	overflow-x: hidden;
 	margin: 0;
+}
+
+/* must be like this
+   for mobile browsers;
+   seems to work without
+   #container, but leaving
+   it to be extra safe  */
+html, body, #container {
+	overflow-x: hidden;
 }
 
 em,
