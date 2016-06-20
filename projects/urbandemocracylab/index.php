@@ -37,7 +37,7 @@
 			<li>The reader: <i>now</i> we may expect the viewer to read blocks of text, but only very special viewers make it this far. They deserve something succint and well-composed. Details ready to be added to a calendar.</li>
 		</ol></p>
 		<div>
-			<img class="border" src="iol.png" srcset="iol.svg" alt="Infrastructures of Labor: grey boxes stacked like a newspaper">
+			<img src="iol.png" srcset="iol.svg" alt="Infrastructures of Labor: grey boxes stacked like a newspaper">
 			<p class="caption">Infrastructures of Labor</p>
 		</div>
 		<div>
