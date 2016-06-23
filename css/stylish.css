@@ -81,7 +81,8 @@ a.action + a.action {
 	margin-left: 1em;
 }
 
-p {
+p,
+blockquote {
 	font-kerning: normal;
 	font-variant-ligatures: common-ligatures contextual;
 	   -moz-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
@@ -98,6 +99,14 @@ p.contact {
 	     -o-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
 	-webkit-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
 	        font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+}
+
+blockquote {
+	font-size: 1.5em;
+}
+
+div#story blockquote + .caption {
+	margin-top: -2em;
 }
 
 ol, ul {
@@ -665,7 +674,9 @@ span.subscribernumber.digits {
 		content: none;
 	}
 
-	div#story > p, div#story > img {
+	div#story > p,
+	div#story > img,
+	div#story > blockquote {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
