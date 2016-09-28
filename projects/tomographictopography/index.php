@@ -37,7 +37,7 @@
 <?php htmlheader($pageClass, $middle, $bottom, true); ?>
 	<div id="story">
 		<div class="overhang">
-			<img src="crowncloseup.jpg" alt="Spikes jut up from a tangible brain model. The peaks represent areas of high activity. Valleys represent areas of low activity.">
+			<img <?php htmlsrcset('crowncloseup.jpg', $pageClass, 3, true); ?> alt="Spikes jut up from a tangible brain model. The peaks represent areas of high activity. Valleys represent areas of low activity.">
 			<p class="caption">Printed on a 3D Systems ProJet 660</p>
 		</div>
 		<p>When we want want to know what&rsquo;s going on inside someone&rsquo;s brain, we inject a radioactive tracer into their blood and give it a minute or two to flow throughout the body. The most active areas of the brain demand the most blood, so they begin emitting the most radiation, which we can measure. The process is called a PET scan: <i>positron emission tomography</i>. The result is a grid of numbers: a two-dimensional slice of the brain divided into a grid x- and y-coordinates, each assigned a numeric value corresponding to its level of brain activity.</p>
@@ -99,7 +99,7 @@
 		<p>There&rsquo;s another popular use for gradients: storing geographic elevation data. Terrain data can be stored as a regular image file, where each pixel represents a geographic coordinate, and the color value of that pixel corresponds to the elevation at that point. The highest elevation is mapped to white, the lowest to black. It&rsquo;s called a DEM image: a digital elevation model, stored as an image. The only difference is that we never really analyze these flat images <em>as</em> terrain data. The image is only an intermediary data format, and as soon as possible it is converted into a 3D model of the land it represents.</p>
 		<p>So I ran the result of a PET scan through software designed for converting DEM images into 3D elevation models, and got the terrain of a working brain. The wondrous thing about 3D models is that they can be 3D-printed, and brain activity can be made tactile.</p>
 		<div class="overhang">
-			<img src="brainmodel.jpg" alt="Cream-colored 3D model of a brain scan: spikes coming straight up out of a square.">
+			<img <?php htmlsrcset('brainmodel.jpg', $pageClass, 3, true); ?> alt="Cream-colored 3D model of a brain scan: spikes coming straight up out of a square.">
 			<p class="caption">Printed on a Stratasys Mojo</p>
 		</div>
 		<p>Physical space is much more universal, much less arbitrary than visual space. No training is necessary; we&mdash;the human species&mdash;have been exploring and manipulating it for a very long time. It comes very naturally that a physical peak on a 3D model might represent an area of high activity in the brain, and that a valley could represent a relatively inactive area. Background scatter radiation, the radiating lines which in some color gradients becomes oddly apparent, is easy for the human brain to isolate and filter out on a physical model. We could employ calipers and measuring sticks&mdash;devices we already use to measure physical reality&mdash;to measure and compare brain activity. The blind could <em>feel</em> brain activity, and understand it using a sense already keenly developed.</p>
