@@ -18,6 +18,7 @@
 <?php htmlindexstrip("urbandemocracylab", "Civic Engagement Posters", "for the Urban Democracy Lab", "png"); ?>
 <?php htmlindexstrip("violet100", "Violet 100: The NYU Spirit Week", "for the NYU Student Senators Council", "jpg"); ?>
 <?php htmlindexstrip("gallatinfacultyshow", "Gallatin Faculty Show", "for the Gallatin Galleries", "jpg"); ?>
+<?php htmlindexstrip("doesmennonitematter", "Does Mennonite Matter?", "for the Franconia Conference", "jpg"); ?>
 	</div>
 <?php htmlfooter($pageClass); ?>
 </div>
