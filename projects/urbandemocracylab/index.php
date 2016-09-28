@@ -34,7 +34,7 @@
 		<ol>
 			<li>The passerby: color scheme and iconography work to present something curious, something worth looking at. I do not spend minutes soaking in every advertisement in my periphery; I can&rsquo;t expect my viewers to do the same</li>
 			<li>The skimmer: my poster may have earned someone&rsquo;s attention, but attention isn&rsquo;t dedication. Short phrases set in large type and composition should make the event&rsquo;s basic subject clear within five seconds, so the viewer knows if it&rsquo;s worth reading on.</li>
-			<li>The reader: <i>now</i> we may expect the viewer to read blocks of text, but only very special viewers make it this far. They deserve something succint and well-composed. Details ready to be added to a calendar.</li>
+			<li>The reader: <i>now</i> we may expect the viewer to read blocks of text, but only very special viewers make it this far. They deserve something succinct and well-composed. Details ready to be added to a calendar.</li>
 		</ol></p>
 		<div>
 			<img src="iol.png" srcset="iol.svg" alt="Infrastructures of Labor: grey boxes stacked like a newspaper">
