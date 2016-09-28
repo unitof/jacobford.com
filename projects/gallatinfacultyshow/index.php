@@ -21,7 +21,7 @@
 			<img src="detail_cover.jpg" srcset="detail_cover@2x.jpg 2x, detail_cover@3x.jpg 3x, detail_cover@max.jpg 4x" alt="Closeup: gallatin / faculty / show / 2013, where one ligature from each line shares a stroke with its neighbor. Top three lines are black, bottom is cyan. All on just offwhite.">
 			<p class="caption">Independent characters sharing elements: the exhibition's visual identity</p>
 		</div>
-		<p>Professors at NYU&rsquo;s Gallatin School do strange and wonderful things, much of which is worthy of display in Gallatin's first-floor gallery space. While working as an assistant curator for the Gallatin Galleries, I was responsible for designing a visual identity and assembling a printed exhibition catalog for 2013&rsquo;s iteration of the show.</p>
+		<p>Professors at NYU&rsquo;s Gallatin School do strange and wonderful things, much of which is worthy of display in Gallatin’s first-floor gallery space. While working as an assistant curator for the Gallatin Galleries, I was responsible for designing a visual identity and assembling a printed exhibition catalog for 2013&rsquo;s iteration of the show.</p>
 		<div class="overhang">
 			<img src="cover.jpg" srcset="cover@2x.jpg 2x, cover@3x.jpg 3x, cover@max.jpg 4x" alt="Straigthon: booklet cover: gallatin / faculty / show / 2013, where one ligature from each line shares a stroke with its neighbor">
 			<p class="caption">Front cover</p>
