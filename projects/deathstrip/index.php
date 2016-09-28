@@ -27,17 +27,19 @@
 		</div>
 		<p>The project began with a set of OpenStreetMap layers containing the shapefiles for all buildings, water bodies, greenspace, roads, paths, and railways within an area of Berlin, compiled by and downloaded via what was then the WeoGeo Market, now called the Trimble Data Marketplace. Then there was a dream-come-true KML file containing the precise paths of both the inner and outer Berlin Walls, traced from known records and aerial imagery by an amazing person named Stephanie Lange, whose work I was able to find clinging onto some decaying servers in various dusty corners of the internet.</p>
 		<img src="workspace_fme@max.jpg" alt="Screenshot of FME workspace">
-		<p class="caption">FME workspace</p>
+		<!-- <p class="caption">FME workspace</p> -->
 		<p>The OpenStreetMap layers and the Wall routes fed into a barely stable FME (Feature Merger Engine, from Safe) script I wrote, which—if I was lucky—managed to get the points jiving together in one projection system, determined the donut polygon formed by the inner and outer walls,  merged all the layers into roughly the correct stacking order, and spat out a massive SVG file which I could import into Illustrator for designing. (Inkscape lacked the necessary stamina and, when I would try to do anything as ambitious as zoom in, would crash instantly.)</p>
 		<img src="workspace_ill@max.jpg" alt="Screenshot of Adobe Illustrator Workspace">
-		<p class="caption">Illustrator workspace</p>
+		<!-- <p class="caption">Illustrator workspace</p> -->
 		<p>From there, a poster is just an inkjet printer a paper roll away. Matte, because it’s the cheapest paper type and I like it the most so I can convince myself I would still want it if it were the most expensive paper type.</p>
 		<div class="overhang">
 			<img <?php htmlsrcset('print_tiergarten.jpg', $pageClass, 3, true); ?> alt="Macro photo of printed poster, detail on Tiergarten">
+			<p class="caption">Detail on Tiergarten</p>
 		</div>
-		<div class="hangover">
+		<p>In this case, Epson Premium Presentation Matte paper using an Epson Stylus Pro 4900 with a bunch of settings I never get precisely right when it comes time to print a new batch.</p>
+		<div class="overhang">
 			<img <?php htmlsrcset('print_title.jpg', $pageClass, 3, true); ?> alt="Macro photo of printed poster, detail on title">
-			<p class="caption">Printed by an Epson Stylus Pro 4900<br>onto Epson Premium Presentation Matte paper</p>
+			<p class="caption">Detail on title</p>
 		</div>
 		<div class="credits">
 			<p>Berlin Wall route data <a href="https://web.archive.org/web/20090413050019/http://www.k-ita.de/~sl/2008/12/18/remainings-of-berlin-wall-the-former-border-strip/">compiled by</a> <span class="name">Stephanie Lange</span>, 2009.</p>
