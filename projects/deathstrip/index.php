@@ -22,7 +22,7 @@
 		</div>
 		<p>The Berlin Wall was plural. Two concrete barriers divided East from West, and in between lay the Death Strip: a heavily-guarded minefield razed flat except for 302 watchtowers. The wall began to be officially dismantled in 1990, but it left a scar of emptiness through the center of a suddenly reunited city. This map shows what the Death Strip has become.</p>
 		<div class="overhang">
-			<img <?php htmlsrcset('deathstrip_detail.png', $pageClass, 3, true); ?> alt="Detail on map key">
+			<img <?php htmlsrcset('detail_key.png', $pageClass, 3, true); ?> alt="Detail on map key">
 			<p class="caption">Detail on map key</p>
 		</div>
 		<p>The project began with a set of OpenStreetMap layers containing the shapefiles for all buildings, water bodies, greenspace, roads, paths, and railways within an area of Berlin, compiled by and downloaded via what was then the WeoGeo Market, now called the Trimble Data Marketplace. Then there was a dream-come-true KML file containing the precise paths of both the inner and outer Berlin Walls, traced from known records and aerial imagery by an amazing person named Stephanie Lange, whose work I was able to find clinging onto some decaying servers in various dusty corners of the internet.</p>
