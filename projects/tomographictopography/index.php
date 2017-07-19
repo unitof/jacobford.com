@@ -85,7 +85,7 @@
 		<p>With a wealth of color options arrives a wealth of problems. Brian Murphy, collector of these images, points out one, which he calls <em>dialing a defect</em>: with a whole stockpile of gradients available, one can simply choose (or create) the gradient which happens to highlight whatever area of the brain they want to draw attention to, and objectivity can wither. Different medical schools have adopted different gradients as their respective &ldquo;favorites,&rdquo; and their students are trained on <em>that</em> gradient. Collaboration suffers. And we&rsquo;ve formed strong cultural associations with certain colors&mdash;red means hot, or danger, or stop; blue means cold; green means good, or go&mdash;strong enough that even the most well-trained neuroscientist might have trouble viewing certain colors with pure objectivity, especially when a ployingly saturated color like red falls in the middle of a gradient, and means nothing of significance.</p>
 		<div class="underhang">
 			<div class="gallery">
-				<div class="frame"><img src="stoplight.jpg" srcset="stoplight@2x.jpg 3x" alt="A stoplight lit red"></div>
+				<div class="frame"><img src="stoplight.jpg" srcset="stoplight@2x.jpg 2x" alt="A stoplight lit red"></div>
 				<div class="frame"><img src="faucets.jpg" alt="A water cooler with handles red and blue"></div>
 			</div>
 			<p class="caption">Stoplight <a href="https://commons.wikimedia.org/wiki/File:Modern_British_LED_Traffic_Light.jpg">via</a> Unisouth<br>Cooler <a href="http://www.purewaterdynamics.com/boiling-water-dispensers.asp">via</a> Pure Water Dynamics</p>
