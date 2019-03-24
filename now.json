@@ -4,11 +4,11 @@
   "alias": "jacobford.com",
   "builds": [
     {
-      "src": "*.php",
+      "src": "**/*.php",
       "use": "@now/php"
     },
     {
-      "src": "*",
+      "src": "**/*",
       "use": "@now/static"
     }
   ]
