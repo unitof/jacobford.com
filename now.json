@@ -5,7 +5,10 @@
   "builds": [
     {
       "src": "**/*.php",
-      "use": "@now/php"
+      "use": "@now/php@canary",
+      "config": {
+        "includeFiles": ["**/*.php"]
+      }
     },
     {
       "src": "**/*",
