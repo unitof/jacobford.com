@@ -1,10 +1,5 @@
 {
   "version": 1,
-  "type": "docker",
-  "features": {
-    "cloud": "v2"
-  },
   "name": "jacobford.com",
-  "alias": "jacobford.com",
-  "regions": ["iad1"]
+  "alias": "jacobford.com"
 }
