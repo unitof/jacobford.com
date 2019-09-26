@@ -1,9 +1,8 @@
 FROM php:7.2-apache
-
-ENV APACHE_DOCUMENT_ROOT /app/public/
-
 MAINTAINER j@cobford.com
 
+RUN mkdir -p /app/public/
+ENV APACHE_DOCUMENT_ROOT /app/public/
 COPY / /app/public/
 
 EXPOSE 80
