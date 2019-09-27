@@ -1,5 +1,8 @@
 {
   "version": 1,
   "name": "jacobford.com",
-  "alias": "jacobford.com"
+  "alias": "jacobford.com",
+  "github": {
+    "silent": true
+  }
 }
