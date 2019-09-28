@@ -7,7 +7,6 @@ describe('Screenshot compare with previous deployment', function() {
   it('Loads the homepage', async function() {
     const server = await phpServer({
       port: 0, //random
-      base: '../'
     })
     const browser = await puppeteer.launch()
     const page = await browser.newPage() 
