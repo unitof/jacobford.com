@@ -18,12 +18,12 @@
   },
   "homepage": "https://github.com/unitof/jacobford.com#readme",
   "devDependencies": {
-    "@percy/puppeteer": "^1.0.8",
-    "env-cmd": "^10.0.1",
-    "mocha": "^6.2.0",
-    "now": "^16.3.1",
-    "percy": "^0.16.1",
+    "@percy/puppeteer": "^1.1.0",
+    "env-cmd": "^10.1.0",
+    "mocha": "^6.2.3",
+    "now": "^16.7.3",
+    "percy": "^0.28.0",
     "php-server": "^0.2.1",
-    "wtfnode": "^0.8.0"
+    "wtfnode": "^0.8.1"
   }
 }
