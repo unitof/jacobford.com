@@ -19,3 +19,9 @@ Goodbye.
 The app lives on Now now, on v1 which probably isn't long for this world.
 
 See branch `now-v2` for a currently-broken attempt to update it for v2. The problem is that my PHP requires filesystem access to the image assets, as it does some scripting to detect their dimensions. But if I bundle my images with PHP it pushes way beyond Now's 50MB deployment maximum.
+
+## Heroku
+
+I was right. Now v1 is sunsetting on August 7 at 8pm Eastern.
+
+I've speed-learned Heroku unilt I can get Now v2 working. Geez, this thing detects your repo's setup like black magic.
