@@ -1,17 +1,7 @@
 {
   "version": 2,
   "alias": "jacobford.com",
-  "builds": [
-    {
-      "src": "**/*.php",
-      "use": "@now/php@canary",
-      "config": {
-        "includeFiles": ["**/*.php"]
-      }
-    },
-    {
-      "src": "**/*",
-      "use": "@now/static"
-    }
-  ]
+  "functions": {
+    "**/*.php": "vercel-php@0.3.1"
+  }
 }
