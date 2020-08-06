@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once("php/functions.php");
+	require_once("api/functions.php");
 	$pageClass = "index";
 	$title = "The Portfolio of Jacob Ford";
 ?>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once("../../php/functions.php");
+	require_once("api/functions.php");
 	$pageClass = "project";
 	$object = "Death Strip: A Map of Berlin & Time";
 	$client = "";
