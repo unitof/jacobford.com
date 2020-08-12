@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once("../php/functions.php");
+	require_once(__DIR__."/../functions.php");
 	$pageClass = "card";
 	$title = "Take My Card";
 ?>
