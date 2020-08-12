@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once("api/functions.php");
+	require_once("../../functions.php");
 	$pageClass = "project";
 	$object = "Civic Engagement Posters";
 	$client = "the Urban Democracy Lab";

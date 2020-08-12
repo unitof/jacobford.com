@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once("api/functions.php");
+	require_once("../../functions.php");
 	$pageClass = "project";
 	$object = "Violet 100: The NYU Spirit Week";
 	$client = "The NYU Student Senators Council";
