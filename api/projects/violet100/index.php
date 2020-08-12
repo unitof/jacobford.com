@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once(__DIR__."/../../api/functions.php");
+	require_once(__DIR__."/../../functions.php");
 	$pageClass = "project";
 	$object = "Violet 100: The NYU Spirit Week";
 	$client = "The NYU Student Senators Council";

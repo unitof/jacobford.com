@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once(__DIR__."/../../api/functions.php");
+	require_once(__DIR__."/../../functions.php");
 	$pageClass = "project";
 	$object = "Gallatin Faculty Show";
 	$client = "The Gallatin Galleries";
