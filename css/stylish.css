@@ -421,7 +421,7 @@ div.image-strip {
 	background-position: center top;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	height: 1px;
+	height: 21px;
 	        transition: height .7s;
 	-webkit-transition: height .7s;
 	z-index: -1;
@@ -460,11 +460,6 @@ a.portfolio-item {
 .portfolio-item span.item-client {
 	color: #b9b9b9;
 	opacity: 0;
-}
-
-.portfolio-item:hover div.image-strip,
-.portfolio-item:focus div.image-strip {
-	height: 21px;
 }
 
 .portfolio-item:hover h3,
