@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "The Portfolio of Jacob Ford",
   "main": "index.php",
+  "scripts": {
+    "dev": "php -S localhost:8080"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unitof/jacobford.com.git"
