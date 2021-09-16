@@ -49,7 +49,7 @@ function htmlhead($pageClass = "", $title = "") {
 	</script>
 	<!-- gradually transitioning from Google Analytics to Fathom -->
 	<!-- sorry to, for now, be using both on you -->
-	<script src="https://cdn.usefathom.com/script.js" data-site="BUTONZDI" defer></script>
+	<script src="https://waterboa.jacobford.com/script.js" data-site="BUTONZDI" defer></script>
 HTML;
 	$toRoot = toRoot($pageClass);
 
