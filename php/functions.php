@@ -47,9 +47,8 @@ function htmlhead($pageClass = "", $title = "") {
 		ga('send', 'pageview');
 	} else { console.log("Google Analytics disabled: hostname not jacobford.com"); }
 	</script>
-	<!-- gradually transitioning from Google Analytics to Fathom -->
-	<!-- sorry to, for now, be using both on you -->
-	<script src="https://waterboa.jacobford.com/script.js" data-site="BUTONZDI" defer></script>
+	<!-- ↓ Fathom Analytics, full transparency. It’s good: usefathom.com/ref/VIGUPS -->
+	<script src="https://magpie.unitof.com/script.js" data-site="BUTONZDI" defer></script>
 HTML;
 	$toRoot = toRoot($pageClass);
 
