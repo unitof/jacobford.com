@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once("../../php/functions.php");
+	require_once(__DIR__."/../../functions.php");
 	$pageClass = "project";
 	$object = "Civic Engagement Posters";
 	$client = "the Urban Democracy Lab";
