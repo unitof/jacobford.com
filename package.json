@@ -4,7 +4,10 @@
   "description": "The Portfolio of Jacob Ford",
   "main": "index.php",
   "scripts": {
-    "dev": "php -S localhost:8080"
+    "dev": "next-remote-watch ./content ./lib",
+    "dev-old": "php -S localhost:8080",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -12,5 +15,10 @@
   },
   "author": "Jacob Ford",
   "license": "UNLICENSED",
-  "homepage": "jacobford.com"
+  "homepage": "jacobford.com",
+  "dependencies": {
+    "next": "^12.1.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
 }
