@@ -8,6 +8,8 @@
 <head>
 <?php htmlhead($pageClass, $title); ?>
 	<meta name="Description" content="Designer of Things.">
+	<link rel="me" href="https://merveilles.town/@unitof">
+	<link rel="me" href="https://thelife.boats/@unitof">
 </head>
 <body>
 <div id="container">
