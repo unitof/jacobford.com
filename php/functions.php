@@ -196,6 +196,9 @@ function htmlfooter($pageClass = "") {
 			<div class="icon icon-card"></div>
 			<h2>Take my Card</h2>
 		</a>
+		<a href="https://webring.xxiivv.com/#unitof" target="_blank" rel="noopener">
+			<img src="https://webring.xxiivv.com/icon.black.svg" alt="XXIIVV webring"/>
+		</a>
 	</div>
 HTML;
 			break;
