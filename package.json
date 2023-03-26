@@ -12,7 +12,7 @@
   },
   "author": "Jacob Ford",
   "license": "UNLICENSED",
-  "homepage": "jacobford.com",
+  "homepage": "https://jacobford.com",
   "dependencies": {
     "astro": "^2.1.7"
   }
