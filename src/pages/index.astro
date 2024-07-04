@@ -1,5 +1,6 @@
 ---
 import Head from '@/components/Head.astro'
+import Header from '@/components/Header.astro'
 import IndexStrip from '@/components/IndexStrip.astro'
 
 const pageClass = 'index'
@@ -13,7 +14,9 @@ const pageDescr = 'Designer of Things.'
 />
 <body>
 <div id="container">
-<?php htmlheader($pageClass) ?>
+<Header
+	pageClass = {pageClass}
+/>
 	<div id="stripestack">
 	<IndexStrip
 		slug = "deathstrip"

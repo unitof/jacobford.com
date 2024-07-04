@@ -30,56 +30,6 @@ function toRoot($pageClass) {
 	return $toRoot;
 }
 
-function htmlheader($pageClass = "", $middle = "", $bottom = "") {
-	switch ($pageClass) {
-		case "project":
-			$html = <<<HTML
-	<div id="header" class="project-header">
-		<h2 class="header-top">
-			<a href="../../" class="camouflage">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
-		</h2>
-		<h1 class="header-mid">{$middle}</h1>
-		<h2 class="header-bot">{$bottom}</h2>
-	</div>
-HTML;
-			break;
-
-		case "card":
-			$html = <<<HTML
-	<div id="header" class="index-header">
-		<h2 class="header-top">The Business Card&nbsp;<span class="lc">of</span></h2>
-		<h1 class="header-mid">Jacob Ford</h1>
-		<h2 class="header-bot">Designer&nbsp;<span class="lc">of</span> Things</h2>
-	</div>
-HTML;
-			break;
-
-		case "index":
-			$html = <<<HTML
-	<div id="header" class="index-header">
-		<h2 class="header-top">The Portfolio&nbsp;<span class="lc">of</span></h2>
-		<h1 class="header-mid">Jacob Ford</h1>
-		<h2 class="header-bot">Designer&nbsp;<span class="lc">of</span> Things</h2>
-	</div>
-HTML;
-			break;
-
-		default:
-			$html = <<<HTML
-	<div id="header" class="project-header">
-		<h2 class="header-top">
-			<a href="/" class="camouflage">The Portfolio <span class="lc">of</span>&nbsp;Jacob&nbsp;Ford</a>
-		</h2>
-		<h1 class="header-mid">Coming Soon</h1>
-		<h2 class="header-bot">A Project Still in the Works</h2>
-	</div>
-HTML;
-			break;
-	}
-
-	echo $html . "\n";
-}
-
 function htmlsrcset_density($src, $upTo = 3, $max = false) {
 	$lastDotPos = strrpos($src, ".");
 	$slug = substr($src, 0, $lastDotPos);

@@ -1,7 +1,8 @@
 ---
 import Head from '@/components/Head.astro'
+import Header from '@/components/Header.astro'
 
-const pageType = 'card'
+const pageClass = 'card'
 const pageTitle = 'Take My Card'
 const pageDesc  = 'The business card of Jacob Ford, Designer of Things.'
 ---
@@ -11,7 +12,9 @@ const pageDesc  = 'The business card of Jacob Ford, Designer of Things.'
 />
 <body ontouchstart>
 <div id="container">
-<?php htmlheader($pageClass) ?>
+	<Header
+		pageClass = {pageClass}
+	/>
 	<section class="card-holder">
 		<div id="card">
 			<div class="card-face" id="front">
