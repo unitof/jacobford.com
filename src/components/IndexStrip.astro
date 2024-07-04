@@ -1,0 +1,25 @@
+---
+/*
+Make sure the following exist:
+	/projects/[slug]/index.php
+	/projects/[slug]/str_[slug].[imgExt]
+*/
+
+export interface Props {
+	slug: string,
+	title: string,
+	client: string,
+	imgExt: 'jpg' | 'jpeg' | 'png'
+}
+
+const {
+	slug,
+	title,
+	client,
+	imgExt,
+} = Astro.props
+---
+<a class="portfolio-item" href={`projects/${slug}/`} id={slug}>
+	<div class="image-strip" style={`background-image: url(../projects/${slug}/str_${slug}.${imgExt});`}></div>
+	<h3 class="item-title">{title}{client && <span class="item-client">{client}</span>}</h3>
+</a>

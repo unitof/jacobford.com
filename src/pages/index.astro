@@ -1,5 +1,6 @@
 ---
 import Head from '@/components/Head.astro'
+import IndexStrip from '@/components/IndexStrip.astro'
 
 const pageClass = 'index'
 const pageTitle = 'The Portfolio of Jacob Ford'
@@ -14,12 +15,40 @@ const pageDescr = 'Designer of Things.'
 <div id="container">
 <?php htmlheader($pageClass) ?>
 	<div id="stripestack">
-<?php htmlindexstrip("deathstrip", "Death Strip: A Map of Berlin &amp; Time", "", "jpg"); ?>
-<?php htmlindexstrip("tomographictopography", "Tomographic Topography", "", "jpg"); ?>
-<?php htmlindexstrip("urbandemocracylab", "Civic Engagement Posters", "for the Urban Democracy Lab", "png"); ?>
-<?php htmlindexstrip("doesmennonitematter", "Does Mennonite Matter?", "for the Franconia Conference", "jpg"); ?>
-<?php htmlindexstrip("gallatinfacultyshow", "Gallatin Faculty Show", "for the Gallatin Galleries", "jpg"); ?>
-<?php htmlindexstrip("violet100", "Violet 100: The NYU Spirit Week", "for the NYU Student Senators Council", "jpg"); ?>
+	<IndexStrip
+		slug = "deathstrip"
+		title = "Death Strip: A Map of Berlin &amp; Time"
+		imgExt = "jpg"
+	/>
+	<IndexStrip
+		slug = "tomographictopography"
+		title = "Tomographic Topography"
+		imgExt = "jpg"
+	/>
+	<IndexStrip
+		slug = "urbandemocracylab"
+		title = "Civic Engagement Posters"
+		client = "for the Urban Democracy Lab"
+		imgExt = "png"
+	/>
+	<IndexStrip
+		slug = "doesmennonitematter"
+		title = "Does Mennonite Matter?"
+		client = "for the Franconia Conference"
+		imgExt = "jpg"
+	/>
+	<IndexStrip
+		slug = "gallatinfacultyshow"
+		title = "Gallatin Faculty Show"
+		client = "for the Gallatin Galleries"
+		imgExt = "jpg"
+	/>
+	<IndexStrip
+		slug = "violet100"
+		title = "Violet 100: The NYU Spirit Week"
+		client = "for the NYU Student Senators Council"
+		imgExt = "jpg"
+	/>
 	</div>
 <?php htmlfooter($pageClass); ?>
 </div>

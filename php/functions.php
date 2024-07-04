@@ -235,32 +235,6 @@ HTML;
 
 	echo $html . "\n";
 }
-/*
-Make sure the following exist before invoking htmlindexstrip():
-	/projects/[slug]/index.php
-	/projects/[slug]/str_[slug].[imgExt]
-*/
-function htmlindexstrip($slug, $title = "", $client = "", $imgExt = "jpg") {
-	if ($client == "") {
-		$html = <<<HTML
-		<a class="portfolio-item" href="projects/{$slug}/" id="{$slug}">
-			<div class="image-strip" style="background-image: url(../projects/{$slug}/str_$slug.{$imgExt});"></div>
-			<h3 class="item-title">{$title}</h3>
-		</a>
-HTML;
-	} else {
-		$html = <<<HTML
-		<a class="portfolio-item" href="projects/{$slug}/" id="{$slug}">
-			<div class="image-strip" style="background-image: url(../projects/{$slug}/str_{$slug}.{$imgExt});"></div>
-			<h3 class="item-title">{$title}
-				<span class="item-client">{$client}</span>
-			</h3>
-		</a>
-HTML;
-	}
-
-	echo $html . "\n";
-}
 
 function htmldesignedbyline($year = "", $name = "Jacob Ford") {
 	$htmlname = makelastspacenb($name);
