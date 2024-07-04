@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<?php
-	require_once("php/functions.php");
-	$pageClass = "index";
-	$title = "The Portfolio of Jacob Ford";
-?>
+---
+import Head from '@/components/Head.astro'
+
+const pageClass = 'index'
+const pageTitle = 'The Portfolio of Jacob Ford'
+const pageDescr = 'Designer of Things.'
+---
 <html>
-<head>
-<?php htmlhead($pageClass, $title); ?>
-	<meta name="Description" content="Designer of Things.">
-	<link rel="me" href="https://merveilles.town/@unitof">
-	<link rel="me" href="https://thelife.boats/@unitof">
-</head>
+<Head
+	title = {pageTitle}
+	description = {pageDescr}
+/>
 <body>
 <div id="container">
 <?php htmlheader($pageClass) ?>

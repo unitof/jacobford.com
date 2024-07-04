@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<?php
-	require_once("../php/functions.php");
-	$pageClass = "card";
-	$title = "Take My Card";
-?>
-<html>
-<head>
-<?php htmlhead($pageClass, $title); ?>
-	<meta name="Description" content="The business card of Jacob Ford, Designer of Things.">
-</head>
+---
+import Head from '@/components/Head.astro'
+
+const pageType = 'card'
+const pageTitle = 'Take My Card'
+const pageDesc  = 'The business card of Jacob Ford, Designer of Things.'
+---
+<Head
+	title={pageTitle}
+	description={pageDesc}
+/>
 <body ontouchstart>
 <div id="container">
 <?php htmlheader($pageClass) ?>
