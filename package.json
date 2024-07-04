@@ -16,6 +16,6 @@
   "license": "UNLICENSED",
   "homepage": "https://jacobford.com",
   "dependencies": {
-    "astro": "^2.1.7"
+    "astro": "^4.11.5"
   }
 }
