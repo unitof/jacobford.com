@@ -1,0 +1,14 @@
+<!DOCTYPE html><head><meta charset="utf-8"><title>Take My Card</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="/css/typography.css"><link rel="stylesheet" type="text/css" href="/css/stylish.css"><link rel="me" href="https://merveilles.town/@unitof"><link rel="me" href="https://thelife.boats/@unitof"><!-- ↓ Fathom Analytics, full transparency. It’s good: usefathom.com/ref/VIGUPS --><script src="https://magpie.unitof.com/script.js" data-site="BUTONZDI" defer></script><meta name="Description" content="The business card of Jacob Ford, Designer of Things."><script type="module">var s=document.location.hostname,i="UA-78108122-1";s=="staging.jacobford.com"&&(i="UA-78108122-2");s.search(/^(.+\.)?jacobford\.com/i)!==-1?(function(e,a,c,l,o,t,n){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,t=a.createElement(c),n=a.getElementsByTagName(c)[0],t.async=1,t.src=l,n.parentNode.insertBefore(t,n)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create",i,"auto"),document.cookie.includes("JFDev=dev")==!0&&ga("set","dimension1","true"),ga("send","pageview")):console.log("Google Analytics disabled: hostname not jacobford.com");
+</script></head> <div id="container"> <div id="header" class="index-header"><h2 class="header-top">
+The
+Business Card<span class="lc">of</span></h2><h1 class="header-mid">Jacob Ford</h1><h2 class="header-bot">Designer&nbsp;<span class="lc">of</span> Things</h2></div> <section class="card-holder"> <div id="card"> <div class="card-face" id="front"> <h3 class="name">Jacob Ford</h3> <h4 class="title">Designer&nbsp;<span class="lc">of</span> Things</h4> </div> <div class="card-face" id="back"> <p class="contact email"><a class="hidden" href="mailto:j@cobford.com">j@cobford.com</a></p> <p class="contact phone">(<span class="three digits expand">best to <a href="mailto:j@cobford.com">email me</a> first</span>)<span class="subscribernumber digits contract"><span class="three digits">000</span>-<span class="four digits">0000</span></span></p> </div> </div> </section> <section class="action-pane"> <a class="action" href="jacobford_resume.pdf">Download resume</a> </section> <!--?php htmlfooter($pageClass) ?--> </div> <script type="text/javascript">
+	var card = document.getElementById('card');
+	function flipCard(event){
+		if (event.target.nodeName.toLowerCase() == 'a') {
+			event.stopPropagation();
+		} else {
+			card.classList.toggle('flipped');
+		}
+	}
+	card.addEventListener('click', flipCard, true);
+</script> 
