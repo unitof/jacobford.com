@@ -1,0 +1,18 @@
+---
+export interface Props {
+  slug: string;
+  title: string;
+  client?: string;
+  imgExt?: string;
+}
+
+const { slug, title, client = "", imgExt = "jpg" } = Astro.props;
+---
+
+<a class="portfolio-item" href={`projects/${slug}/`} id={slug}>
+  <div class="image-strip" style={`background-image: url(projects/${slug}/str_${slug}.${imgExt});`}></div>
+  <h3 class="item-title">
+    {title}
+    {client && <span class="item-client">{client}</span>}
+  </h3>
+</a>

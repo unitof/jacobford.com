@@ -1,0 +1,20 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+const pageClass = "project";
+const title = "Civic Engagement Posters for the Urban Democracy Lab";
+const middle = "Civic Engagement Posters";
+const bottom = '<span class="lc">for</span>&nbsp;the Urban Democracy&nbsp;Lab';
+---
+
+<Layout title={title} pageClass={pageClass}>
+  <Header pageClass={pageClass} middle={middle} bottom={bottom} />
+  
+  <div id="story">
+    <p>Project details coming soon...</p>
+  </div>
+  
+  <Footer pageClass={pageClass} />
+</Layout>

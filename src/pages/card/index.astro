@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const pageClass = "card";
+const title = "Take My Card";
+---
+
+<Layout title={title} pageClass={pageClass}>
+  <Fragment slot="head">
+    <meta name="description" content="The business card of Jacob Ford, Designer of Things.">
+  </Fragment>
+  
+  <Header pageClass={pageClass} />
+  
+  <section class="card-holder">
+    <div id="card">
+      <div class="card-face" id="front">
+        <h3 class="name">Jacob Ford</h3>
+        <h4 class="title">Designer&nbsp;<span class="lc">of</span> Things</h4>
+      </div>
+      <div class="card-face" id="back">
+        <p class="contact email"><a class="hidden" href="mailto:j@cobford.com">j@cobford.com</a></p>
+        <p class="contact phone">(<span class="three digits expand">best to <a href="mailto:j@cobford.com">email me</a> first</span>)<span class="subscribernumber digits contract"><span class="three digits">000</span>-<span class="four digits">0000</span></span></p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="action-pane">
+    <a class="action" href="jacobford_resume.pdf">Download resume</a>
+  </section>
+  
+  <Footer pageClass={pageClass} />
+</Layout>
+
+<script>
+  var card = document.getElementById('card');
+  function flipCard(event: Event) {
+    if ((event.target as HTMLElement).nodeName.toLowerCase() == 'a') {
+      event.stopPropagation();
+    } else {
+      card?.classList.toggle('flipped');
+    }
+  }
+  card?.addEventListener('click', flipCard, true);
+</script>

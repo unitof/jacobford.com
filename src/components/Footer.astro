@@ -1,0 +1,69 @@
+---
+export interface Props {
+  pageClass?: string;
+}
+
+const { pageClass = "" } = Astro.props;
+---
+
+{pageClass === "project" && (
+  <div id="footer" class="project-footer">
+    <a href="../../" class="icon-link camouflage">
+      <div class="icon icon-index">
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe icon-index-expand"></div>
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe"></div>
+      </div>
+      <h2>Return <span class="lc">to</span> the Index</h2>
+    </a>
+    <a href="../../card/" class="icon-link camouflage">
+      <div class="icon icon-card"></div>
+      <h2>Take my Card</h2>
+    </a>
+  </div>
+)}
+
+{pageClass === "card" && (
+  <div id="footer" class="project-footer">
+    <a href="../" class="icon-link camouflage">
+      <div class="icon icon-index">
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe icon-index-expand"></div>
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe"></div>
+      </div>
+      <h2>Return <span class="lc">to</span> the Index</h2>
+    </a>
+  </div>
+)}
+
+{pageClass === "index" && (
+  <div id="footer" class="project-footer">
+    <a href="card/" class="icon-link camouflage">
+      <div class="icon icon-card"></div>
+      <h2>Take my Card</h2>
+    </a>
+  </div>
+)}
+
+{!["project", "card", "index"].includes(pageClass) && (
+  <div id="footer" class="project-footer">
+    <a href="/" class="icon-link camouflage">
+      <div class="icon icon-index">
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe icon-index-expand"></div>
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe"></div>
+        <div class="icon-index-stripe"></div>
+      </div>
+      <h2>Return <span class="lc">to</span> the Index</h2>
+    </a>
+    <a href="/card/" class="icon-link camouflage">
+      <div class="icon icon-card"></div>
+      <h2>Take my Card</h2>
+    </a>
+  </div>
+)}
