@@ -1,0 +1,20 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+const pageClass = "project";
+const title = "Gallatin Faculty Show for the Gallatin Galleries";
+const middle = "Gallatin Faculty Show";
+const bottom = '<span class="lc">for</span>&nbsp;the Gallatin&nbsp;Galleries';
+---
+
+<Layout title={title} pageClass={pageClass}>
+  <Header pageClass={pageClass} middle={middle} bottom={bottom} />
+  
+  <div id="story">
+    <p>Project details coming soon...</p>
+  </div>
+  
+  <Footer pageClass={pageClass} />
+</Layout>

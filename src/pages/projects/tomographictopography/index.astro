@@ -1,0 +1,20 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+const pageClass = "project";
+const title = "Tomographic Topography";
+const middle = "Tomographic Topography";
+const bottom = "A Personal Academic Project";
+---
+
+<Layout title={title} pageClass={pageClass}>
+  <Header pageClass={pageClass} middle={middle} bottom={bottom} />
+  
+  <div id="story">
+    <p>Project details coming soon...</p>
+  </div>
+  
+  <Footer pageClass={pageClass} />
+</Layout>

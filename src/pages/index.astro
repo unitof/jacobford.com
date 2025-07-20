@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import IndexStrip from '../components/IndexStrip.astro';
+
+const pageClass = "index";
+const title = "The Portfolio of Jacob Ford";
+---
+
+<Layout title={title} pageClass={pageClass}>
+  <Fragment slot="head">
+    <meta name="description" content="Designer of Things.">
+    <link rel="me" href="https://merveilles.town/@unitof">
+    <link rel="me" href="https://thelife.boats/@unitof">
+  </Fragment>
+  
+  <Header pageClass={pageClass} />
+  
+  <div id="stripestack">
+    <IndexStrip 
+      slug="deathstrip" 
+      title="Death Strip: A Map of Berlin &amp; Time" 
+      imgExt="jpg" 
+    />
+    <IndexStrip 
+      slug="tomographictopography" 
+      title="Tomographic Topography" 
+      imgExt="jpg" 
+    />
+    <IndexStrip 
+      slug="urbandemocracylab" 
+      title="Civic Engagement Posters" 
+      client="for the Urban Democracy Lab" 
+      imgExt="png" 
+    />
+    <IndexStrip 
+      slug="doesmennonitematter" 
+      title="Does Mennonite Matter?" 
+      client="for the Franconia Conference" 
+      imgExt="jpg" 
+    />
+    <IndexStrip 
+      slug="gallatinfacultyshow" 
+      title="Gallatin Faculty Show" 
+      client="for the Gallatin Galleries" 
+      imgExt="jpg" 
+    />
+    <IndexStrip 
+      slug="violet100" 
+      title="Violet 100: The NYU Spirit Week" 
+      client="for the NYU Student Senators Council" 
+      imgExt="jpg" 
+    />
+  </div>
+  
+  <Footer pageClass={pageClass} />
+</Layout>

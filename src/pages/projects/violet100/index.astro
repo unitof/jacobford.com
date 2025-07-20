@@ -1,0 +1,20 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+
+const pageClass = "project";
+const title = "Violet 100: The NYU Spirit Week for the NYU Student Senators Council";
+const middle = "Violet 100: The NYU Spirit Week";
+const bottom = '<span class="lc">for</span>&nbsp;the NYU Student Senators&nbsp;Council';
+---
+
+<Layout title={title} pageClass={pageClass}>
+  <Header pageClass={pageClass} middle={middle} bottom={bottom} />
+  
+  <div id="story">
+    <p>Project details coming soon...</p>
+  </div>
+  
+  <Footer pageClass={pageClass} />
+</Layout>

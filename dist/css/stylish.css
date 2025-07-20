@@ -1,0 +1,682 @@
+html {
+	font-family: "Fanwood-JF", "Fanwood", "Times New Roman", serif;
+	font-weight: normal;
+	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: #eeeeee;
+	color: #454545;
+	margin: 0;
+}
+
+/* must be like this
+   for mobile browsers;
+   seems to work without
+   #container, but leaving
+   it to be extra safe  */
+html, body, #container {
+	overflow-x: hidden;
+}
+
+em,
+cite,
+i {
+	font-style: italic;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+a:link, a:visited {
+	color: #848484;
+	text-decoration: none;
+	transition: color .3s;
+}
+
+/* invisible links */
+a.camouflage:link,
+a.camouflage:visited {
+	color: inherit;
+}
+
+a:hover,
+a.camouflage:hover {
+	color: #a8a8a8;
+}
+
+a:active,
+a.camouflage:active {
+	color: #ff0022;
+}
+
+.action-pane {
+	text-align: center;
+}
+
+a.action {
+	display: inline-block;
+	padding: 20px;
+	margin: 2em auto;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-color: #a8a8a8;
+	border-width: 1px;
+	border-style: solid none solid;
+	transition: border-color .2s, color .2s;
+}
+
+/* TODO: implement something like http://stackoverflow.com/questions/16977631/removing-margin-on-inline-block-element-after-wrapping-lines */
+
+a.action:hover {
+	color: #454545;
+	border-color: #454545;
+}
+
+a.action + a.action {
+	margin-left: 1em;
+}
+
+p,
+blockquote {
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures contextual;
+	   -moz-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	    -ms-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	     -o-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	-webkit-font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	        font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+}
+
+/* we just want lining numbers with contact info, that's all, but that rule alone would reset the others */
+p.contact {
+	   -moz-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	    -ms-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	     -o-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	-webkit-font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+	        font-feature-settings: "lnum" 1, "pnum" 1, "kern" 1, "calt" 1, "liga" 1, "clig" 1, "dlig" 1;
+}
+
+blockquote {
+	font-size: 1.5em;
+}
+
+div#story blockquote + .caption {
+	margin-top: -2em;
+}
+
+ol, ul {
+	padding-left: 30px;
+	padding-right: 30px;
+    /* best if these match values for
+	@media all and (max-width: 1000px)
+	{ div#story > p, div#story > img } */
+}
+
+li {
+	margin: 1em 0;
+}
+
+p.caption {
+	font-size: 12px;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
+}
+
+p.caption i,
+p.caption em {
+	font-style: normal;
+}
+
+/* STYLES FOR HEADER & FOOTER */
+
+div#header, div#footer {
+	font-weight: normal;
+	text-align: center;
+	color: #818181;
+	text-transform: uppercase;
+	margin: 45px 15px;
+	min-width: 210px;
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
+}
+
+h1 {
+	font-size: 26px;
+	font-weight: normal;
+	letter-spacing: 3px;
+	margin: 0 -3px 0 0; /* keep margin-right equal to -(letter-spacing value) */
+}
+
+div.index-header h1 {
+	letter-spacing: 28px;
+	margin: 15px -28px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
+}
+
+div.index-header h1::before {
+	content: "\2022\00a0";
+}
+
+div.index-header h1::after {
+	content: "\00a0\2022";
+}
+
+/* To restore proper margin collapsing,
+   I moved the a inside the h2 in the header.
+   TODO: solve margin collapsing and move
+   it back outside. */
+h2 {
+	color: #a8a8a8;
+	font-size: 18px;
+	font-weight: normal;
+	letter-spacing: 7px;
+	margin: 15px -7px 15px 0; /* keep margin-right equal to -(letter-spacing value) */
+}
+
+span.lc {
+	text-transform: none;
+	font-style: italic;
+	letter-spacing: 3.5px;
+}
+
+h2 span.lc {
+	margin-right: 3.5px; /* =(h2.h-t.let-spac value) - (span.lc.let-spac value) */
+}
+
+/* STYLES FOR THE ICONS */
+
+.icon-link {
+	display: block;
+}
+
+.icon-link h2 {
+	display: inline-block;
+}
+
+.icon {
+	display: inline-block;
+	position: relative;
+	width: 18px;
+}
+
+.icon + h2 {
+	margin-left: 9px;
+}
+
+/* Index Icon */
+
+.icon-index {
+	height: 12px;
+	top: 2px;
+	-webkit-transition: top .2s;
+	        transition: top .2s;
+}
+
+.icon-index .icon-index-stripe {
+	border-style: solid none solid;
+	border-width: 1px;
+	border-color: #a8a8a8 #a8a8a8 transparent;
+	height: 0px;
+	-webkit-transition: border .05s, border-color .2s, height .2s, margin .2s;
+	        transition: border .05s, border-color .2s, height .2s, margin .2s;
+}
+
+.icon-link:hover .icon-index,
+.icon-link:focus .icon-index {
+	top: 0; /* less like the actual frontpage, but better text alignment */
+}
+
+.icon-link:hover .icon-index .icon-index-expand,
+.icon-link:focus .icon-index .icon-index-expand {
+	border: 1px solid #a8a8a8;
+	height: 2px;
+	margin-bottom: 1px;
+}
+
+/* Card icon */
+
+.icon-card {
+	height: 9px;
+	-webkit-transition: transform .3s;
+	        transition: transform .3s;
+	border: 1px solid #a8a8a8;
+}
+
+.icon-link:hover .icon-card {
+	transform: rotateY(180deg);
+}
+
+/* STYLES FOR PROJECT STORIES */
+
+/* Fake 800px width while still allowing for .superoverhang */
+div#story > * {
+	max-width: 800px;
+	margin: 1em auto;
+}
+
+div#story > *:first-child {
+	margin-top: 0px;
+}
+
+div#story img {
+	display: block;
+	width: 100%;
+}
+
+/* for designs whose backgrounds are or are dangerously close to #eeeeee */
+div#story .border {
+	border: 2px solid #dddddd;
+	margin-left: -2px;
+}
+
+div#story .overhang {
+	max-width: 1000px;
+}
+
+div#story .underhang {
+	max-width: 400px;
+}
+
+div#story .superoverhang {
+	max-width: none;
+	width: 100%;
+}
+
+div#story div p.caption {
+	margin-top: 3px;
+	margin-left: -1px;
+}
+
+div#story .superoverhang p.caption {
+	margin-left: 15px; /* must match @media all and (max-width: 1016px) { p.caption } */
+}
+
+div#story .embed {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+div#story .embed.r16x9 {
+	padding-bottom: 56.25%;
+}
+
+.embed iframe,
+.embed object,
+.embed embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+div#story .gallery {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	     -ms-flex-align: stretch;
+	        align-items: stretch; /* if this works it'll be amazing: short items will stretch themselves to the tallest */
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	          -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-align-content: flex-start;
+	        -ms-flex-line-pack: start;
+	        align-content: flex-start;
+}
+
+div#story .gallery > div,
+div#story .gallery > img,
+div#story .gallery .frame {
+	margin: 15px 15px 0 0;
+	/* TODO: use flex:auto here
+	   and flex-flow: row wrap above and
+	   I can make the row wrap when .frames are
+	   below a certain width. */
+}
+
+/* Method using calc() and gallery width-specific classes
+
+.g2 {
+	width: calc(50% - (15px / 2));
+}
+
+.g3 {
+	width: calc(33.33333333% - 15px + (15px / 3));
+}
+
+*/
+
+div#story .gallery > div:last-child,
+div#story .gallery > img:last-child,
+div#story .gallery .frame:last-child {
+	margin-right: 0;
+}
+
+div#story .credits {
+	max-width: 100%;
+	margin: 45px 15px; /* keep equal to div#footer margins */
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div#story .credits p {
+	font-size: 12.5px; /* .625rem */
+	line-height: 1.6em; /* 1rem */
+	margin: 6px 0;
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
+}
+
+div#story .credits .name {
+	text-transform: none;
+	font-size: 1.6em; /* 1rem */
+	font-style: italic;
+	margin: 0 1px;
+}
+
+div#story .credits .name:not(.wrap) {
+	white-space: nowrap;
+}
+
+/* STYLES FOR THE INDEX */
+
+div#stripestack {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.image-strip {
+	background-color: #e2e2e2;
+	background-position: center top;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-top: 5px;
+	height: 15px;
+	        transition: height .2s;
+	-webkit-transition: height .2s;
+	z-index: -1;
+	overflow: hidden;
+}
+
+a.portfolio-item {
+	display: block;
+}
+
+/* TODO: Use :before classes and separate styling
+   to append .item-subtitles and .item-clients to .item-titles
+   linked by " for " or ": " respectively */
+.portfolio-item h3 {
+	font-family: "Raleway";
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #818181;
+	letter-spacing: 2px;
+	margin: 0 0 0 -.5px;
+	padding: 4px 0; /* using margins adds an unwanted gap in the clickable areas */
+	opacity: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/* See .portfolio-item h3, div#story p.caption selector
+	   for transition rules. Rules set here get overridden. */
+	   -moz-font-feature-settings: "lnum" 1;
+	    -ms-font-feature-settings: "lnum" 1;
+	     -o-font-feature-settings: "lnum" 1;
+	-webkit-font-feature-settings: "lnum" 1;
+	        font-feature-settings: "lnum" 1;
+}
+
+.portfolio-item span.item-client {
+	color: #b9b9b9;
+	opacity: 0;
+}
+
+.portfolio-item:hover div.image-strip,
+.portfolio-item:focus div.image-strip {
+	height: 21px;
+}
+
+.portfolio-item:hover span.item-client,
+.portfolio-item:focus span.item-client {
+	opacity: 1;
+	-webkit-transition-delay: 0.3s;
+	        transition-delay: 0.3s;
+	-webkit-transition-duration: 1s;
+	        transition-duration: 1s;
+}
+
+.portfolio-item:active div.image-strip {
+	height: 300px;
+	/* TODO: transition-duration: 1.5s [or longer?]; */
+}
+
+.portfolio-item h3, div#story p.caption {
+	-webkit-transition: margin-left .3s, opacity .7s;
+	        transition: margin-left .3s, opacity .7s;
+	/* No delay for opacity because these properties
+	   determine how it will RETURN to a transparent state.
+	   Delay set in .portfolio-item:hover h3... */
+}
+
+/* STYLES FOR THE CARD */
+
+.card-holder {
+	position: relative;
+	margin: 0 auto;
+	width: 80vw;
+	height: 45.7142857143vw; /* 3.5:2 aspect ratio */
+	max-width: 400px;
+	max-height: 228px;
+
+	border: 1px solid #818181;
+	perspective: 800px;
+
+	text-align: center;
+}
+
+#card {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+}
+
+#card.flipped {
+	transform: rotateY(180deg);
+}
+
+/* TODO: seems to be a bug where :hover can still be triggered on the backface */
+
+#card .card-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color: #f8f8f8;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+/* everything half of div.index-header h1 */
+#card .card-face h3 {
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 14px;
+	margin-right: -14px; /* keep margin-right equal to -(letter-spacing value) */
+	text-transform: uppercase;
+}
+
+/* everything half of div.index-header h2 */
+#card .card-face h4 {
+	font-size: 9px;
+	font-weight: normal;
+	letter-spacing: 3.5px;
+	margin-right: -3.5px; /* keep margin-right equal to -(letter-spacing value) */
+	text-transform: uppercase;
+}
+
+#card #front {
+	transform: rotateY(180deg);
+}
+
+/* if #front is the URL target, don't flip it… */
+#card #front:target {
+	transform: none;
+}
+
+/* …and instead flip the back */
+/* TODO: Why doesn't this work as `#card #front:target ~ #card #back`? */
+#card #front:target ~ #back {
+	transform: rotateY(180deg);
+}
+
+/* fix for Chrome bug where :hover still fires on backface */
+#card.flipped #back {
+	pointer-events: none;
+}
+
+#card #front:target ~ #back {
+	pointer-events: auto;
+}
+
+#card .contact {
+	font-weight: normal;
+	margin: 1em 0;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	height: 1.2em;
+}
+
+#card .contact span.contract,
+#card .contact span.expand {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: opacity 1s ease, width 1s ease .8s, margin-left 1s ease .8s;
+}
+
+#card .contact span.expand {
+	opacity: 0;
+}
+
+#card .contact span.contract {
+	opacity: 1;
+}
+
+#card .contact:hover span.expand,
+#card .contact:focus span.expand,
+#card .contact:active span.expand {
+	width: 70%;
+	opacity: 1;
+	transition: opacity 1s ease .8s, width 1s ease, margin-left 1s ease;
+}
+
+#card .contact:hover span.contract,
+#card .contact:focus span.contract,
+#card .contact:active span.contract {
+	width: 0;
+	margin-left: 0;
+	opacity: 0;
+	transition: opacity .3s ease, width 1s ease, margin-left 1s ease;
+}
+
+span.digits {
+	opacity: 0;
+}
+
+span.one.digits {
+	width: .55em;
+	width: calc(.55em * 1);
+}
+
+span.two.digits {
+	width: 1.1em;
+	width: calc(.55em * 2);
+}
+
+span.three.digits {
+	width: 1.65em;
+	width: calc(.55em * 3);
+}
+
+span.four.digits {
+	width: 2.2em;
+	width: calc(.55em * 4);
+}
+
+span.subscribernumber.digits {
+	width: 4.1585em;
+	margin-left: .2em;
+}
+
+@media all and (max-width: 1016px) {
+	.portfolio-item h3 {
+		margin-left: 5px;
+	}
+
+	div#story div p.caption {
+		margin-left: 15px; /* must match .superoverhang p.caption */
+	}
+}
+
+@media all and (min-width: 1001px) and (max-width: 1016px) {
+	body {
+		padding-left: auto;
+		padding-right: auto;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	div.index-header h1::before, div.index-header h1::after {
+		content: none;
+	}
+
+	div#story > p,
+	div#story > img,
+	div#story > blockquote {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	div#story > img {
+		width: 80%;
+		width: calc(100% - 60px);
+	}
+}
