@@ -19,8 +19,8 @@
 				<h4 class="title">Designer&nbsp;<span class="lc">of</span> Things</h3>
 			</div>
 			<div class="card-face" id="back">
-				<p class="contact email"><a class="hidden" href="mailto:&#x66;&#x6F;&#x72;&#x2E;&#x6A;&#x40;&#x63;&#x6F;&#x62;&#x66;&#x6F;&#x72;&#x64;&#x2E;&#x63;&#x6F;&#x6D;"><span style="display: none;">for.</span>j@cobford.com</a></p>
-				<p class="contact phone">(<span class="three digits expand">best to <a href="mailto:&#x66;&#x6F;&#x72;&#x2E;&#x6A;&#x40;&#x63;&#x6F;&#x62;&#x66;&#x6F;&#x72;&#x64;&#x2E;&#x63;&#x6F;&#x6D;">email me</a> first</span>)<span class="subscribernumber digits contract"><span class="three digits">000</span>-<span class="four digits">0000</span></span></p>
+				<p class="contact email"><a class="hidden" href="mailto:j@cobford.com">j@cobford.com</a></p>
+				<p class="contact phone">(<span class="three digits expand">best to <a href="mailto:j@cobford.com">email me</a> first</span>)<span class="subscribernumber digits contract"><span class="three digits">000</span>-<span class="four digits">0000</span></span></p>
 			</div>
 		</div>
 	</section>
