@@ -4,6 +4,9 @@
   "description": "The Portfolio of Jacob Ford",
   "main": "index.php",
   "scripts": {
+    "build:manifest": "node scripts/generate-image-width-manifest.mjs",
+    "build:static": "node scripts/populate-vercel-static-output.mjs",
+    "build:vercel": "npm run build:manifest && npm run build:static",
     "dev": "php -S localhost:8080"
   },
   "repository": {

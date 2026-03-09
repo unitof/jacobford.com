@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-	require_once("../../php/functions.php");
+	require_once(__DIR__ . "/../../php/functions.php");
 	$pageClass = "project";
 	$object = "Does Mennonite Matter?";
 	$client = "the Franconia Conference";

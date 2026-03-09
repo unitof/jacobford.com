@@ -1,5 +1,62 @@
 <?php
 
+function siteroot() {
+	return dirname(__DIR__);
+}
+
+function imagewidthmanifest() {
+	static $manifest = null;
+
+	if ($manifest === null) {
+		$manifest = require __DIR__ . '/generated-image-widths.php';
+	}
+
+	return $manifest;
+}
+
+function imageassetpath($src) {
+	$trace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
+	$callerFile = '';
+	foreach ($trace as $frame) {
+		if (($frame['file'] ?? '') !== __FILE__) {
+			$callerFile = $frame['file'] ?? '';
+			break;
+		}
+	}
+	$callerDir = $callerFile ? dirname($callerFile) : getcwd();
+	$root = siteroot();
+
+	if ($callerDir === $root) {
+		$relativeDir = '';
+	} elseif (str_starts_with($callerDir, $root . DIRECTORY_SEPARATOR)) {
+		$relativeDir = substr($callerDir, strlen($root) + 1);
+	} else {
+		$relativeDir = $callerDir;
+	}
+
+	$path = $relativeDir === '' ? $src : $relativeDir . DIRECTORY_SEPARATOR . $src;
+	return str_replace(DIRECTORY_SEPARATOR, '/', ltrim($path, DIRECTORY_SEPARATOR));
+}
+
+function imagewidth($src) {
+	$path = imageassetpath($src);
+	$manifest = imagewidthmanifest();
+
+	if (isset($manifest[$path])) {
+		return $manifest[$path];
+	}
+
+	$absolutePath = siteroot() . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $path);
+	if (is_file($absolutePath)) {
+		$size = getimagesize($absolutePath);
+		if ($size !== false) {
+			return $size[0];
+		}
+	}
+
+	return null;
+}
+
 function prependlcfor($string, $nbsp = true) {
 	return '<span class="lc">for</span>&nbsp;' . $string;
 }
@@ -165,17 +222,18 @@ function htmlsrcset($src, $maxDisplayWidth = '', $upTo = 3, $max = false) {
 	$ext = substr($src, strrpos($src, ".") + 1);
 	$upTo = floor($upTo);
 	$srcval = $src;
+	$srcsetval = '';
 	for ( $x = 1; $x <= $upTo; $x++ ) {
 		if ($x == 1) {
 			$filename = $src;
 		} else {
 			$filename = "{$slug}@{$x}x.{$ext}";
 		}
-		list($width) = getimagesize($filename);
+		$width = imagewidth($filename);
 		$srcsetval .= "{$filename} {$width}w, ";
 	}
 	if ( $max ) {
-		list($maxWidth) = getimagesize($slug . '@max.' . $ext);
+		$maxWidth = imagewidth($slug . '@max.' . $ext);
 		$srcsetval .= "{$slug}@max.{$ext} {$maxWidth}w, ";
 	}
 	$sizesval = "(max-width: {$maxDisplayWidth}px) 100vw, {$maxDisplayWidth}px";
