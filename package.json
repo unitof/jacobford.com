@@ -7,7 +7,7 @@
     "build:manifest": "node scripts/generate-image-width-manifest.mjs",
     "build:static": "node scripts/populate-vercel-static-output.mjs",
     "build:vercel": "npm run build:manifest && npm run build:static",
-    "dev": "php -S localhost:8080"
+    "dev": "php -S 127.0.0.1:${PORT:-8080} api/index.php"
   },
   "repository": {
     "type": "git",
