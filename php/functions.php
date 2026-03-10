@@ -105,7 +105,7 @@ function htmlhead($pageClass = "", $title = "") {
 	} else { console.log("Google Analytics disabled: hostname not jacobford.com"); }
 	</script>
 	<!-- ↓ Fathom Analytics, full transparency. It’s good: usefathom.com/ref/VIGUPS -->
-	<script src="https://magpie.unitof.com/script.js" data-site="BUTONZDI" defer></script>
+	<script src="https://cdn.usefathom.com/script.js" data-site="BUTONZDI" defer></script>
 HTML;
 	$toRoot = toRoot($pageClass);
 
