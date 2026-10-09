@@ -9,7 +9,7 @@
   "github": {
     "enabled": false
   },
-  "outputDirectory": "static", 
+  "outputDirectory": ".vercel/output/static", 
   "routes": [
     {
       "handle": "filesystem"
