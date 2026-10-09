@@ -22,6 +22,7 @@
 <?php htmlindexstrip("gallatinfacultyshow", "Gallatin Faculty Show", "for the Gallatin Galleries", "jpg"); ?>
 <?php htmlindexstrip("violet100", "Violet 100: The NYU Spirit Week", "for the NYU Student Senators Council", "jpg"); ?>
 	</div>
+	<p>Friday 7pm Eastern: attend my <a href="https://theater.jacobford.com">symposium on the last 10 years of Mark Zuckerberg</a>.</p>
 <?php htmlfooter($pageClass); ?>
 </div>
 </body>
