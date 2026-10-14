@@ -6,7 +6,7 @@
       "runtime": "vercel-php@0.9.0"
     }
   },
-  "outputDirectory": ".vercel/output/static", 
+  "outputDirectory": ".vercel/output/static",
   "routes": [
     {
       "handle": "filesystem"
